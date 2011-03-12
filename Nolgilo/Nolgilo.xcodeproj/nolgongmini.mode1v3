@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -280,7 +278,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>17</integer>
+									<integer>18</integer>
 									<integer>16</integer>
 									<integer>13</integer>
 									<integer>0</integer>
@@ -317,12 +315,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MapViewController.m</string>
+								<string>LoadingViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MapViewController.m</string>
+										<string>LoadingViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>71100ED9132B49280009733A</string>
+										<string>71100EE2132B4C840009733A</string>
 										<key>history</key>
 										<array>
 											<string>71B7173E131E23C000894FCB</string>
@@ -352,8 +352,8 @@
 											<string>713864E4132A2D3200684734</string>
 											<string>713864E5132A2D3200684734</string>
 											<string>710F7D95132A312700F6965E</string>
+											<string>71100EE1132B4C840009733A</string>
 											<string>71100ED7132B49280009733A</string>
-											<string>71100ED8132B49280009733A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -551,6 +551,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>71100EEA132B4C840009733A</string>
+		<string>71100EEB132B4C840009733A</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>71C5F09A131DFC0900F2BC31</string>
 		<string>/Users/nolgongmini/Project/Nolgilo/Nolgilo/Nolgilo.xcodeproj</string>
 	</array>
@@ -754,13 +758,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>710F7D89132A30B800F6965E</string>
+				<string>71100EE3132B4C840009733A</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>710F7D8A132A30B800F6965E</string>
-				<string>710F7D8B132A30B800F6965E</string>
-				<string>710F7D8C132A30B800F6965E</string>
-				<string>710F7D8D132A30B800F6965E</string>
-				<string>710F7D8E132A30B800F6965E</string>
+				<string>71100EE4132B4C840009733A</string>
+				<string>71100EE5132B4C840009733A</string>
+				<string>71100EE6132B4C840009733A</string>
+				<string>71100EE7132B4C840009733A</string>
+				<string>71100EE8132B4C840009733A</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -887,8 +891,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -924,7 +926,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>710F7D8F132A30B800F6965E</string>
+				<string>71100EE9132B4C840009733A</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -934,7 +936,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

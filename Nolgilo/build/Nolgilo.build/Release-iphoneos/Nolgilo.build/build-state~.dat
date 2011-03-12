@@ -1,510 +1,0 @@
-TNolgilo
-v7
-r0
-t320087948.663083
-cCheck dependencies
-cCpResource build/Release-iphoneos/Nolgilo.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-cProcessInfoPlistFile /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Info.plist Nolgilo-Info.plist
-cCompileXIB /Users/goyange/놀기로/Nolgilo/MainWindow.xib
-cCompileXIB /Users/goyange/놀기로/Nolgilo/NolgiloViewController.xib
-cCopyPNGFile /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/user.png user.png
-cProcessPCH /var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-bddarayhmctggfadvdlshftreaez/Nolgilo_Prefix.pch.gch Nolgilo_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH /var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-dqogpukchjtjokexytzqdpzvcvzr/Nolgilo_Prefix.pch.gch Nolgilo_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/main.o /Users/goyange/놀기로/Nolgilo/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/NolgiloAppDelegate.o /Users/goyange/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/NolgiloViewController.o /Users/goyange/놀기로/Nolgilo/Classes/NolgiloViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/main.o /Users/goyange/놀기로/Nolgilo/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/NolgiloAppDelegate.o /Users/goyange/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/Nolgilo normal armv6
-cCompileC build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/NolgiloViewController.o /Users/goyange/놀기로/Nolgilo/Classes/NolgiloViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/Nolgilo normal armv7
-cCreateUniversalBinary /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Nolgilo normal "armv6 armv7"
-cGenerateDSYMFile /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app.dSYM /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Nolgilo
-cProcessProductPackaging "/Users/goyange/Library/MobileDevice/Provisioning Profiles/D73DD52D-31E6-4A61-A45B-27CB7230342B.mobileprovision" /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/embedded.mobileprovision
-cTouch /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app
-cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo.xcent
-cCodeSign /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app
-cValidate /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
-c000000004CC7DC9E0000000000000110
-t1288166558
-s272
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
-c000000004CB3DFCF00000000000001A7
-t1286856655
-s423
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-c000000004CB3DFCF00000000000001E5
-t1286856655
-s485
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c000000004CC10EF400000000003B8CB0
-t1287720692
-s3902640
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioServices.h
-c000000004CC10EB60000000000010AAC
-t1287720630
-s68268
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004CC10EF500000000003532B0
-t1287720693
-s3486384
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-c000000004CC11B5300000000000D96F0
-t1287723859
-s890608
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h
-c000000004CC11B4300000000000001D0
-t1287723843
-s464
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004CC10F4700000000003E1F20
-t1287720775
-s4071200
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004CC10F1C0000000000001466
-t1287720732
-s5222
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKAnnotation.h
-c000000004CC11D48000000000000027E
-t1287724360
-s638
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapView.h
-c000000004CC11D48000000000000243D
-t1287724360
-s9277
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.h
-c000000004CC11D4800000000000002FE
-t1287724360
-s766
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/MapKit.framework/MapKit
-c000000004CC11D62000000000029CFA0
-t1287724386
-s2740128
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004CC11AE60000000000000AA1
-t1287723750
-s2721
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004CC11B750000000000C769F0
-t1287723893
-s13068784
-
-N/Users/goyange/Library/MobileDevice/Provisioning Profiles/D73DD52D-31E6-4A61-A45B-27CB7230342B.mobileprovision
-c000000004D61D8230000000000001C41
-t1298257955
-s7233
-
-N/Users/goyange/놀기로/Nolgilo/Classes/NolgiloAppDelegate.h
-c000000004D53842000000000000001DD
-t1297318944
-s477
-i<UIKit/UIKit.h>
-
-N/Users/goyange/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m
-c000000004D5384200000000000000A89
-t1297318944
-s2697
-i"NolgiloAppDelegate.h"
-i"NolgiloViewController.h"
-
-N/Users/goyange/놀기로/Nolgilo/Classes/NolgiloViewController.h
-c000000004D53B7CD0000000000000284
-t1297332173
-s644
-i<UIKit/UIKit.h>
-i<MapKit/MapKit.h>
-i<MapKit/MKAnnotation.h>
-i<CoreLocation/CoreLocation.h>
-i<MapKit/MKMapView.h>
-i<AudioToolbox/AudioServices.h>
-
-N/Users/goyange/놀기로/Nolgilo/Classes/NolgiloViewController.m
-c000000004D53BDC80000000000000AAC
-t1297333704
-s2732
-i"NolgiloViewController.h"
-
-N/Users/goyange/놀기로/Nolgilo/MainWindow.xib
-c000000004D5384200000000000004E29
-t1297318944
-s20009
-
-N/Users/goyange/놀기로/Nolgilo/NolgiloViewController.xib
-c000000004D53B8800000000000004413
-t1297332352
-s17427
-
-N/Users/goyange/놀기로/Nolgilo/Nolgilo_Prefix.pch
-c000000004D53842000000000000000B7
-t1297318944
-s183
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo.xcent
-t1298395146
-s412
-
-N/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/Nolgilo
-t1298395146
-s23652
-
-N/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/Nolgilo.LinkFileList
-c000000004D63F0020000000000000193
-t1298395138
-s403
-
-N/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/NolgiloAppDelegate.o
-t1298395145
-s51172
-
-N/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/NolgiloViewController.o
-t1298395145
-s50952
-
-N/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/main.o
-t1298395145
-s6524
-
-N/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/Nolgilo
-t1298395146
-s23436
-
-N/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/Nolgilo.LinkFileList
-c000000004D63F0020000000000000193
-t1298395138
-s403
-
-N/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/NolgiloAppDelegate.o
-t1298395145
-s51180
-
-N/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/NolgiloViewController.o
-t1298395145
-s50608
-
-N/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/main.o
-t1298395145
-s6500
-
-N/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/com.apple.build-tools.platform.validate
-t2
-s0
-
-N/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app
-t1298395147
-s408
-
-N/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app.dSYM
-t1298395146
-s102
-
-N/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Info.plist
-t1298395138
-s777
-
-N/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/MainWindow.nib
-t1298395142
-s1123
-
-N/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Nolgilo
-t1298395146
-s52108
-
-N/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/NolgiloViewController.nib
-t1298395142
-s1097
-
-N/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/PkgInfo
-t1298395138
-s8
-
-N/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/ResourceRules.plist
-t1298395138
-s485
-
-N/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/embedded.mobileprovision
-t1298395146
-s7233
-
-N/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/user.png
-t1298395143
-s3193
-
-N/Users/goyange/놀기로/Nolgilo/main.m
-c000000004D5384200000000000000167
-t1297318944
-s359
-i<UIKit/UIKit.h>
-
-N/Users/goyange/놀기로/Nolgilo/user.png
-c000000004D53B6590000000000000C4F
-t1297331801
-s3151
-
-N/var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-bddarayhmctggfadvdlshftreaez/Nolgilo_Prefix.pch.gch
-t1298395144
-s9783000
-
-N/var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-dqogpukchjtjokexytzqdpzvcvzr/Nolgilo_Prefix.pch.gch
-t1298395144
-s10249944
-
-NNolgilo-Info.plist
-c000000004D61D6F50000000000000389
-t1298257653
-s905
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies320087938#320087938#0(0"0(0#1#0"3343187568374212096#0"0#
-
-CCodeSign /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app
-s320087946.852166
-e320087947.984881
-r1
-xCodeSign
-x/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app
-lSLF07#2@43"CodeSign build/Release-iphoneos/Nolgilo.app320087946#320087947#0(0"0(0#0#79"/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app8608287072#680"    cd /Users/goyange/놀기로/Nolgilo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Seung Taek Lee (DZX77Q7623)" --resource-rules=/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/ResourceRules.plist --entitlements /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo.xcent /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app0#
-
-CCompileC build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/NolgiloAppDelegate.o /Users/goyange/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s320087944.984138
-e320087945.411652
-r1
-xCompileC
-xbuild/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/NolgiloAppDelegate.o
-x/Users/goyange/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@81"Compile /Users/goyange/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m320087944#320087945#0(0"0(0#0#73"/Users/goyange/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m8608790976#1868"    cd /Users/goyange/놀기로/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos -I/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/include -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources/armv6 -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-bddarayhmctggfadvdlshftreaez/Nolgilo_Prefix.pch -c /Users/goyange/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m -o /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/NolgiloAppDelegate.o0#
-
-CCompileC build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/NolgiloViewController.o /Users/goyange/놀기로/Nolgilo/Classes/NolgiloViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s320087945.259040
-e320087945.524246
-r1
-xCompileC
-xbuild/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/NolgiloViewController.o
-x/Users/goyange/놀기로/Nolgilo/Classes/NolgiloViewController.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@84"Compile /Users/goyange/놀기로/Nolgilo/Classes/NolgiloViewController.m320087945#320087945#0(0"0(0#0#76"/Users/goyange/놀기로/Nolgilo/Classes/NolgiloViewController.m8608486208#1874"    cd /Users/goyange/놀기로/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos -I/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/include -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources/armv6 -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-bddarayhmctggfadvdlshftreaez/Nolgilo_Prefix.pch -c /Users/goyange/놀기로/Nolgilo/Classes/NolgiloViewController.m -o /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/NolgiloViewController.o0#
-
-CCompileC build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/main.o /Users/goyange/놀기로/Nolgilo/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s320087944.982702
-e320087945.258920
-r1
-xCompileC
-xbuild/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/main.o
-x/Users/goyange/놀기로/Nolgilo/main.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@59"Compile /Users/goyange/놀기로/Nolgilo/main.m320087944#320087945#0(0"0(0#0#51"/Users/goyange/놀기로/Nolgilo/main.m8610093344#1832"    cd /Users/goyange/놀기로/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos -I/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/include -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources/armv6 -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-bddarayhmctggfadvdlshftreaez/Nolgilo_Prefix.pch -c /Users/goyange/놀기로/Nolgilo/main.m -o /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/main.o0#
-
-CCompileC build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/NolgiloAppDelegate.o /Users/goyange/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s320087945.489449
-e320087945.637504
-r1
-xCompileC
-xbuild/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/NolgiloAppDelegate.o
-x/Users/goyange/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@81"Compile /Users/goyange/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m320087945#320087945#0(0"0(0#0#73"/Users/goyange/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m8609914144#1868"    cd /Users/goyange/놀기로/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos -I/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/include -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources/armv7 -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-dqogpukchjtjokexytzqdpzvcvzr/Nolgilo_Prefix.pch -c /Users/goyange/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m -o /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/NolgiloAppDelegate.o0#
-
-CCompileC build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/NolgiloViewController.o /Users/goyange/놀기로/Nolgilo/Classes/NolgiloViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s320087945.637630
-e320087945.841239
-r1
-xCompileC
-xbuild/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/NolgiloViewController.o
-x/Users/goyange/놀기로/Nolgilo/Classes/NolgiloViewController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@84"Compile /Users/goyange/놀기로/Nolgilo/Classes/NolgiloViewController.m320087945#320087945#0(0"0(0#0#76"/Users/goyange/놀기로/Nolgilo/Classes/NolgiloViewController.m8610780704#1874"    cd /Users/goyange/놀기로/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos -I/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/include -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources/armv7 -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-dqogpukchjtjokexytzqdpzvcvzr/Nolgilo_Prefix.pch -c /Users/goyange/놀기로/Nolgilo/Classes/NolgiloViewController.m -o /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/NolgiloViewController.o0#
-
-CCompileC build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/main.o /Users/goyange/놀기로/Nolgilo/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s320087945.411779
-e320087945.489325
-r1
-xCompileC
-xbuild/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/main.o
-x/Users/goyange/놀기로/Nolgilo/main.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@59"Compile /Users/goyange/놀기로/Nolgilo/main.m320087945#320087945#0(0"0(0#0#51"/Users/goyange/놀기로/Nolgilo/main.m8610107968#1832"    cd /Users/goyange/놀기로/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos -I/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/include -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources/armv7 -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-dqogpukchjtjokexytzqdpzvcvzr/Nolgilo_Prefix.pch -c /Users/goyange/놀기로/Nolgilo/main.m -o /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/main.o0#
-
-CCompileXIB /Users/goyange/놀기로/Nolgilo/MainWindow.xib
-s320087938.918519
-e320087942.571984
-r1
-xCompileXIB
-x/Users/goyange/놀기로/Nolgilo/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib320087938#320087942#0(0"0(0#0#59"/Users/goyange/놀기로/Nolgilo/MainWindow.xib8608486880#562"    cd /Users/goyange/놀기로/Nolgilo    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/MainWindow.nib /Users/goyange/놀기로/Nolgilo/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCompileXIB /Users/goyange/놀기로/Nolgilo/NolgiloViewController.xib
-s320087938.919381
-e320087942.583396
-r1
-xCompileXIB
-x/Users/goyange/놀기로/Nolgilo/NolgiloViewController.xib
-lSLF07#2@36"CompileXIB NolgiloViewController.xib320087938#320087942#0(0"0(0#0#70"/Users/goyange/놀기로/Nolgilo/NolgiloViewController.xib8608470240#584"    cd /Users/goyange/놀기로/Nolgilo    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/NolgiloViewController.nib /Users/goyange/놀기로/Nolgilo/NolgiloViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCopyPNGFile /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/user.png user.png
-s320087942.572213
-e320087943.035746
-r1
-xCopyPNGFile
-x/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/user.png
-xuser.png
-lSLF07#2@64"CopyPNGFile build/Release-iphoneos/Nolgilo.app/user.png user.png320087942#320087943#0(0"0(0#0#53"/Users/goyange/놀기로/Nolgilo/user.png8610659264#576"    cd /Users/goyange/놀기로/Nolgilo    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/goyange/놀기로/Nolgilo/user.png /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/user.png0#
-
-CCpResource build/Release-iphoneos/Nolgilo.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-s320087938.777636
-e320087938.918405
-r1
-xCpResource
-xbuild/Release-iphoneos/Nolgilo.app/ResourceRules.plist
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist320087938#320087938#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist8307809061684012032#529"    cd /Users/goyange/놀기로/Nolgilo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app0#
-
-CCreateUniversalBinary /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Nolgilo normal "armv6 armv7"
-s320087946.533364
-e320087946.564726
-r1
-xCreateUniversalBinary
-x/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Nolgilo
-xnormal
-xarmv6 armv7
-lSLF07#2@85"CreateUniversalBinary build/Release-iphoneos/Nolgilo.app/Nolgilo normal "armv6 armv7"320087946#320087946#0(0"0(0#0#56"/Users/goyange/놀기로/Nolgilo/armv6 armv78610572992#548"    cd /Users/goyange/놀기로/Nolgilo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/Nolgilo /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/Nolgilo -output /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Nolgilo0#
-
-CGenerateDSYMFile /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app.dSYM /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Nolgilo
-s320087946.564841
-e320087946.759463
-r1
-xGenerateDSYMFile
-x/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app.dSYM
-x/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Nolgilo
-lSLF07#2@99"GenerateDSYMFile build/Release-iphoneos/Nolgilo.app.dSYM build/Release-iphoneos/Nolgilo.app/Nolgilo320087946#320087946#0(0"0(0#0#87"/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Nolgilo8610202432#384"    cd /Users/goyange/놀기로/Nolgilo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Nolgilo -o /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app.dSYM0#
-
-CLd /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/Nolgilo normal armv6
-s320087945.524358
-e320087946.533278
-r1
-xLd
-x/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/Nolgilo
-xnormal
-xarmv6
-lSLF07#2@129"Link /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/Nolgilo320087945#320087946#0(0"0(0#0#0"8596649792#963"    cd /Users/goyange/놀기로/Nolgilo    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos -F/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos -filelist /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/Nolgilo.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -framework AudioToolbox -framework CoreLocation -framework MapKit -o /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv6/Nolgilo0#
-
-CLd /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/Nolgilo normal armv7
-s320087945.841350
-e320087946.532603
-r1
-xLd
-x/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/Nolgilo
-xnormal
-xarmv7
-lSLF07#2@129"Link /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/Nolgilo320087945#320087946#0(0"0(0#0#0"8610513984#963"    cd /Users/goyange/놀기로/Nolgilo    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos -F/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos -filelist /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/Nolgilo.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -framework AudioToolbox -framework CoreLocation -framework MapKit -o /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Objects-normal/armv7/Nolgilo0#
-
-CProcessInfoPlistFile /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Info.plist Nolgilo-Info.plist
-s320087938.840504
-e320087938.899263
-r1
-xProcessInfoPlistFile
-x/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Info.plist
-xNolgilo-Info.plist
-lSLF07#2@26"Process Nolgilo-Info.plist320087938#320087938#0(0"0(0#0#63"/Users/goyange/놀기로/Nolgilo/Nolgilo-Info.plist8610780032#592"    cd /Users/goyange/놀기로/Nolgilo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Nolgilo-Info.plist -genpkginfo /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/ResourceRules.plist -o /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/Info.plist0#
-
-CProcessPCH /var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-bddarayhmctggfadvdlshftreaez/Nolgilo_Prefix.pch.gch Nolgilo_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
-s320087943.035979
-e320087944.982583
-r1
-xProcessPCH
-x/var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-bddarayhmctggfadvdlshftreaez/Nolgilo_Prefix.pch.gch
-xNolgilo_Prefix.pch
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@29"Precompile Nolgilo_Prefix.pch320087943#320087944#0(0"0(0#0#63"/Users/goyange/놀기로/Nolgilo/Nolgilo_Prefix.pch8610520704#1722"    cd /Users/goyange/놀기로/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos -I/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/include -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources/armv6 -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/goyange/놀기로/Nolgilo/Nolgilo_Prefix.pch -o /var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-bddarayhmctggfadvdlshftreaez/Nolgilo_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-dqogpukchjtjokexytzqdpzvcvzr/Nolgilo_Prefix.pch.gch Nolgilo_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-s320087943.041858
-e320087944.884449
-r1
-xProcessPCH
-x/var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-dqogpukchjtjokexytzqdpzvcvzr/Nolgilo_Prefix.pch.gch
-xNolgilo_Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@29"Precompile Nolgilo_Prefix.pch320087943#320087944#0(0"0(0#0#63"/Users/goyange/놀기로/Nolgilo/Nolgilo_Prefix.pch8610500544#1722"    cd /Users/goyange/놀기로/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos -I/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/include -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources/armv7 -I/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/goyange/놀기로/Nolgilo/Nolgilo_Prefix.pch -o /var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-dqogpukchjtjokexytzqdpzvcvzr/Nolgilo_Prefix.pch.gch0#
-
-CProcessProductPackaging "/Users/goyange/Library/MobileDevice/Provisioning Profiles/D73DD52D-31E6-4A61-A45B-27CB7230342B.mobileprovision" /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/embedded.mobileprovision
-s320087946.759590
-e320087946.802431
-r1
-xProcessProductPackaging
-x/Users/goyange/Library/MobileDevice/Provisioning Profiles/D73DD52D-31E6-4A61-A45B-27CB7230342B.mobileprovision
-x/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/embedded.mobileprovision
-lSLF07#2@196"ProcessProductPackaging "/Users/goyange/Library/MobileDevice/Provisioning Profiles/D73DD52D-31E6-4A61-A45B-27CB7230342B.mobileprovision" build/Release-iphoneos/Nolgilo.app/embedded.mobileprovision320087946#320087946#0(0"0(0#0#104"/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/embedded.mobileprovision8610526432#439"    cd /Users/goyange/놀기로/Nolgilo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/goyange/Library/MobileDevice/Provisioning Profiles/D73DD52D-31E6-4A61-A45B-27CB7230342B.mobileprovision" -o /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app/embedded.mobileprovision0#
-
-CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo.xcent
-s320087946.842107
-e320087946.852068
-r1
-xProcessProductPackaging
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
-x/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo.xcent
-lSLF07#2@177"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo.xcent320087946#320087946#0(0"0(0#0#109"/Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo.xcent8608458112#446"    cd /Users/goyange/놀기로/Nolgilo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/goyange/놀기로/Nolgilo/build/Nolgilo.build/Release-iphoneos/Nolgilo.build/Nolgilo.xcent0#
-
-CTouch /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app
-s320087946.802524
-e320087946.841970
-r1
-xTouch
-x/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app
-lSLF07#2@85"Touch /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app320087946#320087946#0(0"0(0#0#0"8608723264#278"    cd /Users/goyange/놀기로/Nolgilo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app0#
-
-CValidate /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app
-s320087947.984975
-e320087948.662956
-r1
-xValidate
-x/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app
-o2011-02-23 02:19:08.335 Validation[1311:607] *** Warning: Defaulting to the standard codesign tool
-owarning: iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIconFile, CFBundleIconFiles, or provide a default Icon.png that is 57x57 (-19013)
-oUnable to validate your application. - (null)
-o
-lSLF07#2@43"Validate build/Release-iphoneos/Nolgilo.app320087947#320087948#0(342"2011-02-23 02:19:08.335 Validation[1311:607] *** Warning: Defaulting to the standard codesign toolwarning: iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIconFile, CFBundleIconFiles, or provide a default Icon.png that is 57x57 (-19013)Unable to validate your application. - (null)1(22@187" iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIconFile, CFBundleIconFiles, or provide a default Icon.png that is 57x57 (-19013)320087948#18446744073709551615#0#0(6@0"320087948#0#0#0#0#0"0(0#0#79"/Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app8596439680#387"    cd /Users/goyange/놀기로/Nolgilo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PRODUCT_TYPE com.apple.product-type.application    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation /Users/goyange/놀기로/Nolgilo/build/Release-iphoneos/Nolgilo.app0#
-
