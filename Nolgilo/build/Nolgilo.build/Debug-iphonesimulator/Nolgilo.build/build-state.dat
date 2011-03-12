@@ -1,29 +1,29 @@
 TNolgilo
 v7
 r0
-t321531590.917195
+t321604066.954988
 cCheck dependencies
-cProcessInfoPlistFile /프로젝트/놀기로-3.11/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Info.plist Nolgilo-Info.plist
-cCompileXIB /프로젝트/놀기로-3.11/Nolgilo/MainWindow.xib
-cCompileXIB /프로젝트/놀기로-3.11/Nolgilo/NolgiloViewController.xib
-cCompileXIB /프로젝트/놀기로-3.11/Nolgilo/Classes/LoadingViewController.xib
-cCompileXIB /프로젝트/놀기로-3.11/Nolgilo/Classes/MapViewController.xib
+cProcessInfoPlistFile /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Info.plist Nolgilo-Info.plist
+cCompileXIB /Users/nolgongmini/Project/Nolgilo/Nolgilo/MainWindow.xib
+cCompileXIB /Users/nolgongmini/Project/Nolgilo/Nolgilo/NolgiloViewController.xib
+cCompileXIB /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/LoadingViewController.xib
+cCompileXIB /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/MapViewController.xib
 cCpResource build/Debug-iphonesimulator/Nolgilo.app/icon.jpg ../Resource/icon.jpg
 cCpResource build/Debug-iphonesimulator/Nolgilo.app/icon2.jpg ../Resource/icon2.jpg
 cCpResource build/Debug-iphonesimulator/Nolgilo.app/title.jpg ../Resource/title.jpg
-cCopyStringsFile /프로젝트/놀기로-3.11/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-cCopyStringsFile /프로젝트/놀기로-3.11/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Korean.lproj/InfoPlist.strings Korean.lproj/InfoPlist.strings
+cCopyStringsFile /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCopyStringsFile /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Korean.lproj/InfoPlist.strings Korean.lproj/InfoPlist.strings
 cCpResource build/Debug-iphonesimulator/Nolgilo.app/Default.png ../Resource/Default.png
-cProcessPCH /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-gqvgtvglbyxthnehzdekpfszgtdp/Nolgilo_Prefix.pch.gch Nolgilo_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/main.o /프로젝트/놀기로-3.11/Nolgilo/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloAppDelegate.o /프로젝트/놀기로-3.11/Nolgilo/Classes/NolgiloAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloViewController.o /프로젝트/놀기로-3.11/Nolgilo/Classes/NolgiloViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/LoadingViewController.o /프로젝트/놀기로-3.11/Nolgilo/Classes/LoadingViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/MapViewController.o /프로젝트/놀기로-3.11/Nolgilo/Classes/MapViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/RootViewController.o /프로젝트/놀기로-3.11/Nolgilo/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /프로젝트/놀기로-3.11/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo normal i386
-cGenerateDSYMFile /프로젝트/놀기로-3.11/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app.dSYM /프로젝트/놀기로-3.11/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo
-cTouch /프로젝트/놀기로-3.11/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app
+cProcessPCH /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-gonyjfgbjgmhqtftetpclnypvtdh/Nolgilo_Prefix.pch.gch Nolgilo_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/main.o /Users/nolgongmini/Project/Nolgilo/Nolgilo/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloAppDelegate.o /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloViewController.o /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/LoadingViewController.o /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/LoadingViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/MapViewController.o /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/MapViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/RootViewController.o /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo normal i386
+cGenerateDSYMFile /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app.dSYM /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo
+cTouch /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
 c000000004C9AD4330000000000000132
@@ -545,6 +545,228 @@ c000000004D53B6590000000000000C4F
 t1297331801
 s3151
 
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/../Resource/Default.png
+c000000004D79D2060000000000033CF0
+t1299829254
+s212208
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/../Resource/icon.jpg
+c000000004D787AAE0000000000005442
+t1299741358
+s21570
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/../Resource/icon2.jpg
+c000000004D787DD10000000000004FB6
+t1299742161
+s20406
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/../Resource/title.jpg
+c000000004D78752500000000000275FB
+t1299739941
+s161275
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/LoadingViewController.h
+c000000004D79F145000000000000010A
+t1299837253
+s266
+i<UIKit/UIKit.h>
+i"RootViewController.h"
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/LoadingViewController.m
+c000000004D79F1FA00000000000005B4
+t1299837434
+s1460
+i"LoadingViewController.h"
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/LoadingViewController.xib
+c000000004D79F48E00000000000057CB
+t1299838094
+s22475
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/MapViewController.h
+c000000004D79C57700000000000002DD
+t1299826039
+s733
+i<UIKit/UIKit.h>
+i<MapKit/MapKit.h>
+i<MapKit/MKAnnotation.h>
+i<CoreLocation/CoreLocation.h>
+i<MapKit/MKMapView.h>
+i<AudioToolbox/AudioServices.h>
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/MapViewController.m
+c000000004D79F99B0000000000000C51
+t1299839387
+s3153
+i"MapViewController.h"
+i"RootViewController.h"
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/MapViewController.xib
+c000000004D7B125C0000000000005138
+t1299911260
+s20792
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloAppDelegate.h
+c000000004D79E06F000000000000018A
+t1299832943
+s394
+i<UIKit/UIKit.h>
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloAppDelegate.m
+c000000004D79F36C0000000000000A00
+t1299837804
+s2560
+i"NolgiloAppDelegate.h"
+i"RootViewController.h"
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloViewController.h
+c000000004D6B43D70000000000000065
+t1298875351
+s101
+i<UIKit/UIKit.h>
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloViewController.m
+c000000004D6B491C00000000000003F9
+t1298876700
+s1017
+i"NolgiloViewController.h"
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/RootViewController.h
+c000000004D79F1630000000000000104
+t1299837283
+s260
+i<UIKit/UIKit.h>
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/RootViewController.m
+c000000004D79F169000000000000043F
+t1299837289
+s1087
+i"RootViewController.h"
+i"LoadingViewController.h"
+i"MapViewController.h"
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/English.lproj/InfoPlist.strings
+c000000004D79C2850000000000000022
+t1299825285
+s34
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/Korean.lproj/InfoPlist.strings
+c000000004D78AD590000000000000022
+t1299754329
+s34
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/MainWindow.xib
+c000000004D79F33000000000000056EC
+t1299837744
+s22252
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/NolgiloViewController.xib
+c000000004D63F1DC0000000000003EE7
+t1298395612
+s16103
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/Nolgilo_Prefix.pch
+c000000004D53842000000000000000B7
+t1297318944
+s183
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app
+t1299911266
+s578
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app.dSYM
+t1299911120
+s102
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Default.png
+t1299829388
+s212208
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/English.lproj/InfoPlist.strings
+t1299825802
+s76
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Info.plist
+t1299837868
+s674
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Korean.lproj/InfoPlist.strings
+t1299754329
+s75
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/LoadingViewController.nib
+t1299838645
+s1990
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/MainWindow.nib
+t1299837797
+s1230
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/MapViewController.nib
+t1299911266
+s1350
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo
+t1299911120
+s26016
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/NolgiloViewController.nib
+t1299039385
+s795
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/PkgInfo
+t1299837868
+s8
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/icon.jpg
+t1299741454
+s21570
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/icon2.jpg
+t1299750876
+s20406
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/title.jpg
+t1299750876
+s161275
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/LoadingViewController.o
+t1299911120
+s37708
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/MapViewController.o
+t1299911120
+s53460
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/Nolgilo.LinkFileList
+c000000004D7B11CE000000000000033F
+t1299911118
+s831
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloAppDelegate.o
+t1299911120
+s49804
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloViewController.o
+t1299911120
+s38060
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/RootViewController.o
+t1299911120
+s40932
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/main.o
+t1299911120
+s6312
+
+N/Users/nolgongmini/Project/Nolgilo/Nolgilo/main.m
+c000000004D5384200000000000000167
+t1297318944
+s359
+i<UIKit/UIKit.h>
+
 N/var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-adthdfwuyydsphfjibnqpsyonkeb/Nolgilo_Prefix.pch.gch
 t1299039387
 s15453392
@@ -560,6 +782,10 @@ s15453392
 N/var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-epopuzbcfvhzmxdepeouizracezy/Nolgilo_Prefix.pch.pth
 t1299826073
 s2784092
+
+N/var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-gonyjfgbjgmhqtftetpclnypvtdh/Nolgilo_Prefix.pch.gch
+t1299911120
+s15453392
 
 N/var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-gqvgtvglbyxthnehzdekpfszgtdp/Nolgilo_Prefix.pch.gch
 t1299825803
@@ -1291,7 +1517,7 @@ lSLF07#2@78"Analyze /프로젝트/놀기로-3.11/Nolg
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies321531590#321531590#0(0"0(0#1#0"8622324864#0"0#
+lSLF07#2@18"Check dependencies321604066#321604066#0(0"0(0#1#0"8604278336#0"0#
 
 CCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/LoadingViewController.o /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/LoadingViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s320732187.920311
@@ -1305,6 +1531,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@124"Compile /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/LoadingViewController.m320732187#320732187#0(0"0(0#0#116"/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/LoadingViewController.m8611020384#2462"    cd /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/include -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources/i386 -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources -include /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-adthdfwuyydsphfjibnqpsyonkeb/Nolgilo_Prefix.pch -c /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/LoadingViewController.m -o /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/LoadingViewController.o0#
+
+CCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/LoadingViewController.o /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/LoadingViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321603920.373160
+e321603920.444939
+r1
+xCompileC
+xbuild/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/LoadingViewController.o
+x/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/LoadingViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/LoadingViewController.m321603920#321603920#0(0"0(0#0#74"/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/LoadingViewController.m8604249728#2000"    cd /Users/nolgongmini/Project/Nolgilo/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/include -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources/i386 -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources -include /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-gonyjfgbjgmhqtftetpclnypvtdh/Nolgilo_Prefix.pch -c /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/LoadingViewController.m -o /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/LoadingViewController.o0#
 
 CCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/LoadingViewController.o /프로젝트/놀기로-3.10/Nolgilo/Classes/LoadingViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s321434255.106586
@@ -1359,6 +1598,19 @@ xcom.apple.compilers.gcc.4_2
 o/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/MapViewController.m:120: warning: property 'placemark' requires method '-placemark' to be defined - use @synthesize, @dynamic or provide a method implementation
 o/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/MapViewController.m:120: warning: property 'placemark' requires the method 'setPlacemark:' to be defined - use @synthesize, @dynamic or provide a method implementation
 lSLF07#2@120"Compile /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/MapViewController.m321273994#321273995#0(515"/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/MapViewController.m:120: warning: property 'placemark' requires method '-placemark' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/MapViewController.m:120: warning: property 'placemark' requires the method 'setPlacemark:' to be defined - use @synthesize, @dynamic or provide a method implementation2(22@126"Property 'placemark' requires method '-placemark' to be defined - use @synthesize, @dynamic or provide a method implementation321273995#0#222#0(6@112"/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/MapViewController.m321273990#120#0#120#0#0"0(22@133"Property 'placemark' requires the method 'setPlacemark:' to be defined - use @synthesize, @dynamic or provide a method implementation321273995#222#229#0(6@112"/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/MapViewController.m321273990#120#0#120#0#0"0(0#0#112"/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/MapViewController.m8617493664#2454"    cd /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/include -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources/i386 -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources -include /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-adthdfwuyydsphfjibnqpsyonkeb/Nolgilo_Prefix.pch -c /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/MapViewController.m -o /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/MapViewController.o0#
+
+CCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/MapViewController.o /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/MapViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321603920.426548
+e321603920.560711
+r1
+xCompileC
+xbuild/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/MapViewController.o
+x/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/MapViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/MapViewController.m321603920#321603920#0(0"0(0#0#70"/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/MapViewController.m8602202784#1992"    cd /Users/nolgongmini/Project/Nolgilo/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/include -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources/i386 -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources -include /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-gonyjfgbjgmhqtftetpclnypvtdh/Nolgilo_Prefix.pch -c /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/MapViewController.m -o /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/MapViewController.o0#
 
 CCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/MapViewController.o /프로젝트/놀기로-3.10/Nolgilo/Classes/MapViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s321447129.700004
@@ -1442,6 +1694,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@121"Compile /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m320732187#320732187#0(0"0(0#0#113"/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m8609909856#2456"    cd /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/include -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources/i386 -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources -include /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-adthdfwuyydsphfjibnqpsyonkeb/Nolgilo_Prefix.pch -c /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/NolgiloAppDelegate.m -o /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloAppDelegate.o0#
 
+CCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloAppDelegate.o /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321603920.228556
+e321603920.373054
+r1
+xCompileC
+xbuild/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloAppDelegate.o
+x/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloAppDelegate.m321603920#321603920#0(0"0(0#0#71"/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloAppDelegate.m8603899392#1994"    cd /Users/nolgongmini/Project/Nolgilo/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/include -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources/i386 -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources -include /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-gonyjfgbjgmhqtftetpclnypvtdh/Nolgilo_Prefix.pch -c /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloAppDelegate.m -o /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloAppDelegate.o0#
+
 CCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloAppDelegate.o /프로젝트/놀기로-3.10/Nolgilo/Classes/NolgiloAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s321447129.698694
 e321447129.782160
@@ -1520,6 +1785,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@124"Compile /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/NolgiloViewController.m320732187#320732187#0(0"0(0#0#116"/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/NolgiloViewController.m8611315296#2462"    cd /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/include -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources/i386 -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources -include /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-adthdfwuyydsphfjibnqpsyonkeb/Nolgilo_Prefix.pch -c /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/NolgiloViewController.m -o /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloViewController.o0#
 
+CCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloViewController.o /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321603920.347357
+e321603920.426447
+r1
+xCompileC
+xbuild/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloViewController.o
+x/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloViewController.m321603920#321603920#0(0"0(0#0#74"/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloViewController.m8606680960#2000"    cd /Users/nolgongmini/Project/Nolgilo/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/include -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources/i386 -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources -include /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-gonyjfgbjgmhqtftetpclnypvtdh/Nolgilo_Prefix.pch -c /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/NolgiloViewController.m -o /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloViewController.o0#
+
 CCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/NolgiloViewController.o /프로젝트/놀기로-3.10/Nolgilo/Classes/NolgiloViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s321434255.105633
 e321434255.184914
@@ -1571,6 +1849,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@121"Compile /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/RootViewController.m321273994#321273995#0(0"0(0#0#113"/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/RootViewController.m8624023072#2456"    cd /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/include -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources/i386 -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources -include /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-adthdfwuyydsphfjibnqpsyonkeb/Nolgilo_Prefix.pch -c /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Classes/RootViewController.m -o /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/RootViewController.o0#
+
+CCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/RootViewController.o /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321603920.445040
+e321603920.544926
+r1
+xCompileC
+xbuild/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/RootViewController.o
+x/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/RootViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/RootViewController.m321603920#321603920#0(0"0(0#0#71"/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/RootViewController.m8605728288#1994"    cd /Users/nolgongmini/Project/Nolgilo/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/include -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources/i386 -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources -include /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-gonyjfgbjgmhqtftetpclnypvtdh/Nolgilo_Prefix.pch -c /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/RootViewController.m -o /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/RootViewController.o0#
 
 CCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/RootViewController.o /프로젝트/놀기로-3.10/Nolgilo/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s321447129.782272
@@ -1649,6 +1940,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@99"Compile /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/main.m320732187#320732187#0(0"0(0#0#91"/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/main.m8607329184#2420"    cd /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/include -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources/i386 -I/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources -include /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-adthdfwuyydsphfjibnqpsyonkeb/Nolgilo_Prefix.pch -c /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/main.m -o /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/main.o0#
+
+CCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/main.o /Users/nolgongmini/Project/Nolgilo/Nolgilo/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321603920.227464
+e321603920.347259
+r1
+xCompileC
+xbuild/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/main.o
+x/Users/nolgongmini/Project/Nolgilo/Nolgilo/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/nolgongmini/Project/Nolgilo/Nolgilo/main.m321603920#321603920#0(0"0(0#0#49"/Users/nolgongmini/Project/Nolgilo/Nolgilo/main.m8607896672#1958"    cd /Users/nolgongmini/Project/Nolgilo/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/include -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources/i386 -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources -include /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-gonyjfgbjgmhqtftetpclnypvtdh/Nolgilo_Prefix.pch -c /Users/nolgongmini/Project/Nolgilo/Nolgilo/main.m -o /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/main.o0#
 
 CCompileC build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/main.o /프로젝트/놀기로-3.10/Nolgilo/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s321434254.927170
@@ -1749,6 +2053,23 @@ xCompileXIB
 x/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/NolgiloViewController.xib
 lSLF07#2@36"CompileXIB NolgiloViewController.xib320732184#320732185#0(0"0(0#0#110"/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/NolgiloViewController.xib8612341824#730"    cd /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/NolgiloViewController.nib /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/NolgiloViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
+CCompileXIB /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/LoadingViewController.xib
+r0
+
+CCompileXIB /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/MapViewController.xib
+s321604066.543570
+e321604066.951379
+r1
+xCompileXIB
+x/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/MapViewController.xib
+lSLF07#2@40"CompileXIB Classes/MapViewController.xib321604066#321604066#0(0"0(0#0#72"/Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/MapViewController.xib22518200007196784#604"    cd /Users/nolgongmini/Project/Nolgilo/Nolgilo    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/MapViewController.nib /Users/nolgongmini/Project/Nolgilo/Nolgilo/Classes/MapViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/nolgongmini/Project/Nolgilo/Nolgilo/MainWindow.xib
+r0
+
+CCompileXIB /Users/nolgongmini/Project/Nolgilo/Nolgilo/NolgiloViewController.xib
+r0
+
 CCompileXIB /프로젝트/놀기로-3.10/Nolgilo/Classes/LoadingViewController.xib
 s321443676.145286
 e321443676.603098
@@ -1808,6 +2129,12 @@ CCompileXIB /프로젝트/놀기로-다음/N
 r0
 
 CCompileXIB /프로젝트/놀기로-다음/Nolgilo/NolgiloViewController.xib
+r0
+
+CCopyStringsFile /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+r0
+
+CCopyStringsFile /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Korean.lproj/InfoPlist.strings Korean.lproj/InfoPlist.strings
 r0
 
 CCopyStringsFile /프로젝트/놀기로-3.10/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
@@ -1921,6 +2248,15 @@ x/Users/nolgongmini/Dropbox/프로젝트/놀기로/No
 x/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo
 lSLF07#2@109"GenerateDSYMFile build/Debug-iphonesimulator/Nolgilo.app.dSYM build/Debug-iphonesimulator/Nolgilo.app/Nolgilo321273995#321273995#0(0"0(0#0#132"/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo8604352736#521"    cd /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo -o /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app.dSYM0#
 
+CGenerateDSYMFile /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app.dSYM /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo
+s321603920.817164
+e321603920.873505
+r1
+xGenerateDSYMFile
+x/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app.dSYM
+x/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo
+lSLF07#2@109"GenerateDSYMFile build/Debug-iphonesimulator/Nolgilo.app.dSYM build/Debug-iphonesimulator/Nolgilo.app/Nolgilo321603920#321603920#0(0"0(0#0#90"/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo8605929664#395"    cd /Users/nolgongmini/Project/Nolgilo/Nolgilo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo -o /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app.dSYM0#
+
 CGenerateDSYMFile /프로젝트/놀기로-3.10/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app.dSYM /프로젝트/놀기로-3.10/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo
 s321447129.920907
 e321447129.943020
@@ -1978,6 +2314,16 @@ xnormal
 xi386
 lSLF07#2@137"Link /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo321273995#321273995#0(0"0(0#0#0"8623378368#1196"    cd /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator -F/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator -filelist /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/Nolgilo.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework AudioToolbox -framework CoreLocation -framework MapKit -o /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo0#
 
+CLd /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo normal i386
+s321603920.560802
+e321603920.817071
+r1
+xLd
+x/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo
+xnormal
+xi386
+lSLF07#2@95"Link /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo321603920#321603920#0(0"0(0#0#0"8603927840#986"    cd /Users/nolgongmini/Project/Nolgilo/Nolgilo    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator -F/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator -filelist /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Objects-normal/i386/Nolgilo.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework AudioToolbox -framework CoreLocation -framework MapKit -o /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo0#
+
 CLd /프로젝트/놀기로-3.10/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Nolgilo normal i386
 s321447129.892803
 e321447129.920805
@@ -2034,6 +2380,9 @@ xProcessInfoPlistFile
 x/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Info.plist
 xNolgilo-Info.plist
 lSLF07#2@26"Process Nolgilo-Info.plist320744546#320744546#0(0"0(0#0#103"/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/Nolgilo-Info.plist30399748463067244#617"    cd /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Nolgilo-Info.plist -genpkginfo /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Info.plist0#
+
+CProcessInfoPlistFile /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Info.plist Nolgilo-Info.plist
+r0
 
 CProcessInfoPlistFile /프로젝트/놀기로-3.10/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app/Info.plist Nolgilo-Info.plist
 s321443775.323108
@@ -2108,6 +2457,19 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.analyzer
 lSLF07#2@29"Precompile Nolgilo_Prefix.pch321518873#321518873#0(0"0(0#0#82"/프로젝트/놀기로-3.11/Nolgilo/Nolgilo_Prefix.pch8617440000#2047"    cd /프로젝트/놀기로-3.11/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /프로젝트/놀기로-3.11/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-generated-files.hmap -I/프로젝트/놀기로-3.11/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/프로젝트/놀기로-3.11/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /프로젝트/놀기로-3.11/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-project-headers.hmap -F/프로젝트/놀기로-3.11/Nolgilo/build/Debug-iphonesimulator -I/프로젝트/놀기로-3.11/Nolgilo/build/Debug-iphonesimulator/include -I/프로젝트/놀기로-3.11/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources/i386 -I/프로젝트/놀기로-3.11/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources -c /프로젝트/놀기로-3.11/Nolgilo/Nolgilo_Prefix.pch -o /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-epopuzbcfvhzmxdepeouizracezy/Nolgilo_Prefix.pch.pth0#
 
+CProcessPCH /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-gonyjfgbjgmhqtftetpclnypvtdh/Nolgilo_Prefix.pch.gch Nolgilo_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s321603919.167003
+e321603920.227309
+r1
+xProcessPCH
+x/var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-gonyjfgbjgmhqtftetpclnypvtdh/Nolgilo_Prefix.pch.gch
+xNolgilo_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile Nolgilo_Prefix.pch321603919#321603920#0(0"0(0#0#61"/Users/nolgongmini/Project/Nolgilo/Nolgilo/Nolgilo_Prefix.pch8603442080#1846"    cd /Users/nolgongmini/Project/Nolgilo/Nolgilo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-generated-files.hmap -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-own-target-headers.hmap -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-all-target-headers.hmap -iquote /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/Nolgilo-project-headers.hmap -F/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/include -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources/i386 -I/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Nolgilo.build/Debug-iphonesimulator/Nolgilo.build/DerivedSources -c /Users/nolgongmini/Project/Nolgilo/Nolgilo/Nolgilo_Prefix.pch -o /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-gonyjfgbjgmhqtftetpclnypvtdh/Nolgilo_Prefix.pch.gch0#
+
 CProcessPCH /var/folders/BI/BICPMS5yHQ4tOX2xzPuDPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Nolgilo_Prefix-gqvgtvglbyxthnehzdekpfszgtdp/Nolgilo_Prefix.pch.gch Nolgilo_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s321518602.588007
 e321518603.870841
@@ -2173,6 +2535,14 @@ r1
 xTouch
 x/Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app
 lSLF07#2@130"Touch /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app321273995#321273995#0(0"0(0#0#0"8604039712#370"    cd /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/nolgongmini/Dropbox/프로젝트/놀기로/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app0#
+
+CTouch /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app
+s321604066.952321
+e321604066.954914
+r1
+xTouch
+x/Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app
+lSLF07#2@88"Touch /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app321604066#321604066#0(0"0(0#0#0"8605806048#286"    cd /Users/nolgongmini/Project/Nolgilo/Nolgilo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/nolgongmini/Project/Nolgilo/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app0#
 
 CTouch /프로젝트/놀기로-3.10/Nolgilo/build/Debug-iphonesimulator/Nolgilo.app
 s321447129.943111
