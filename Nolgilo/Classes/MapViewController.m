@@ -33,7 +33,6 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
 	mapView.showsUserLocation = YES; // if yes, shows a bule~;
 	mapView.mapType = MKMapTypeStandard;
 	mapView.delegate = self;
@@ -47,6 +46,8 @@
 	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 	
 	[locationManager startUpdatingLocation];
+	[locationManager startUpdatingHeading];
+	
 											
 }
 
@@ -70,27 +71,29 @@
 	self.mapView = nil;
 	self.locationManager = nil;
     [super viewDidUnload]; 
+	[locationManager stopUpdatingHeading];
 }
 //나침판과 지도 연동~
 
--(void) viewWillAppear:(BOOL)animated{
-	NSLog(@"Heading init");
+- (void)viewWillAppear:(BOOL)animated{
+
 	[super viewWillAppear:YES];
+	NSLog(@"Heading init");
 	mapView.transform = CGAffineTransformMakeRotation(0.0f);
 	if([CLLocationManager headingAvailable]){
 		[locationManager startUpdatingHeading];
-	}
+	}	
 	
 }
 -(void) viewWillDisappear:(BOOL)animated{
 	
-	[super viewWillDisappear:animated];
+	[super viewWillAppear:animated];
 	if([CLLocationManager headingAvailable]){
 		[locationManager stopUpdatingHeading];
 	}
 }
--(void) locationManager : (CLLocationManager *)manager
-		didUpdateHeading:(CLHeading *)newHeading{
+-(void)locationManager:(CLLocationManager *)manager
+	  didUpdateHeading:(CLHeading *)newHeading{
 	NSLog(@"Updatding");
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:0.1];
@@ -108,8 +111,6 @@
 		   fromLocation:(CLLocation *)oldLocation{
 	location = newLocation.coordinate;
 	
-	NSLog(@"Map reloading");
-	
 	MKCoordinateRegion region;
 	region.center = location;
 	
@@ -117,8 +118,7 @@
 	span.latitudeDelta = 0.002;
 	span.longitudeDelta = 0.002;
 	region.span = span;
-	
-	[mapView setRegion:region animated:TRUE];
+	[mapView setRegion:region animated:YES];
 	
 	
 }

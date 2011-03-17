@@ -287,6 +287,7 @@
 				INFOPLIST_FILE = "Nolgilo-Info.plist";
 				PRODUCT_NAME = Nolgilo;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D73DD52D-31E6-4A61-A45B-27CB7230342B";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};

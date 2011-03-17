@@ -35,7 +35,7 @@
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.7];
     [UIView setAnimationTransition: UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
-	
+
 	[self.view addSubview:mapViewController.view];
 	[UIView commitAnimations];
 
