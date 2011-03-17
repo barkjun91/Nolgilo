@@ -120,7 +120,6 @@
 	region.span = span;
 	[mapView setRegion:region animated:YES];
 	
-	
 }
 
 
