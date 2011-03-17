@@ -278,9 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos4.2]" = "iPhone Developer: Seung Taek Lee (DZX77Q7623)";
-				"CODE_SIGN_IDENTITY[sdk=iphonesimulator4.2]" = "iPhone Developer: Seung Taek Lee (DZX77Q7623)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Seung Taek Lee (DZX77Q7623)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -288,9 +286,7 @@
 				GCC_PREFIX_HEADER = Nolgilo_Prefix.pch;
 				INFOPLIST_FILE = "Nolgilo-Info.plist";
 				PRODUCT_NAME = Nolgilo;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos4.2]" = "D73DD52D-31E6-4A61-A45B-27CB7230342B";
-				"PROVISIONING_PROFILE[sdk=iphonesimulator4.2]" = "D73DD52D-31E6-4A61-A45B-27CB7230342B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D73DD52D-31E6-4A61-A45B-27CB7230342B";
 			};
 			name = Debug;
 		};
@@ -313,13 +309,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Seung Taek Lee (DZX77Q7623)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jinwook Kim (ER5GX9R575)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F4C33659-EF11-416B-B603-F32AC17F1E2F";
-				SDKROOT = iphoneos4.2;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D93E6EB9-B108-440D-A524-0CD9116A8A88";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -329,12 +326,13 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Seung Taek Lee (DZX77Q7623)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F4C33659-EF11-416B-B603-F32AC17F1E2F";
-				SDKROOT = iphoneos4.2;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

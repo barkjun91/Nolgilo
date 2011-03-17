@@ -13,9 +13,6 @@
 
 
 
-LoadingViewController* g_LoadingViewController = nil;
-MapViewController* g_MapViewController = nil;
-
 @implementation RootViewController
 
 
@@ -23,11 +20,11 @@ MapViewController* g_MapViewController = nil;
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	g_LoadingViewController = [[LoadingViewController alloc] initWithNibName:@"LoadingViewController" bundle:nil];
-	g_MapViewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+	loadingViewController = [[LoadingViewController alloc] initWithNibName:@"LoadingViewController" bundle:nil];
+	mapViewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
 	
 	
-	[self.view addSubview:g_LoadingViewController.view];
+	[self.view addSubview:loadingViewController.view];
 }
 
 
@@ -39,7 +36,7 @@ MapViewController* g_MapViewController = nil;
     [UIView setAnimationDuration:0.7];
     [UIView setAnimationTransition: UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
 	
-	[self.view addSubview:g_MapViewController.view];
+	[self.view addSubview:mapViewController.view];
 	[UIView commitAnimations];
 
 }

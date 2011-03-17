@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class LoadingViewController;
+@class MapViewController;
 
 @interface RootViewController : UIViewController {
-	
+    LoadingViewController* loadingViewController;
+    MapViewController* mapViewController;
+    	
 }
 
 -(IBAction)  TitleOnFlipView;
