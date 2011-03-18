@@ -13,6 +13,8 @@
 #import <MapKit/MKMapView.h>
 #import <AudioToolbox/AudioServices.h>
 
+#import "GameAnnotation.h"
+
 @interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate> {
 	
 	IBOutlet MKMapView *mapView;
@@ -22,7 +24,7 @@
 
 	UIAlertView  *baseAlert ;
 	
-	
+	GameAnnotation *annotation;
 	
 }
 

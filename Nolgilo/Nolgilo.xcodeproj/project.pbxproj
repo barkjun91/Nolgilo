@@ -21,6 +21,7 @@
 		7171ABB01328D65B004127CE /* title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7171ABAF1328D65B004127CE /* title.jpg */; };
 		7198D08A133209D6002125A6 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7198D088133209D6002125A6 /* GameViewController.m */; };
 		7198D08B133209D6002125A6 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7198D089133209D6002125A6 /* GameViewController.xib */; };
+		719C1B601333557400E7C276 /* GameAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 719C1B5F1333557400E7C276 /* GameAnnotation.m */; };
 		71A1251A1328E47A00C1BC87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71A125191328E47A00C1BC87 /* InfoPlist.strings */; };
 		7AB4DBD91303BCBE00DE0AA8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBD81303BCBE00DE0AA8 /* AudioToolbox.framework */; };
 		7AB4DBDB1303BCBE00DE0AA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBDA1303BCBE00DE0AA8 /* CoreLocation.framework */; };
@@ -52,6 +53,8 @@
 		7198D087133209D6002125A6 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		7198D088133209D6002125A6 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		7198D089133209D6002125A6 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameViewController.xib; path = Classes/GameViewController.xib; sourceTree = "<group>"; };
+		719C1B5E1333557400E7C276 /* GameAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameAnnotation.h; sourceTree = "<group>"; };
+		719C1B5F1333557400E7C276 /* GameAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameAnnotation.m; sourceTree = "<group>"; };
 		71A125171328E46D00C1BC87 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		71A1251B1328E4A200C1BC87 /* Korean */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Korean; path = Korean.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7AB4DBD81303BCBE00DE0AA8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -100,6 +103,8 @@
 				28D7ACF70DDB3853001CB0EB /* NolgiloViewController.m */,
 				7198D087133209D6002125A6 /* GameViewController.h */,
 				7198D088133209D6002125A6 /* GameViewController.m */,
+				719C1B5E1333557400E7C276 /* GameAnnotation.h */,
+				719C1B5F1333557400E7C276 /* GameAnnotation.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 				7ABB8FE4131B730D00437FC4 /* MapViewController.m in Sources */,
 				7ABB9037131B770B00437FC4 /* RootViewController.m in Sources */,
 				7198D08A133209D6002125A6 /* GameViewController.m in Sources */,
+				719C1B601333557400E7C276 /* GameAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

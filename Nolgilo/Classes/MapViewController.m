@@ -104,6 +104,7 @@
 }
 
 - (void)dealloc {
+	[annotation release];
     [super dealloc];
 }
 
@@ -122,7 +123,13 @@
 	region.span = span;
 	[mapView setRegion:region animated:YES];
 	
+	annotation = [[GameAnnotation alloc] Coordinatelat:37.549502
+										 Coordinatelng:126.913933
+												 title: @"여기당"
+											  subTitle: @"ㅎㅎㅎ"
+				  ];
 	
+	[mapView addAnnotation:annotation];
 }
 -(void) performDismiss: (NSTimer *)timer{
 	
