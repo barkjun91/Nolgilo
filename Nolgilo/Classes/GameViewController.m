@@ -8,6 +8,7 @@
 
 #import "GameViewController.h"
 
+#import "MapViewController.h"
 
 @implementation GameViewController
 
@@ -22,12 +23,14 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	mapViewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+	tabBar.selectedItem = tabBaritem;
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -52,8 +55,10 @@
 
 
 - (void)dealloc {
+	[tabBar release];
     [super dealloc];
 }
+
 
 
 @end

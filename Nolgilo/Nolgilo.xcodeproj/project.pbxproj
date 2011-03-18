@@ -19,7 +19,6 @@
 		7171AB791328B26F004127CE /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7171AB781328B26F004127CE /* icon.jpg */; };
 		7171AB8F1328B587004127CE /* icon2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7171AB8E1328B587004127CE /* icon2.jpg */; };
 		7171ABB01328D65B004127CE /* title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7171ABAF1328D65B004127CE /* title.jpg */; };
-		7198D07E13320509002125A6 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 7198D07D13320509002125A6 /* pause.png */; };
 		7198D08A133209D6002125A6 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7198D088133209D6002125A6 /* GameViewController.m */; };
 		7198D08B133209D6002125A6 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7198D089133209D6002125A6 /* GameViewController.xib */; };
 		71A1251A1328E47A00C1BC87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71A125191328E47A00C1BC87 /* InfoPlist.strings */; };
@@ -50,7 +49,6 @@
 		7171AB781328B26F004127CE /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon.jpg; path = ../Resource/icon.jpg; sourceTree = SOURCE_ROOT; };
 		7171AB8E1328B587004127CE /* icon2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon2.jpg; path = ../Resource/icon2.jpg; sourceTree = SOURCE_ROOT; };
 		7171ABAF1328D65B004127CE /* title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = title.jpg; path = ../Resource/title.jpg; sourceTree = SOURCE_ROOT; };
-		7198D07D13320509002125A6 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = ../Resource/pause.png; sourceTree = SOURCE_ROOT; };
 		7198D087133209D6002125A6 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		7198D088133209D6002125A6 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		7198D089133209D6002125A6 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameViewController.xib; path = Classes/GameViewController.xib; sourceTree = "<group>"; };
@@ -185,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				714D748B132A09FD00FB57A0 /* Default.png */,
-				7198D07D13320509002125A6 /* pause.png */,
 				7171ABAF1328D65B004127CE /* title.jpg */,
 				7171AB8E1328B587004127CE /* icon2.jpg */,
 			);
@@ -251,7 +248,6 @@
 				7171ABB01328D65B004127CE /* title.jpg in Resources */,
 				71A1251A1328E47A00C1BC87 /* InfoPlist.strings in Resources */,
 				714D748C132A09FD00FB57A0 /* Default.png in Resources */,
-				7198D07E13320509002125A6 /* pause.png in Resources */,
 				7198D08B133209D6002125A6 /* GameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

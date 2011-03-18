@@ -45,10 +45,12 @@
 	locationManager.delegate = self;
 	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 	
-	[locationManager startUpdatingLocation];
-	[locationManager startUpdatingHeading];
 	
-											
+	[locationManager startUpdatingHeading];
+	[locationManager startUpdatingLocation];
+	[self presentSheet];
+	
+
 }
 
 
@@ -120,8 +122,28 @@
 	region.span = span;
 	[mapView setRegion:region animated:YES];
 	
+	
+}
+-(void) performDismiss: (NSTimer *)timer{
+	
+	[baseAlert dismissWithClickedButtonIndex:0 animated:NO];
 }
 
-
-
+-(void) presentSheet{
+	baseAlert = [[UIAlertView alloc] 
+							  initWithTitle:@"[ 동기화중 ]"
+							  message:@"위치정보를 설정하고 있습니다. \n 잠시만 기다려주세요."
+							  delegate:self 
+							  cancelButtonTitle:nil
+							  otherButtonTitles:nil];
+	
+	[NSTimer scheduledTimerWithTimeInterval:3.0
+									 target:self
+								   selector:@selector(performDismiss:)
+								   userInfo:nil
+									repeats:NO
+	 ];
+	
+	[baseAlert show];	
+}
 @end

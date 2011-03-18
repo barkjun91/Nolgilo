@@ -20,6 +20,8 @@
 	CLLocationManager *locationManager;
 	CLLocationCoordinate2D location;
 
+	UIAlertView  *baseAlert ;
+	
 	
 	
 }
@@ -28,4 +30,5 @@
 @property (nonatomic, readonly) CLLocationCoordinate2D location;
 @property (nonatomic, retain) MKMapView * mapView; 
 
+-(void) presentSheet;
 @end

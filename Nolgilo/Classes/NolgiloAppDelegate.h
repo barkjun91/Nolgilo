@@ -10,7 +10,7 @@
 
 @class RootViewController;
 
-@interface NolgiloAppDelegate : NSObject <UIApplicationDelegate> {
+@interface NolgiloAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
     UIWindow *window;
     IBOutlet RootViewController* root;
 	
