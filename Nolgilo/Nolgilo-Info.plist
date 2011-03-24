@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>icon2.jpg</string>
+	<string>icon2.png</string>
 	<key>UIStatusBarHidden</key>
 	<true/>
 	<key>CFBundleShortVersionString</key>

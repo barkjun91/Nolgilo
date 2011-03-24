@@ -1,5 +1,5 @@
 //
-//  Annotation.h
+//  GameModel.h
 //  Nolgilo
 //
 //  Created by GatGong on 11. 3. 18..
@@ -9,21 +9,21 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-@interface GameAnnotation : NSObject {
-	CLLocationCoordinate2D coordinate;
+@interface GameModel : NSObject {
+    CLLocationCoordinate2D coordinate;
 	NSString *mainTitle;
 	NSString *subTitle;
+	
+	UIAlertView  *baseAlert;
 }
 
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property (nonatomic, retain) NSString *mainTitle;
 @property (nonatomic, retain) NSString *subTitle;
 
--(id) Coordinatelat:(double) lat
-	  Coordinatelng:(double) lng
-			 title :(NSString *) t
-		  subTitle :(NSString *) st;
--(void) installAnnotation: (CLLocationCoordinate2D) newCoordinate;
+//게임 스테이지 초기화
+-(void) gameInit;		
+
 -(NSString *)subtitle;
 -(NSString *)mainTitle;
 

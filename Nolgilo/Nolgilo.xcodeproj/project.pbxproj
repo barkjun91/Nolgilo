@@ -15,13 +15,11 @@
 		2899E5220DE3E06400AC0155 /* NolgiloViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* NolgiloViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* NolgiloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* NolgiloViewController.m */; };
+		7134675F133B3DBF00DCA096 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7134675E133B3DBF00DCA096 /* icon2.png */; };
 		714D748C132A09FD00FB57A0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 714D748B132A09FD00FB57A0 /* Default.png */; };
 		7171AB791328B26F004127CE /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7171AB781328B26F004127CE /* icon.jpg */; };
-		7171AB8F1328B587004127CE /* icon2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7171AB8E1328B587004127CE /* icon2.jpg */; };
 		7171ABB01328D65B004127CE /* title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7171ABAF1328D65B004127CE /* title.jpg */; };
-		7198D08A133209D6002125A6 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7198D088133209D6002125A6 /* GameViewController.m */; };
-		7198D08B133209D6002125A6 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7198D089133209D6002125A6 /* GameViewController.xib */; };
-		719C1B601333557400E7C276 /* GameAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 719C1B5F1333557400E7C276 /* GameAnnotation.m */; };
+		719C1B601333557400E7C276 /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 719C1B5F1333557400E7C276 /* GameModel.m */; };
 		71A1251A1328E47A00C1BC87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71A125191328E47A00C1BC87 /* InfoPlist.strings */; };
 		7AB4DBD91303BCBE00DE0AA8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBD81303BCBE00DE0AA8 /* AudioToolbox.framework */; };
 		7AB4DBDB1303BCBE00DE0AA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBDA1303BCBE00DE0AA8 /* CoreLocation.framework */; };
@@ -46,15 +44,12 @@
 		28D7ACF70DDB3853001CB0EB /* NolgiloViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NolgiloViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Nolgilo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nolgilo_Prefix.pch; sourceTree = "<group>"; };
+		7134675E133B3DBF00DCA096 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon2.png; path = ../Resource/icon2.png; sourceTree = SOURCE_ROOT; };
 		714D748B132A09FD00FB57A0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Resource/Default.png; sourceTree = SOURCE_ROOT; };
 		7171AB781328B26F004127CE /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon.jpg; path = ../Resource/icon.jpg; sourceTree = SOURCE_ROOT; };
-		7171AB8E1328B587004127CE /* icon2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon2.jpg; path = ../Resource/icon2.jpg; sourceTree = SOURCE_ROOT; };
 		7171ABAF1328D65B004127CE /* title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = title.jpg; path = ../Resource/title.jpg; sourceTree = SOURCE_ROOT; };
-		7198D087133209D6002125A6 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		7198D088133209D6002125A6 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		7198D089133209D6002125A6 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameViewController.xib; path = Classes/GameViewController.xib; sourceTree = "<group>"; };
-		719C1B5E1333557400E7C276 /* GameAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameAnnotation.h; sourceTree = "<group>"; };
-		719C1B5F1333557400E7C276 /* GameAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameAnnotation.m; sourceTree = "<group>"; };
+		719C1B5E1333557400E7C276 /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
+		719C1B5F1333557400E7C276 /* GameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameModel.m; sourceTree = "<group>"; };
 		71A125171328E46D00C1BC87 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		71A1251B1328E4A200C1BC87 /* Korean */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Korean; path = Korean.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7AB4DBD81303BCBE00DE0AA8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -91,20 +86,15 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				710A3B04133A0C1A0055B6A2 /* Game */,
 				1D3623240D0F684500981E51 /* NolgiloAppDelegate.h */,
 				1D3623250D0F684500981E51 /* NolgiloAppDelegate.m */,
-				7ABB8FE1131B730D00437FC4 /* MapViewController.h */,
-				7ABB8FE2131B730D00437FC4 /* MapViewController.m */,
 				7ABB8FCF131B706D00437FC4 /* LoadingViewController.h */,
 				7ABB8FD0131B706D00437FC4 /* LoadingViewController.m */,
 				7ABB9035131B770B00437FC4 /* RootViewController.h */,
 				7ABB9036131B770B00437FC4 /* RootViewController.m */,
 				28D7ACF60DDB3853001CB0EB /* NolgiloViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* NolgiloViewController.m */,
-				7198D087133209D6002125A6 /* GameViewController.h */,
-				7198D088133209D6002125A6 /* GameViewController.m */,
-				719C1B5E1333557400E7C276 /* GameAnnotation.h */,
-				719C1B5F1333557400E7C276 /* GameAnnotation.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -163,6 +153,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		710A3B04133A0C1A0055B6A2 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				719C1B5E1333557400E7C276 /* GameModel.h */,
+				719C1B5F1333557400E7C276 /* GameModel.m */,
+				7ABB8FE1131B730D00437FC4 /* MapViewController.h */,
+				7ABB8FE2131B730D00437FC4 /* MapViewController.m */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
 		714D746D132A095000FB57A0 /* logo */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +177,6 @@
 			isa = PBXGroup;
 			children = (
 				7ABB8FE3131B730D00437FC4 /* MapViewController.xib */,
-				7198D089133209D6002125A6 /* GameViewController.xib */,
 				7ABB8FD1131B706D00437FC4 /* LoadingViewController.xib */,
 				2899E5210DE3E06400AC0155 /* NolgiloViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
@@ -189,7 +189,7 @@
 			children = (
 				714D748B132A09FD00FB57A0 /* Default.png */,
 				7171ABAF1328D65B004127CE /* title.jpg */,
-				7171AB8E1328B587004127CE /* icon2.jpg */,
+				7134675E133B3DBF00DCA096 /* icon2.png */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -249,11 +249,10 @@
 				7ABB8FD3131B706D00437FC4 /* LoadingViewController.xib in Resources */,
 				7ABB8FE5131B730D00437FC4 /* MapViewController.xib in Resources */,
 				7171AB791328B26F004127CE /* icon.jpg in Resources */,
-				7171AB8F1328B587004127CE /* icon2.jpg in Resources */,
 				7171ABB01328D65B004127CE /* title.jpg in Resources */,
 				71A1251A1328E47A00C1BC87 /* InfoPlist.strings in Resources */,
 				714D748C132A09FD00FB57A0 /* Default.png in Resources */,
-				7198D08B133209D6002125A6 /* GameViewController.xib in Resources */,
+				7134675F133B3DBF00DCA096 /* icon2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +269,7 @@
 				7ABB8FD2131B706D00437FC4 /* LoadingViewController.m in Sources */,
 				7ABB8FE4131B730D00437FC4 /* MapViewController.m in Sources */,
 				7ABB9037131B770B00437FC4 /* RootViewController.m in Sources */,
-				7198D08A133209D6002125A6 /* GameViewController.m in Sources */,
-				719C1B601333557400E7C276 /* GameAnnotation.m in Sources */,
+				719C1B601333557400E7C276 /* GameModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +300,7 @@
 				GCC_PREFIX_HEADER = Nolgilo_Prefix.pch;
 				INFOPLIST_FILE = "Nolgilo-Info.plist";
 				PRODUCT_NAME = Nolgilo;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D73DD52D-31E6-4A61-A45B-27CB7230342B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C9D931E3-FE46-4707-A826-9F24D85FFAA5";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -317,7 +315,7 @@
 				GCC_PREFIX_HEADER = Nolgilo_Prefix.pch;
 				INFOPLIST_FILE = "Nolgilo-Info.plist";
 				PRODUCT_NAME = Nolgilo;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D73DD52D-31E6-4A61-A45B-27CB7230342B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C9D931E3-FE46-4707-A826-9F24D85FFAA5";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -332,7 +330,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D93E6EB9-B108-440D-A524-0CD9116A8A88";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C9D931E3-FE46-4707-A826-9F24D85FFAA5";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -348,7 +346,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F4C33659-EF11-416B-B603-F32AC17F1E2F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C9D931E3-FE46-4707-A826-9F24D85FFAA5";
 				SDKROOT = iphoneos;
 			};
 			name = Release;

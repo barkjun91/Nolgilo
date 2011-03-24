@@ -33,12 +33,9 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	mapView.showsUserLocation = YES; // if yes, shows a bule~;
-	mapView.mapType = MKMapTypeStandard;
-	mapView.delegate = self;
-	mapView.zoomEnabled = YES;
-	mapView.scrollEnabled = YES;
-	mapView.userInteractionEnabled = YES;
+
+	[[GameModel alloc] gameInit];
+	
 	
 	self.locationManager = [[CLLocationManager alloc] init];
 	
@@ -48,9 +45,14 @@
 	
 	[locationManager startUpdatingHeading];
 	[locationManager startUpdatingLocation];
-	[self presentSheet];
 	
-
+	mapView.showsUserLocation = YES; // if yes, shows a bule~;
+	mapView.mapType = MKMapTypeStandard;
+	mapView.delegate = self;
+	mapView.zoomEnabled = YES;
+	mapView.scrollEnabled = YES;
+	mapView.userInteractionEnabled = YES;	
+	mapView.transform = CGAffineTransformMakeRotation(0.0f);
 }
 
 
@@ -70,33 +72,13 @@
 }
 
 - (void)viewDidUnload {
-	self.mapView = nil;
-	self.locationManager = nil;
-    [super viewDidUnload]; 
 	[locationManager stopUpdatingHeading];
+    [super viewDidUnload]; 
 }
-//나침판과 지도 연동~
 
-- (void)viewWillAppear:(BOOL)animated{
 
-	[super viewWillAppear:YES];
-	NSLog(@"Heading init");
-	mapView.transform = CGAffineTransformMakeRotation(0.0f);
-	if([CLLocationManager headingAvailable]){
-		[locationManager startUpdatingHeading];
-	}	
-	
-}
--(void) viewWillDisappear:(BOOL)animated{
-	
-	[super viewWillAppear:animated];
-	if([CLLocationManager headingAvailable]){
-		[locationManager stopUpdatingHeading];
-	}
-}
 -(void)locationManager:(CLLocationManager *)manager
 	  didUpdateHeading:(CLHeading *)newHeading{
-	NSLog(@"Updatding");
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:0.1];
 	mapView.transform = CGAffineTransformMakeRotation(M_PI * (360 - newHeading.trueHeading) / 180.0f);
@@ -104,7 +86,6 @@
 }
 
 - (void)dealloc {
-	[annotation release];
     [super dealloc];
 }
 
@@ -123,34 +104,7 @@
 	region.span = span;
 	[mapView setRegion:region animated:YES];
 	
-	annotation = [[GameAnnotation alloc] Coordinatelat:37.549502
-										 Coordinatelng:126.913933
-												 title: @"여기당"
-											  subTitle: @"ㅎㅎㅎ"
-				  ];
-	
-	[mapView addAnnotation:annotation];
-}
--(void) performDismiss: (NSTimer *)timer{
-	
-	[baseAlert dismissWithClickedButtonIndex:0 animated:NO];
 }
 
--(void) presentSheet{
-	baseAlert = [[UIAlertView alloc] 
-							  initWithTitle:@"[ 동기화중 ]"
-							  message:@"위치정보를 설정하고 있습니다. \n 잠시만 기다려주세요."
-							  delegate:self 
-							  cancelButtonTitle:nil
-							  otherButtonTitles:nil];
-	
-	[NSTimer scheduledTimerWithTimeInterval:3.0
-									 target:self
-								   selector:@selector(performDismiss:)
-								   userInfo:nil
-									repeats:NO
-	 ];
-	
-	[baseAlert show];	
-}
+
 @end

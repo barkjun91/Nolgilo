@@ -13,7 +13,7 @@
 #import <MapKit/MKMapView.h>
 #import <AudioToolbox/AudioServices.h>
 
-#import "GameAnnotation.h"
+#import "GameModel.h"
 
 @interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate> {
 	
@@ -21,16 +21,14 @@
 	
 	CLLocationManager *locationManager;
 	CLLocationCoordinate2D location;
-
-	UIAlertView  *baseAlert ;
 	
-	GameAnnotation *annotation;
-	
+	GameModel *gameSpot;
 }
 
 @property (nonatomic,  retain) CLLocationManager *locationManager;;
 @property (nonatomic, readonly) CLLocationCoordinate2D location;
 @property (nonatomic, retain) MKMapView * mapView; 
 
--(void) presentSheet;
+-(void) gameInit;
+
 @end
