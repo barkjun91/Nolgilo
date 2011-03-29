@@ -10,12 +10,13 @@
 
 @class LoadingViewController;
 @class MapViewController;
-//@class GameViewController;
+
+@class RootGameListViewController;
 
 @interface RootViewController : UIViewController {
     LoadingViewController* loadingViewController;
     MapViewController* mapViewController;
-//	GameViewController* gameViewController;
+	RootGameListViewController* gameListViewController;
     	
 }
 

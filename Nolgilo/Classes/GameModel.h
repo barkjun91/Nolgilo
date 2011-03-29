@@ -15,6 +15,7 @@
 	NSString *subTitle;
 	
 	UIAlertView  *baseAlert;
+	
 }
 
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
@@ -22,8 +23,9 @@
 @property (nonatomic, retain) NSString *subTitle;
 
 //게임 스테이지 초기화
--(void) gameInit;		
+-(void) gameInit:(MKMapView *)mapview;		
 
+-(void) spotSet: (double) lat: (double) lng: (NSString *) t: (NSString *) st: (MKMapView *)map;
 -(NSString *)subtitle;
 -(NSString *)mainTitle;
 

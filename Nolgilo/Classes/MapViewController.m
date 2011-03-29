@@ -34,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-	[[GameModel alloc] gameInit];
+	[[GameModel alloc] gameInit:mapView];
 	
 	
 	self.locationManager = [[CLLocationManager alloc] init];
