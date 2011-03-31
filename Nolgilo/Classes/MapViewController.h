@@ -29,6 +29,5 @@
 @property (nonatomic, readonly) CLLocationCoordinate2D location;
 @property (nonatomic, retain) MKMapView * mapView; 
 
--(void) gameInit;
 
 @end

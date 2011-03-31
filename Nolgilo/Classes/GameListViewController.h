@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TableHandler.h"
 
 @interface GameListViewController : UIViewController {
-
+	IBOutlet TableHandler * list;
 }
+@property (nonatomic, retain) IBOutlet TableHandler * list;
 
 @end

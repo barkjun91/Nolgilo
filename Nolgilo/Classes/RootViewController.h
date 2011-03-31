@@ -10,7 +10,6 @@
 
 @class LoadingViewController;
 @class MapViewController;
-
 @class RootGameListViewController;
 
 @interface RootViewController : UIViewController {
@@ -20,5 +19,6 @@
     	
 }
 
--(IBAction)  TitleOnFlipView;
+-(IBAction) TitleOnFlipView;
+-(void) GameStartView;
 @end

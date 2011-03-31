@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface RootGameListViewController : UIViewController {
+@interface RootGameListViewController : UIViewController<UINavigationControllerDelegate>{
 	IBOutlet UIView *window;
 	IBOutlet UINavigationController * navController;
 }
