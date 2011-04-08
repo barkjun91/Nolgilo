@@ -11,7 +11,7 @@
 #import "LoadingViewController.h"
 #import "MapViewController.h"
 #import "RootGameListViewController.h"
-
+#import "PingGameViewController.h"
 
 @implementation RootViewController
 
@@ -23,7 +23,8 @@
 	loadingViewController = [[LoadingViewController alloc] initWithNibName:@"LoadingViewController" bundle:nil];
 	mapViewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
 	gameListViewController = [[RootGameListViewController alloc] initWithNibName:@"RootGameListViewController" bundle:nil];
-	
+	pingGameViewController = [[PingGameViewController alloc] initWithNibName:@"PingGameViewController" bundle:nil];
+
 	[self.view addSubview:loadingViewController.view];
 }
 
@@ -36,7 +37,9 @@
     [UIView setAnimationDuration:0.7];
     [UIView setAnimationTransition: UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
 //	[self.view addSubview:mapViewController.view];
-	[self.view addSubview:gameListViewController.view];
+//	[self.view addSubview:gameListViewController.view];
+	[self.view addSubview:pingGameViewController.view];
+	
 	[UIView commitAnimations];
 
 }

@@ -15,6 +15,10 @@
 		2899E5220DE3E06400AC0155 /* NolgiloViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* NolgiloViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* NolgiloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* NolgiloViewController.m */; };
+		7107944F134F050B006A4D36 /* PingGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7107944D134F050B006A4D36 /* PingGameViewController.m */; };
+		71079450134F050B006A4D36 /* PingGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7107944E134F050B006A4D36 /* PingGameViewController.xib */; };
+		71079462134F0666006A4D36 /* TeamA.png in Resources */ = {isa = PBXBuildFile; fileRef = 71079461134F0666006A4D36 /* TeamA.png */; };
+		710794A5134F0A20006A4D36 /* GameStage.m in Sources */ = {isa = PBXBuildFile; fileRef = 710794A4134F0A20006A4D36 /* GameStage.m */; };
 		711BDBA91341D4A0007A6B3D /* GameListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711BDBA71341D4A0007A6B3D /* GameListViewController.m */; };
 		711BDBAA1341D4A0007A6B3D /* GameListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711BDBA81341D4A0007A6B3D /* GameListViewController.xib */; };
 		711BDBB01341D4B5007A6B3D /* GameInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711BDBAE1341D4B5007A6B3D /* GameInfoViewController.m */; };
@@ -53,6 +57,12 @@
 		28D7ACF70DDB3853001CB0EB /* NolgiloViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NolgiloViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Nolgilo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nolgilo_Prefix.pch; sourceTree = "<group>"; };
+		7107944C134F050B006A4D36 /* PingGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PingGameViewController.h; path = ../PingGameViewController.h; sourceTree = "<group>"; };
+		7107944D134F050B006A4D36 /* PingGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PingGameViewController.m; path = ../PingGameViewController.m; sourceTree = "<group>"; };
+		7107944E134F050B006A4D36 /* PingGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PingGameViewController.xib; sourceTree = "<group>"; };
+		71079461134F0666006A4D36 /* TeamA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TeamA.png; path = ../Resource/TeamA.png; sourceTree = SOURCE_ROOT; };
+		710794A3134F0A20006A4D36 /* GameStage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStage.h; sourceTree = "<group>"; };
+		710794A4134F0A20006A4D36 /* GameStage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStage.m; sourceTree = "<group>"; };
 		711BDBA61341D4A0007A6B3D /* GameListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameListViewController.h; sourceTree = "<group>"; };
 		711BDBA71341D4A0007A6B3D /* GameListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameListViewController.m; sourceTree = "<group>"; };
 		711BDBA81341D4A0007A6B3D /* GameListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameListViewController.xib; path = Classes/GameListViewController.xib; sourceTree = "<group>"; };
@@ -108,6 +118,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				71079448134F04A4006A4D36 /* Model */,
 				711BDB831341CC3F007A6B3D /* GameList */,
 				710A3B04133A0C1A0055B6A2 /* Game */,
 				1D3623240D0F684500981E51 /* NolgiloAppDelegate.h */,
@@ -176,13 +187,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		710A3B04133A0C1A0055B6A2 /* Game */ = {
+		71079448134F04A4006A4D36 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				719C1B5E1333557400E7C276 /* GameModel.h */,
 				719C1B5F1333557400E7C276 /* GameModel.m */,
+				71FD080D13445D5F008DB7AB /* TableHandler.h */,
+				71FD080E13445D5F008DB7AB /* TableHandler.m */,
+				710794A3134F0A20006A4D36 /* GameStage.h */,
+				710794A4134F0A20006A4D36 /* GameStage.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		710A3B04133A0C1A0055B6A2 /* Game */ = {
+			isa = PBXGroup;
+			children = (
 				7ABB8FE1131B730D00437FC4 /* MapViewController.h */,
 				7ABB8FE2131B730D00437FC4 /* MapViewController.m */,
+				7107944C134F050B006A4D36 /* PingGameViewController.h */,
+				7107944D134F050B006A4D36 /* PingGameViewController.m */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -196,8 +220,6 @@
 				711BDBAE1341D4B5007A6B3D /* GameInfoViewController.m */,
 				711BDBC51341D521007A6B3D /* RootGameListViewController.h */,
 				711BDBC61341D521007A6B3D /* RootGameListViewController.m */,
-				71FD080D13445D5F008DB7AB /* TableHandler.h */,
-				71FD080E13445D5F008DB7AB /* TableHandler.m */,
 			);
 			name = GameList;
 			sourceTree = "<group>";
@@ -221,6 +243,7 @@
 				7ABB8FD1131B706D00437FC4 /* LoadingViewController.xib */,
 				2899E5210DE3E06400AC0155 /* NolgiloViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				7107944E134F050B006A4D36 /* PingGameViewController.xib */,
 			);
 			name = xib;
 			sourceTree = "<group>";
@@ -232,6 +255,7 @@
 				7182D406134327480047DA4D /* menutitle.png */,
 				714D748B132A09FD00FB57A0 /* Default.png */,
 				7171ABAF1328D65B004127CE /* title.jpg */,
+				71079461134F0666006A4D36 /* TeamA.png */,
 				7134675E133B3DBF00DCA096 /* icon2.png */,
 			);
 			name = image;
@@ -301,6 +325,8 @@
 				711BDBC91341D521007A6B3D /* RootGameListViewController.xib in Resources */,
 				7182D407134327480047DA4D /* menutitle.png in Resources */,
 				71E0E4CC13446D5800AFE39F /* gradientBackground.png in Resources */,
+				71079450134F050B006A4D36 /* PingGameViewController.xib in Resources */,
+				71079462134F0666006A4D36 /* TeamA.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +348,8 @@
 				711BDBB01341D4B5007A6B3D /* GameInfoViewController.m in Sources */,
 				711BDBC81341D521007A6B3D /* RootGameListViewController.m in Sources */,
 				71FD080F13445D5F008DB7AB /* TableHandler.m in Sources */,
+				7107944F134F050B006A4D36 /* PingGameViewController.m in Sources */,
+				710794A5134F0A20006A4D36 /* GameStage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

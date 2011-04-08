@@ -14,6 +14,7 @@
 #import <AudioToolbox/AudioServices.h>
 
 #import "GameModel.h"
+#import "GameStage.h"
 
 @interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate> {
 	

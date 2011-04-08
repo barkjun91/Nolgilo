@@ -11,12 +11,13 @@
 @class LoadingViewController;
 @class MapViewController;
 @class RootGameListViewController;
+@class PingGameViewController;
 
 @interface RootViewController : UIViewController {
     LoadingViewController* loadingViewController;
     MapViewController* mapViewController;
 	RootGameListViewController* gameListViewController;
-    	
+	PingGameViewController* pingGameViewController;
 }
 
 -(IBAction) TitleOnFlipView;
