@@ -20,4 +20,5 @@
 	mapView.userInteractionEnabled = YES;	
 	mapView.transform = CGAffineTransformMakeRotation(0.0f);
 }
+
 @end

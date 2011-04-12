@@ -12,14 +12,17 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MKMapView.h>
 
-
 #import "GameStage.h"
+#import "PingGameCore.h"
 
 @interface PingGameViewController : UIViewController<MKMapViewDelegate, CLLocationManagerDelegate> {
 	IBOutlet MKMapView *gameStage;
-	
+	IBOutlet UILabel *teamName1, *teamName2;
+	IBOutlet UIImageView *teamArrow1, *teamArrow2;
 	CLLocationManager *locationManager;
 	CLLocationCoordinate2D location;
+	
+	PingGameCore *core;
 	
 }
 

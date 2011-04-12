@@ -27,6 +27,8 @@
 		711BDBC91341D521007A6B3D /* RootGameListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711BDBC71341D521007A6B3D /* RootGameListViewController.xib */; };
 		7134675F133B3DBF00DCA096 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7134675E133B3DBF00DCA096 /* icon2.png */; };
 		714D748C132A09FD00FB57A0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 714D748B132A09FD00FB57A0 /* Default.png */; };
+		715717FF135438B900FC5012 /* PingGameCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 715717FE135438B900FC5012 /* PingGameCore.m */; };
+		715718C31354423400FC5012 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 715718C21354423400FC5012 /* arrow.png */; };
 		7171AB791328B26F004127CE /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7171AB781328B26F004127CE /* icon.jpg */; };
 		7171ABB01328D65B004127CE /* title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7171ABAF1328D65B004127CE /* title.jpg */; };
 		7182D407134327480047DA4D /* menutitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7182D406134327480047DA4D /* menutitle.png */; };
@@ -74,6 +76,9 @@
 		711BDBC71341D521007A6B3D /* RootGameListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RootGameListViewController.xib; path = Classes/RootGameListViewController.xib; sourceTree = "<group>"; };
 		7134675E133B3DBF00DCA096 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon2.png; path = ../Resource/icon2.png; sourceTree = SOURCE_ROOT; };
 		714D748B132A09FD00FB57A0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Resource/Default.png; sourceTree = SOURCE_ROOT; };
+		715717FD135438B900FC5012 /* PingGameCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingGameCore.h; sourceTree = "<group>"; };
+		715717FE135438B900FC5012 /* PingGameCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingGameCore.m; sourceTree = "<group>"; };
+		715718C21354423400FC5012 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = ../Resource/arrow.png; sourceTree = SOURCE_ROOT; };
 		7171AB781328B26F004127CE /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon.jpg; path = ../Resource/icon.jpg; sourceTree = SOURCE_ROOT; };
 		7171ABAF1328D65B004127CE /* title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = title.jpg; path = ../Resource/title.jpg; sourceTree = SOURCE_ROOT; };
 		7182D406134327480047DA4D /* menutitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menutitle.png; path = ../Resource/menutitle.png; sourceTree = SOURCE_ROOT; };
@@ -196,6 +201,8 @@
 				71FD080E13445D5F008DB7AB /* TableHandler.m */,
 				710794A3134F0A20006A4D36 /* GameStage.h */,
 				710794A4134F0A20006A4D36 /* GameStage.m */,
+				715717FD135438B900FC5012 /* PingGameCore.h */,
+				715717FE135438B900FC5012 /* PingGameCore.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -252,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				71E0E4CB13446D5800AFE39F /* gradientBackground.png */,
+				715718C21354423400FC5012 /* arrow.png */,
 				7182D406134327480047DA4D /* menutitle.png */,
 				714D748B132A09FD00FB57A0 /* Default.png */,
 				7171ABAF1328D65B004127CE /* title.jpg */,
@@ -327,6 +335,7 @@
 				71E0E4CC13446D5800AFE39F /* gradientBackground.png in Resources */,
 				71079450134F050B006A4D36 /* PingGameViewController.xib in Resources */,
 				71079462134F0666006A4D36 /* TeamA.png in Resources */,
+				715718C31354423400FC5012 /* arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +359,7 @@
 				71FD080F13445D5F008DB7AB /* TableHandler.m in Sources */,
 				7107944F134F050B006A4D36 /* PingGameViewController.m in Sources */,
 				710794A5134F0A20006A4D36 /* GameStage.m in Sources */,
+				715717FF135438B900FC5012 /* PingGameCore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,7 +26,13 @@
 }
 */
 
-
+-(PingGameCore *) core
+{
+	if(!core){
+		core = [[PingGameCore alloc] init];
+	}
+	return core;
+}
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -62,6 +68,8 @@
     // e.g. self.myOutlet = nil;
 }
 
+
+/* 맵 회전 관련 부분 */
 -(void)locationManager:(CLLocationManager *)manager
 	  didUpdateHeading:(CLHeading *)newHeading{
 
@@ -71,12 +79,12 @@
 	[UIView commitAnimations];
 }
 
+/* 맵 위치 리로딩 */
 -(void) locationManager: (CLLocationManager *)manager
 	didUpdateToLocation:(CLLocation *)newLocation
 		   fromLocation:(CLLocation *)oldLocation{
 
 	location = newLocation.coordinate;
-	
 	MKCoordinateRegion region;
 	region.center = location;
 	
@@ -87,14 +95,42 @@
 	[gameStage setRegion:region animated:YES];
 	
 }
-	
+
+/* 일정 영역을 벗어나면 발생
+ -(void) mapView:(MKMapView *)mapView regionWillChangeAnimated:(BOOL)animated{
+}
+*/
 
 - (void)dealloc {
     [super dealloc];
 }
 
--(IBAction) PingOut{
+-(IBAction) PingOut{	
+	NSMutableArray *otherteam_info = [[self core] SearchOtherTeam:location.latitude 
+														   :location.longitude
+														   :@"A"];
+
+	NSString * imageName = [NSString stringWithFormat:@"%@.png",
+							[otherteam_info objectAtIndex:2]];
+	teamName1.text = [otherteam_info objectAtIndex:0];
+	teamArrow1.image = [UIImage imageNamed:imageName];  
+							
+	//3초간 상대방의 위치를 보여준다.
+	[NSTimer scheduledTimerWithTimeInterval:3.0
+									 target:self
+								   selector:@selector(showInfo:)
+								   userInfo:nil
+									repeats:NO
+	 ];
 	
+	teamName1.hidden = NO;
+	teamArrow1.hidden = NO;
+
+}
+
+-(void) showInfo: (NSTimer *)timer{
+	teamName1.hidden = YES;
+	teamArrow1.hidden = YES;
 }
 
 -(IBAction) MenuOut{
