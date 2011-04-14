@@ -114,14 +114,14 @@
 					<object class="IBUILabel" id="1023329881">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">-2147483356</int>
-						<string key="NSFrame">{{132, 54}, {57, 21}}</string>
+						<string key="NSFrame">{{153, 34}, {14, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">TEAM1</string>
+						<string key="IBUIText">A</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -130,10 +130,10 @@
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 					</object>
-					<object class="IBUIImageView" id="35016145">
+					<object class="IBUIImageView" id="691589012">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">-2147483356</int>
-						<string key="NSFrame">{{144, 92}, {33, 128}}</string>
+						<string key="NSFrame">{{143, 63}, {33, 300}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -200,7 +200,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">teamArrow1</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="35016145"/>
+						<reference key="destination" ref="691589012"/>
 					</object>
 					<int key="connectionID">16</int>
 				</object>
@@ -223,8 +223,8 @@
 							<reference ref="378520942"/>
 							<reference ref="1052537055"/>
 							<reference ref="99657315"/>
+							<reference ref="691589012"/>
 							<reference ref="1023329881"/>
-							<reference ref="35016145"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -266,7 +266,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">15</int>
-						<reference key="object" ref="35016145"/>
+						<reference key="object" ref="691589012"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
@@ -298,11 +298,11 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCzgAAwoAAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDewAAwowAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDEAAAw1oAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDEQAAw7wAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
