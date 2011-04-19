@@ -13,6 +13,12 @@
 	NSString * TeamName;
 	double mylat;
 	double mylog;
+	struct otherTeam {
+		NSString * TeamName;
+		double lat;
+		double log;
+		double angle;
+	}team1, team2;
 }
 -(NSMutableArray *) SearchOtherTeam:(double)mylat:(double)mylog:(NSString *)teamname;
 @end

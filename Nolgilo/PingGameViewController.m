@@ -117,7 +117,9 @@
 							[otherteam_info objectAtIndex:2]];
 	
 	teamName1.text = [otherteam_info objectAtIndex:0];
-	teamArrow1.image = [UIImage imageNamed:imageName];  
+	teamArrow1.image = [UIImage imageNamed:imageName];
+	
+	
 	teamArrow1.transform = CGAffineTransformMakeRotation (80.0f);
 	
 	//3초간 상대방의 위치를 보여준다.

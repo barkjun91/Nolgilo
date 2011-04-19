@@ -23,7 +23,6 @@
 
 -(NSString *) ArrowImageSetting:(NSString *)location{
 	NSArray *locdatalist = [location componentsSeparatedByString:@"/"];
-//	NSLog(@"%@ %@\n", [locdatalist objectAtIndex:0], [locdatalist objectAtIndex:1]);
 	
 	double lat = [[locdatalist objectAtIndex:0] doubleValue];
 	double log = [[locdatalist objectAtIndex:1] doubleValue];
@@ -34,14 +33,17 @@
 	if(dis > 12){
 		return @"arrow";
 	}
+	
 	return @"arrow";
 }
+
 /*
 -(double)SetAngle{
 //	double angle = acos(
 //	return angle;
 }
 */
+
 -(NSString *) InfoRead{
 	NSString * sql = [NSString
 					  stringWithFormat:
@@ -49,15 +51,24 @@
 	
 	return sql;
 }
-
+-(NSMutableArray *)DataSetting:(NSString *)Data{
+	NSMutableArray *datalist = [Data componentsSeparatedByString: @":"];
+	team1.TeamName = [coredatalist objectAtIndex:0];
+	team2.TeamName = [coredatalist objectAtIndex:1];
+	
+	
+	return datalist;
+}
 -(NSMutableArray *) SearchOtherTeam:(double)mylat:(double)mylog:(NSString *)TeamName{
 	/* 각각TEAM에 대한 위도 경도 조사*/
+
 	
 	NSString *coredata = [self InfoRead]; //자료 input예시
-	NSMutableArray *coredatalist = [coredata componentsSeparatedByString: @":"];
+	NSMutableArray *coredatalist= [[self DataSetting:coredata] copy];
 
+	
+	
 	[coredatalist replaceObjectAtIndex:2 withObject:[self ArrowImageSetting:[coredatalist objectAtIndex:2]]];
-	[coredatalist replaceObjectAtIndex:3 withObject:[self ArrowImageSetting:[coredatalist objectAtIndex:3]]];
 	
 	return coredatalist;
 	
