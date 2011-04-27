@@ -77,7 +77,7 @@
 	[UIView setAnimationDuration:0.1];
 	/* 아이폰 회전 관련 부분 */
 	gameStage.transform = CGAffineTransformMakeRotation(M_PI * (360 - newHeading.trueHeading) / 180.0f);
-	teamName1.transform = CGAffineTransformMakeRotation(M_PI * (360 - newHeading.trueHeading) / 180.0f);
+//	teamName1.transform = CGAffineTransformMakeRotation(M_PI * (360 - newHeading.trueHeading) / 180.0f);
 	
 	[UIView commitAnimations];
 }
@@ -120,7 +120,7 @@
 	teamArrow1.image = [UIImage imageNamed:imageName];
 	
 	
-	teamArrow1.transform = CGAffineTransformMakeRotation (80.0f);
+	//teamArrow1.transform = CGAffineTransformMakeRotation (80.0f);
 	
 	//3초간 상대방의 위치를 보여준다.
 	[NSTimer scheduledTimerWithTimeInterval:3.0

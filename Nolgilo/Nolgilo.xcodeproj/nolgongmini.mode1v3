@@ -202,6 +202,46 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
+				<string>712BB57E1368386500A5D454</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>PingGameViewController.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>712BB57F1368386500A5D454</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>PingGameViewController.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>712BB5BD136846AB00A5D454</string>
+						<key>history</key>
+						<array>
+							<string>712BB5661368348900A5D454</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {721, 896}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>225 65 721 937 0 0 1280 1002 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
 				<string>71EC8D0D135D8D4100EF5922</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>PingGameCore.h</string>
@@ -216,10 +256,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>71EC8D1F135D9F7D00EF5922</string>
+						<string>712BB5BE136846AB00A5D454</string>
 						<key>history</key>
 						<array>
-							<string>71EC8D0F135D8D4100EF5922</string>
+							<string>71EC8D1F135D9F7D00EF5922</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -236,46 +276,6 @@
 				<false/>
 				<key>RubberWindowFrame</key>
 				<string>15 60 621 937 0 0 1280 1002 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>71EC8D12135D8D4100EF5922</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>PingGameCore.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>71EC8D13135D8D4100EF5922</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>PingGameCore.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>71EC8D20135D9F7D00EF5922</string>
-						<key>history</key>
-						<array>
-							<string>71EC8CEE135D795C00EF5922</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {621, 896}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>462 65 621 937 0 0 1280 1002 </string>
 			</dict>
 		</dict>
 	</array>
@@ -362,14 +362,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>10</integer>
-									<integer>2</integer>
+									<integer>22</integer>
+									<integer>18</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 363}, {333, 783}}</string>
+							<string>{{0, 116}, {333, 783}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -388,7 +388,7 @@
 							<real>333</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>3 160 1053 842 0 0 1280 1002 </string>
+						<string>136 77 1053 842 0 0 1280 1002 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -406,7 +406,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PingGameCore.m</string>
+								<string>PingGameViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -414,11 +414,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>PingGameCore.m</string>
+										<string>PingGameViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>71EC8D1E135D9F7D00EF5922</string>
+										<string>712BB5BC136846AB00A5D454</string>
 										<key>history</key>
 										<array>
 											<string>71A125251328E4DA00C1BC87</string>
@@ -454,11 +454,11 @@
 											<string>7158885C1356F3B60086A250</string>
 											<string>7158885E1356F3B60086A250</string>
 											<string>7158885F1356F3B60086A250</string>
-											<string>715888601356F3B60086A250</string>
 											<string>715888A9135709FB0086A250</string>
-											<string>71EC8D09135D8D4100EF5922</string>
-											<string>71EC8D0A135D8D4100EF5922</string>
-											<string>71EC8D0B135D8D4100EF5922</string>
+											<string>712BB59513683AD900A5D454</string>
+											<string>712BB5A013683BB300A5D454</string>
+											<string>712BB5BA136846AB00A5D454</string>
+											<string>712BB5BB136846AB00A5D454</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -470,14 +470,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {698, 677}}</string>
+								<string>{{0, 0}, {698, 674}}</string>
 								<key>RubberWindowFrame</key>
-								<string>3 160 1053 842 0 0 1280 1002 </string>
+								<string>136 77 1053 842 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>677pt</string>
+							<string>674pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -490,14 +490,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 682}, {698, 119}}</string>
+								<string>{{0, 679}, {698, 122}}</string>
 								<key>RubberWindowFrame</key>
-								<string>3 160 1053 842 0 0 1280 1002 </string>
+								<string>136 77 1053 842 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>119pt</string>
+							<string>122pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -516,9 +516,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>71EC8CE8135D74B700EF5922</string>
+				<string>712BB57C1368386500A5D454</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>71EC8CE9135D74B700EF5922</string>
+				<string>712BB57D1368386500A5D454</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -656,18 +656,17 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>71EC8D15135D8D4100EF5922</string>
-		<string>71EC8D16135D8D4100EF5922</string>
-		<string>71EC8D17135D8D4100EF5922</string>
-		<string>1C78EAAD065D492600B07095</string>
+		<string>712BB5891368386500A5D454</string>
+		<string>712BB58A1368386500A5D454</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>71C5F09A131DFC0900F2BC31</string>
-		<string>71EC8D12135D8D4100EF5922</string>
 		<string>71EC8D0D135D8D4100EF5922</string>
+		<string>712BB57E1368386500A5D454</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/nolgongmini/Project/Nolgilo/Nolgilo/Nolgilo.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>3 160 1053 842 0 0 1280 1002 </string>
+	<string>136 77 1053 842 0 0 1280 1002 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -688,7 +687,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PingGameCore.m</string>
+								<string>GameModel.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -746,7 +745,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>71C5F09A131DFC0900F2BC31</string>
-				<string>71EC8CEB135D74B700EF5922</string>
+				<string>712BB5651368343200A5D454</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -868,13 +867,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>71EC8D00135D8D3100EF5922</string>
+				<string>712BB5821368386500A5D454</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>71EC8D01135D8D3100EF5922</string>
-				<string>71EC8D02135D8D3100EF5922</string>
-				<string>71EC8D03135D8D3100EF5922</string>
-				<string>71EC8D04135D8D3100EF5922</string>
-				<string>71EC8D05135D8D3100EF5922</string>
+				<string>712BB5831368386500A5D454</string>
+				<string>712BB5841368386500A5D454</string>
+				<string>712BB5851368386500A5D454</string>
+				<string>712BB5861368386500A5D454</string>
+				<string>712BB5871368386500A5D454</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -1001,6 +1000,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1011,18 +1012,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {650, 209}}</string>
+								<string>{{0, 0}, {717, 444}}</string>
 								<key>RubberWindowFrame</key>
-								<string>630 473 650 250 0 0 1280 1002 </string>
+								<string>542 262 717 485 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
 							<key>Proportion</key>
-							<string>209pt</string>
+							<string>444pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>209pt</string>
+					<string>444pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -1036,17 +1037,17 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>71EC8D06135D8D3100EF5922</string>
+				<string>712BB5881368386500A5D454</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>630 473 650 250 0 0 1280 1002 </string>
+			<string>542 262 717 485 0 0 1280 1002 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

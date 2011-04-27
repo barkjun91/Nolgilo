@@ -51,22 +51,24 @@
 	
 	return sql;
 }
--(NSMutableArray *)DataSetting:(NSString *)Data{
-	NSMutableArray *datalist = [Data componentsSeparatedByString: @":"];
-	team1.TeamName = [coredatalist objectAtIndex:0];
-	team2.TeamName = [coredatalist objectAtIndex:1];
+-(NSMutableArray *)DataSetting:(NSString *)data{
+	NSArray *sourceData = [data componentsSeparatedByString: @":"];
+	NSMutableArray *datalist = [NSMutableArray arrayWithCapacity:[sourceData count]];
+	[datalist setArray:sourceData];
+	team1.TeamName = [datalist objectAtIndex:0];
+	team2.TeamName = [datalist objectAtIndex:1];
 	
 	
 	return datalist;
 }
--(NSMutableArray *) SearchOtherTeam:(double)mylat:(double)mylog:(NSString *)TeamName{
+-(NSMutableArray *) SearchOtherTeam:(double)mylat:(double)mylog:(NSString *)teamName{
 	/* 각각TEAM에 대한 위도 경도 조사*/
 
 	
 	NSString *coredata = [self InfoRead]; //자료 input예시
-	NSMutableArray *coredatalist= [[self DataSetting:coredata] copy];
+	NSMutableArray *coredatalist= [self DataSetting:coredata];
 
-	
+	NSLog(@"array %@",[coredatalist class]);
 	
 	[coredatalist replaceObjectAtIndex:2 withObject:[self ArrowImageSetting:[coredatalist objectAtIndex:2]]];
 	
