@@ -19,6 +19,11 @@
 	IBOutlet MKMapView *gameStage;
 	IBOutlet UILabel *teamName1, *teamName2;
 	IBOutlet UIImageView *teamArrow1, *teamArrow2;
+	IBOutlet UIButton *pingButton, *menuButton;
+	double heading;
+	double teamAngle1, teamAngle2;
+	
+	bool ping;
 	CLLocationManager *locationManager;
 	CLLocationCoordinate2D location;
 	

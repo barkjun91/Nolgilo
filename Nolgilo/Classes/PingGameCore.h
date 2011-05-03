@@ -20,5 +20,6 @@
 		double angle;
 	}team1, team2;
 }
--(NSMutableArray *) SearchOtherTeam:(double)mylat:(double)mylog:(NSString *)teamname;
+-(NSMutableArray *) SearchOtherTeam:(double)lat:(double)log:(NSString *)name;
+-(double)SetAngle:(NSString *)teamname;
 @end

@@ -39,6 +39,8 @@
 	self.locationManager = [[CLLocationManager alloc] init];	
 	[[GameStage alloc] StageInit:gameStage];
 	
+	ping = FALSE;
+	
 	locationManager.delegate = self;
 	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 
@@ -75,10 +77,13 @@
 
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:0.1];
-	/* 아이폰 회전 관련 부분 */
-	gameStage.transform = CGAffineTransformMakeRotation(M_PI * (360 - newHeading.trueHeading) / 180.0f);
-//	teamName1.transform = CGAffineTransformMakeRotation(M_PI * (360 - newHeading.trueHeading) / 180.0f);
-	
+	/* 아이폰 회전 관련 부분
+	heading = M_PI * (360 - newHeading.trueHeading) / 180.0f;
+	gameStage.transform = CGAffineTransformMakeRotation(heading);
+	if(ping){
+		teamName1.transform = CGAffineTransformMakeRotation(teamAngle1+heading);
+		teamArrow1.transform = CGAffineTransformMakeRotation(teamAngle1+heading);
+	} */
 	[UIView commitAnimations];
 }
 
@@ -116,11 +121,12 @@
 	NSString * imageName = [NSString stringWithFormat:@"%@.png",
 							[otherteam_info objectAtIndex:2]];
 	
-	teamName1.text = [otherteam_info objectAtIndex:0];
+	teamName1.text = [NSString stringWithFormat:@"%@\n\n\n\n\n\n\n\n\n", [otherteam_info objectAtIndex:0]];
 	teamArrow1.image = [UIImage imageNamed:imageName];
+	teamAngle1 = [[self core] SetAngle:[otherteam_info objectAtIndex:0]];
 	
-	
-	//teamArrow1.transform = CGAffineTransformMakeRotation (80.0f);
+	teamArrow1.transform = CGAffineTransformMakeRotation(teamAngle1);
+	teamName1.transform = CGAffineTransformMakeRotation(teamAngle1);
 	
 	//3초간 상대방의 위치를 보여준다.
 	[NSTimer scheduledTimerWithTimeInterval:3.0
@@ -128,18 +134,31 @@
 								   selector:@selector(showInfo:)
 								   userInfo:nil
 									repeats:NO
+	];
+	//ping버튼은 3초간 coolTime이 존재한다.
+	[NSTimer scheduledTimerWithTimeInterval:3.0
+									 target:self
+								   selector:@selector(pingTime:)
+								   userInfo:nil
+									repeats:NO
 	 ];
 	
 	teamName1.hidden = NO;
 	teamArrow1.hidden = NO;
+	pingButton.enabled = NO;
+	ping = TRUE;
 
 }
 
 -(void) showInfo: (NSTimer *)timer{
 	teamName1.hidden = YES;
 	teamArrow1.hidden = YES;
+	ping = FALSE;
+	
 }
-
+-(void) pingTime: (NSTimer *)timer{
+	pingButton.enabled = YES;	
+}
 -(IBAction) MenuOut{
 	
 }
