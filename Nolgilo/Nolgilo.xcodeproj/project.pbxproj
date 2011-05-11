@@ -28,7 +28,6 @@
 		7134675F133B3DBF00DCA096 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7134675E133B3DBF00DCA096 /* icon2.png */; };
 		714D748C132A09FD00FB57A0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 714D748B132A09FD00FB57A0 /* Default.png */; };
 		715717FF135438B900FC5012 /* PingGameCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 715717FE135438B900FC5012 /* PingGameCore.m */; };
-		715718C31354423400FC5012 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 715718C21354423400FC5012 /* arrow.png */; };
 		7171AB791328B26F004127CE /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7171AB781328B26F004127CE /* icon.jpg */; };
 		7171ABB01328D65B004127CE /* title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7171ABAF1328D65B004127CE /* title.jpg */; };
 		7182D407134327480047DA4D /* menutitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7182D406134327480047DA4D /* menutitle.png */; };
@@ -36,6 +35,7 @@
 		71A1251A1328E47A00C1BC87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71A125191328E47A00C1BC87 /* InfoPlist.strings */; };
 		71E0E4CC13446D5800AFE39F /* gradientBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E0E4CB13446D5800AFE39F /* gradientBackground.png */; };
 		71FD080F13445D5F008DB7AB /* TableHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FD080E13445D5F008DB7AB /* TableHandler.m */; };
+		7A00600E1379B15500F3CDE4 /* pingable.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A00600C1379B15500F3CDE4 /* pingable.png */; };
 		7AB4DBD91303BCBE00DE0AA8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBD81303BCBE00DE0AA8 /* AudioToolbox.framework */; };
 		7AB4DBDB1303BCBE00DE0AA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBDA1303BCBE00DE0AA8 /* CoreLocation.framework */; };
 		7AB4DBDD1303BCBE00DE0AA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBDC1303BCBE00DE0AA8 /* MapKit.framework */; };
@@ -44,6 +44,13 @@
 		7ABB8FE4131B730D00437FC4 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB8FE2131B730D00437FC4 /* MapViewController.m */; };
 		7ABB8FE5131B730D00437FC4 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABB8FE3131B730D00437FC4 /* MapViewController.xib */; };
 		7ABB9037131B770B00437FC4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB9036131B770B00437FC4 /* RootViewController.m */; };
+		7AC4155D1373F82300C37DF3 /* w_tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AC4155C1373F82300C37DF3 /* w_tile.png */; };
+		7AD45EE713778A7F00C1548B /* vs_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD45EE413778A7F00C1548B /* vs_arrow.png */; };
+		7AD45EE813778A7F00C1548B /* xl_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD45EE513778A7F00C1548B /* xl_arrow.png */; };
+		7AD45EE913778A7F00C1548B /* xm_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD45EE613778A7F00C1548B /* xm_arrow.png */; };
+		7AD45EEE13778A9100C1548B /* l_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD45EEA13778A9100C1548B /* l_arrow.png */; };
+		7AD45EEF13778A9100C1548B /* m_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD45EEB13778A9100C1548B /* m_arrow.png */; };
+		7AD45EF113778A9100C1548B /* s_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD45EED13778A9100C1548B /* s_arrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,7 +85,6 @@
 		714D748B132A09FD00FB57A0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Resource/Default.png; sourceTree = SOURCE_ROOT; };
 		715717FD135438B900FC5012 /* PingGameCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingGameCore.h; sourceTree = "<group>"; };
 		715717FE135438B900FC5012 /* PingGameCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingGameCore.m; sourceTree = "<group>"; };
-		715718C21354423400FC5012 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = ../Resource/arrow.png; sourceTree = SOURCE_ROOT; };
 		7171AB781328B26F004127CE /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon.jpg; path = ../Resource/icon.jpg; sourceTree = SOURCE_ROOT; };
 		7171ABAF1328D65B004127CE /* title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = title.jpg; path = ../Resource/title.jpg; sourceTree = SOURCE_ROOT; };
 		7182D406134327480047DA4D /* menutitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menutitle.png; path = ../Resource/menutitle.png; sourceTree = SOURCE_ROOT; };
@@ -89,6 +95,7 @@
 		71E0E4CB13446D5800AFE39F /* gradientBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradientBackground.png; path = ../Resource/gradientBackground.png; sourceTree = SOURCE_ROOT; };
 		71FD080D13445D5F008DB7AB /* TableHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableHandler.h; sourceTree = "<group>"; };
 		71FD080E13445D5F008DB7AB /* TableHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableHandler.m; sourceTree = "<group>"; };
+		7A00600C1379B15500F3CDE4 /* pingable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pingable.png; path = ../Resource/pingable.png; sourceTree = SOURCE_ROOT; };
 		7AB4DBD81303BCBE00DE0AA8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7AB4DBDA1303BCBE00DE0AA8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7AB4DBDC1303BCBE00DE0AA8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -100,6 +107,13 @@
 		7ABB8FE3131B730D00437FC4 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MapViewController.xib; path = Classes/MapViewController.xib; sourceTree = "<group>"; };
 		7ABB9035131B770B00437FC4 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		7ABB9036131B770B00437FC4 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		7AC4155C1373F82300C37DF3 /* w_tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = w_tile.png; path = ../Resource/w_tile.png; sourceTree = SOURCE_ROOT; };
+		7AD45EE413778A7F00C1548B /* vs_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vs_arrow.png; path = ../Resource/vs_arrow.png; sourceTree = SOURCE_ROOT; };
+		7AD45EE513778A7F00C1548B /* xl_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xl_arrow.png; path = ../Resource/xl_arrow.png; sourceTree = SOURCE_ROOT; };
+		7AD45EE613778A7F00C1548B /* xm_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xm_arrow.png; path = ../Resource/xm_arrow.png; sourceTree = SOURCE_ROOT; };
+		7AD45EEA13778A9100C1548B /* l_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = l_arrow.png; path = ../Resource/l_arrow.png; sourceTree = SOURCE_ROOT; };
+		7AD45EEB13778A9100C1548B /* m_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = m_arrow.png; path = ../Resource/m_arrow.png; sourceTree = SOURCE_ROOT; };
+		7AD45EED13778A9100C1548B /* s_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s_arrow.png; path = ../Resource/s_arrow.png; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Nolgilo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Nolgilo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,8 +272,10 @@
 		714D747B132A098400FB57A0 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				7A00600A1379B14900F3CDE4 /* button */,
+				7AD45EE213778A6D00C1548B /* arrow */,
+				7AC4155C1373F82300C37DF3 /* w_tile.png */,
 				71E0E4CB13446D5800AFE39F /* gradientBackground.png */,
-				715718C21354423400FC5012 /* arrow.png */,
 				7182D406134327480047DA4D /* menutitle.png */,
 				714D748B132A09FD00FB57A0 /* Default.png */,
 				7171ABAF1328D65B004127CE /* title.jpg */,
@@ -267,6 +283,27 @@
 				7134675E133B3DBF00DCA096 /* icon2.png */,
 			);
 			name = image;
+			sourceTree = "<group>";
+		};
+		7A00600A1379B14900F3CDE4 /* button */ = {
+			isa = PBXGroup;
+			children = (
+				7A00600C1379B15500F3CDE4 /* pingable.png */,
+			);
+			name = button;
+			sourceTree = "<group>";
+		};
+		7AD45EE213778A6D00C1548B /* arrow */ = {
+			isa = PBXGroup;
+			children = (
+				7AD45EE413778A7F00C1548B /* vs_arrow.png */,
+				7AD45EEA13778A9100C1548B /* l_arrow.png */,
+				7AD45EEB13778A9100C1548B /* m_arrow.png */,
+				7AD45EED13778A9100C1548B /* s_arrow.png */,
+				7AD45EE513778A7F00C1548B /* xl_arrow.png */,
+				7AD45EE613778A7F00C1548B /* xm_arrow.png */,
+			);
+			name = arrow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,7 +372,14 @@
 				71E0E4CC13446D5800AFE39F /* gradientBackground.png in Resources */,
 				71079450134F050B006A4D36 /* PingGameViewController.xib in Resources */,
 				71079462134F0666006A4D36 /* TeamA.png in Resources */,
-				715718C31354423400FC5012 /* arrow.png in Resources */,
+				7AC4155D1373F82300C37DF3 /* w_tile.png in Resources */,
+				7AD45EE713778A7F00C1548B /* vs_arrow.png in Resources */,
+				7AD45EE813778A7F00C1548B /* xl_arrow.png in Resources */,
+				7AD45EE913778A7F00C1548B /* xm_arrow.png in Resources */,
+				7AD45EEE13778A9100C1548B /* l_arrow.png in Resources */,
+				7AD45EEF13778A9100C1548B /* m_arrow.png in Resources */,
+				7AD45EF113778A9100C1548B /* s_arrow.png in Resources */,
+				7A00600E1379B15500F3CDE4 /* pingable.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

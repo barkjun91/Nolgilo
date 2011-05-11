@@ -21,11 +21,21 @@
 	IBOutlet UIImageView *teamArrow1, *teamArrow2;
 	IBOutlet UIButton *pingButton, *menuButton;
 	double heading;
-	double teamAngle1, teamAngle2;
+	
+	struct other {
+		NSString* name;
+		double radian;
+		bool alive;
+		bool check;
+	}team1, team2;
 	
 	bool ping;
+	
 	CLLocationManager *locationManager;
 	CLLocationCoordinate2D location;
+	MKCoordinateSpan span;
+	MKCoordinateRegion region;
+
 	
 	PingGameCore *core;
 	
@@ -37,5 +47,5 @@
 
 -(IBAction) PingOut;
 -(IBAction) MenuOut;
-
+-(IBAction) Catch;
 @end

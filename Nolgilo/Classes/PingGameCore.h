@@ -17,9 +17,13 @@
 		NSString * TeamName;
 		double lat;
 		double log;
-		double angle;
+		double radian;
+		bool live;
+		bool catchteam;
 	}team1, team2;
 }
 -(NSMutableArray *) SearchOtherTeam:(double)lat:(double)log:(NSString *)name;
+-(NSString *) TeamNameSet:(NSString *) teamName :(NSString *) arrowImage;
 -(double)SetAngle:(NSString *)teamname;
+-(NSString *)CatchCheck;
 @end
