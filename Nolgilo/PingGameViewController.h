@@ -15,6 +15,7 @@
 #import "GameStage.h"
 #import "PingGameCore.h"
 
+
 @interface PingGameViewController : UIViewController<MKMapViewDelegate, CLLocationManagerDelegate> {
 	IBOutlet MKMapView *gameStage;
 	IBOutlet UILabel *teamName1, *teamName2;

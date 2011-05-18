@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
+
 @interface PingGameCore : NSObject {
 	NSString * TeamName;
 	double mylat;
