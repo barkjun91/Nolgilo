@@ -18,27 +18,29 @@
 
 @interface PingGameViewController : UIViewController<MKMapViewDelegate, CLLocationManagerDelegate> {
 	IBOutlet MKMapView *gameStage;
-	IBOutlet UILabel *teamName1, *teamName2;
-	IBOutlet UIImageView *teamArrow1, *teamArrow2;
+
 	IBOutlet UIButton *pingButton, *menuButton;
 	double heading;
 	
 	struct other {
 		NSString* name;
+		double dis;
 		double radian;
-		bool alive;
-		bool check;
+		double lat;
+		double log;
+		NSString* arrowName;
 	}team1, team2;
-	
-	bool ping;
+	IBOutlet UILabel *teamName1, *teamName2;
+	IBOutlet UIImageView *teamArrow1, *teamArrow2;
+
+	bool ping_enable;
 	
 	CLLocationManager *locationManager;
 	CLLocationCoordinate2D location;
 	MKCoordinateSpan span;
 	MKCoordinateRegion region;
 
-	
-	PingGameCore *core;
+	PingGameCore *ping;
 	
 }
 

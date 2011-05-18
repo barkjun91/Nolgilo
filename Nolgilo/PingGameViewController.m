@@ -26,12 +26,12 @@
 }
 */
 
--(PingGameCore *) core
+-(PingGameCore *) ping
 {
-	if(!core){
-		core = [[PingGameCore alloc] init];
+	if(!ping){
+		ping = [[PingGameCore alloc] init];
 	}
-	return core;
+	return ping;
 }
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -43,7 +43,7 @@
 	self.locationManager = [[CLLocationManager alloc] init];	
 	[[GameStage alloc] StageInit:gameStage];
 	
-	ping = FALSE;
+	ping_enable = FALSE;
 	
 	locationManager.delegate = self;
 	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
@@ -114,74 +114,74 @@
 */
 
 - (void)dealloc {
-
 	[locationManager stopUpdatingHeading];
+	[locationManager stopUpdatingLocation];
     [locationManager release];
     [super dealloc];
 }
--(IBAction) Catch{
 
-	NSString* catchteam = [[self core] CatchCheck];	
-	
-	if([catchteam isEqualToString: @"team1"]){
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"잡기 성공" 
-														message:@"상대팀을 잡는데 성공하셨습니다!"
-													   delegate:self cancelButtonTitle:@"확인" otherButtonTitles:nil, nil];
-		[alert show];
-		[alert release];
-	}
-	else if([catchteam isEqualToString: @"team2"]){
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"잡기 성공" 
-														message:@"상대팀을 잡는데 성공하셨습니다!"
-													   delegate:self cancelButtonTitle:@"확인" otherButtonTitles:nil, nil];
-		[alert show];
-		[alert release];
-	}
-	else{
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"잡기 실패" 
-														message:@"주변에 상대팀이 없습니다."
-													   delegate:self cancelButtonTitle:@"확인" otherButtonTitles:nil, nil];
-		[alert show];
-		[alert release];
-	}
+-(void) showInfo: (NSTimer *)timer{
+	teamName1.hidden = YES;
+	teamArrow1.hidden = YES;
+	teamName2.hidden = YES;
+	teamArrow2.hidden = YES;
+	ping_enable = FALSE;
 }
--(IBAction) PingOut{	
-	region.center = location;
-	[gameStage setRegion:region animated:YES];
+
+-(void) pingTime: (NSTimer *)timer{
+	pingButton.enabled = YES;	
+}
+
+-(void) DataSet{
+	[[self ping] init:location.latitude:location.longitude:@"A"];
 	
-	NSMutableArray *otherteam_info = [[self core] SearchOtherTeam:location.latitude 
-														   :location.longitude
-														   :@"A"];
-	team1.name = [otherteam_info objectAtIndex:0];
-	teamName1.text = [[self core] TeamNameSet:team1.name
-											 :[otherteam_info objectAtIndex:2]];
-	teamArrow1.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",
-											[otherteam_info objectAtIndex:2]]];
-	team1.radian = [[self core] SetAngle:[otherteam_info objectAtIndex:0]];
-	team1.alive = [[otherteam_info objectAtIndex:4] boolValue];
+	team1.name = [[self ping] SetTeamName:0];
+	team2.name = [[self ping] SetTeamName:1];
 	
-	team2.name = [otherteam_info objectAtIndex:1];
-	teamName2.text = [[self core] TeamNameSet:team2.name
-											 :[otherteam_info objectAtIndex:3]];
-	teamArrow2.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",
-											[otherteam_info objectAtIndex:3]]];
-	team2.radian = [[self core] SetAngle:[otherteam_info objectAtIndex:1]];
-	team2.alive = [[otherteam_info objectAtIndex:5] boolValue];
+	team1.lat = [[self ping] SetLat:0];
+	team1.log = [[self ping] SetLog:0];
+	team2.lat = [[self ping] SetLat:1];
+	team2.log = [[self ping] SetLog:1];
 	
+	team1.dis = [[self ping] SetDistance:team1.lat:team1.log];
+	team2.dis = [[self ping] SetDistance:team2.lat:team2.log];
+
+	team1.radian = [[self ping] SetRadian:team1.lat :team1.log];
+	team2.radian = [[self ping] SetRadian:team2.lat :team2.log];
+	NSLog(@"%f", team1.radian);
 	
-	if(!ping){
+	team1.arrowName = [[self ping] SetArrowImage:team1.dis
+												:0];
+	team2.arrowName = [[self ping] SetArrowImage:team2.dis
+												:0];
+}
+-(void) ImageDataSet{
+
+	
+	teamArrow1.image = [UIImage imageNamed:team1.arrowName];
+	teamArrow2.image = [UIImage imageNamed:team2.arrowName];
+	teamName1.text = [[self ping] SetTeamLabel:team1.name
+											  :team1.arrowName];
+	teamName2.text = [[self ping] SetTeamLabel:team2.name
+											  :team2.arrowName];
+	
+	if(!ping_enable){
 		teamArrow1.transform = CGAffineTransformMakeRotation(team1.radian);
 		teamName1.transform = CGAffineTransformMakeRotation(team1.radian);
 		teamArrow2.transform = CGAffineTransformMakeRotation(team2.radian);
 		teamName2.transform = CGAffineTransformMakeRotation(team2.radian);
 	}
+	
+}
+
+-(void) PingMessageOut{
 	//3초간 상대방의 위치를 보여준다.
 	[NSTimer scheduledTimerWithTimeInterval:6.0
 									 target:self
 								   selector:@selector(showInfo:)
 								   userInfo:nil
 									repeats:NO
-	];
+	 ];
 	//ping버튼은 3초간 coolTime이 존재한다.
 	[NSTimer scheduledTimerWithTimeInterval:8.0
 									 target:self
@@ -190,33 +190,28 @@
 									repeats:NO
 	 ];
 	
-	if(team1.alive){
-		teamName1.hidden = NO;
-		teamArrow1.hidden = NO;
-	}
-	if(team2.alive){
-		teamName2.hidden = NO;
-		teamArrow2.hidden = NO;
-	}
+	teamName1.hidden = NO;
+	teamArrow1.hidden = NO;
+	teamName2.hidden = NO;
+	teamArrow2.hidden = NO;
 	pingButton.enabled = NO;
-	
-
-	
-	ping = TRUE;
-
 }
 
--(void) showInfo: (NSTimer *)timer{
-	teamName1.hidden = YES;
-	teamArrow1.hidden = YES;
-	teamName2.hidden = YES;
-	teamArrow2.hidden = YES;
-	ping = FALSE;
+-(IBAction) PingOut{	
+	region.center = location;
+	[gameStage setRegion:region animated:YES];
+	
+	
+	[self DataSet];
+	[self ImageDataSet];
+	[self PingMessageOut];
 	
 }
--(void) pingTime: (NSTimer *)timer{
-	pingButton.enabled = YES;	
+
+-(IBAction) Catch{
+	
 }
+
 -(IBAction) MenuOut{
 	
 

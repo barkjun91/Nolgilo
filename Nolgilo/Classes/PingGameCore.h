@@ -7,24 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "DBcore.h"
 
 
 @interface PingGameCore : NSObject {
 	NSString * TeamName;
+	NSMutableArray *datalist;
 	double mylat;
 	double mylog;
-	struct otherTeam {
-		NSString * TeamName;
-		double lat;
-		double log;
-		double radian;
-		bool live;
-		bool catchteam;
-	}team1, team2;
+	
+	DBcore *db;
 }
--(NSMutableArray *) SearchOtherTeam:(double)lat:(double)log:(NSString *)name;
--(NSString *) TeamNameSet:(NSString *) teamName :(NSString *) arrowImage;
--(double)SetAngle:(NSString *)teamname;
--(NSString *)CatchCheck;
+
+-(void) init:(double)lat:(double)log:(NSString *)name;
+-(NSString *)SetTeamName:(int)teamnumber;
+-(NSString *)SetArrowImage:(double)dis:(double)set;
+-(double)SetDistance:(double)o_lat:(double)o_log;
+-(double)SetLat:(int)teamnumber;
+-(double)SetLog:(int)teamnumber;
+-(double)SetRadian:(double)o_lat:(double)o_log;
+
+-(NSString *) SetTeamLabel:(NSString *)teamName:(NSString *)arrowImage;
 @end

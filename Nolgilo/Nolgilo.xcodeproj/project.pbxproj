@@ -54,6 +54,7 @@
 		7AD45EEE13778A9100C1548B /* l_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD45EEA13778A9100C1548B /* l_arrow.png */; };
 		7AD45EEF13778A9100C1548B /* m_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD45EEB13778A9100C1548B /* m_arrow.png */; };
 		7AD45EF113778A9100C1548B /* s_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD45EED13778A9100C1548B /* s_arrow.png */; };
+		7AE698591383DE7500193AC2 /* DBcore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE698581383DE7500193AC2 /* DBcore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +139,8 @@
 		7AD45EEA13778A9100C1548B /* l_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = l_arrow.png; path = ../Resource/l_arrow.png; sourceTree = SOURCE_ROOT; };
 		7AD45EEB13778A9100C1548B /* m_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = m_arrow.png; path = ../Resource/m_arrow.png; sourceTree = SOURCE_ROOT; };
 		7AD45EED13778A9100C1548B /* s_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s_arrow.png; path = ../Resource/s_arrow.png; sourceTree = SOURCE_ROOT; };
+		7AE698571383DE7500193AC2 /* DBcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBcore.h; sourceTree = "<group>"; };
+		7AE698581383DE7500193AC2 /* DBcore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBcore.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Nolgilo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Nolgilo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,6 +246,8 @@
 				710794A4134F0A20006A4D36 /* GameStage.m */,
 				715717FD135438B900FC5012 /* PingGameCore.h */,
 				715717FE135438B900FC5012 /* PingGameCore.m */,
+				7AE698571383DE7500193AC2 /* DBcore.h */,
+				7AE698581383DE7500193AC2 /* DBcore.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -468,6 +473,7 @@
 				710794A5134F0A20006A4D36 /* GameStage.m in Sources */,
 				715717FF135438B900FC5012 /* PingGameCore.m in Sources */,
 				7A17D16813839898006D7C33 /* QRcodeViewController.m in Sources */,
+				7AE698591383DE7500193AC2 /* DBcore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
