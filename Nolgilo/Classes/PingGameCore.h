@@ -20,12 +20,11 @@
 }
 
 -(void) init:(double)lat:(double)log:(NSString *)name;
--(NSString *)SetTeamName:(int)teamnumber;
--(NSString *)SetArrowImage:(double)dis:(double)set;
--(double)SetDistance:(double)o_lat:(double)o_log;
--(double)SetLat:(int)teamnumber;
--(double)SetLog:(int)teamnumber;
--(double)SetRadian:(double)o_lat:(double)o_log;
-
--(NSString *) SetTeamLabel:(NSString *)teamName:(NSString *)arrowImage;
+-(NSString *)GetTeamName:(int)teamnumber;
+-(NSString *)GetArrowImage:(double)dis:(double)set;
+-(double)GetDistance:(double)o_lat:(double)o_log;
+-(double)GetLat:(int)teamnumber;
+-(double)GetLog:(int)teamnumber;
+-(double)GetRadian:(double)o_lat:(double)o_log;
+-(NSString *)GetTeamLabel:(NSString *)teamName:(NSString *)arrowImage;
 @end

@@ -39,6 +39,7 @@
 		7A17D12A13839609006D7C33 /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A17D12913839601006D7C33 /* libZXingWidget.a */; };
 		7A17D16813839898006D7C33 /* QRcodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A17D16613839898006D7C33 /* QRcodeViewController.m */; };
 		7A17D16913839898006D7C33 /* QRcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A17D16713839898006D7C33 /* QRcodeViewController.xib */; };
+		7AAAEB8E1384CA9700873682 /* menubg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AAAEB8D1384CA9700873682 /* menubg.png */; };
 		7AB4DBD91303BCBE00DE0AA8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBD81303BCBE00DE0AA8 /* AudioToolbox.framework */; };
 		7AB4DBDB1303BCBE00DE0AA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBDA1303BCBE00DE0AA8 /* CoreLocation.framework */; };
 		7AB4DBDD1303BCBE00DE0AA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBDC1303BCBE00DE0AA8 /* MapKit.framework */; };
@@ -121,6 +122,7 @@
 		7A17D16513839898006D7C33 /* QRcodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRcodeViewController.h; sourceTree = "<group>"; };
 		7A17D16613839898006D7C33 /* QRcodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRcodeViewController.m; sourceTree = "<group>"; };
 		7A17D16713839898006D7C33 /* QRcodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = QRcodeViewController.xib; path = Classes/QRcodeViewController.xib; sourceTree = "<group>"; };
+		7AAAEB8D1384CA9700873682 /* menubg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menubg.png; path = ../Resource/menubg.png; sourceTree = SOURCE_ROOT; };
 		7AB4DBD81303BCBE00DE0AA8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7AB4DBDA1303BCBE00DE0AA8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7AB4DBDC1303BCBE00DE0AA8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -310,6 +312,7 @@
 				71E0E4CB13446D5800AFE39F /* gradientBackground.png */,
 				7182D406134327480047DA4D /* menutitle.png */,
 				714D748B132A09FD00FB57A0 /* Default.png */,
+				7AAAEB8D1384CA9700873682 /* menubg.png */,
 				7171ABAF1328D65B004127CE /* title.jpg */,
 				71079461134F0666006A4D36 /* TeamA.png */,
 				7134675E133B3DBF00DCA096 /* icon2.png */,
@@ -448,6 +451,7 @@
 				7AD45EF113778A9100C1548B /* s_arrow.png in Resources */,
 				7A00600E1379B15500F3CDE4 /* pingable.png in Resources */,
 				7A17D16913839898006D7C33 /* QRcodeViewController.xib in Resources */,
+				7AAAEB8E1384CA9700873682 /* menubg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

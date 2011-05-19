@@ -44,7 +44,7 @@
 	[[GameStage alloc] StageInit:gameStage];
 	
 	ping_enable = FALSE;
-	
+	menu_enable = FALSE;
 	locationManager.delegate = self;
 	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 
@@ -135,34 +135,31 @@
 -(void) DataSet{
 	[[self ping] init:location.latitude:location.longitude:@"A"];
 	
-	team1.name = [[self ping] SetTeamName:0];
-	team2.name = [[self ping] SetTeamName:1];
+	team1.name = [[self ping] GetTeamName:0];
+	team2.name = [[self ping] GetTeamName:1];
 	
-	team1.lat = [[self ping] SetLat:0];
-	team1.log = [[self ping] SetLog:0];
-	team2.lat = [[self ping] SetLat:1];
-	team2.log = [[self ping] SetLog:1];
+	team1.lat = [[self ping] GetLat:0];
+	team1.log = [[self ping] GetLog:0];
+	team2.lat = [[self ping] GetLat:1];
+	team2.log = [[self ping] GetLog:1];
 	
-	team1.dis = [[self ping] SetDistance:team1.lat:team1.log];
-	team2.dis = [[self ping] SetDistance:team2.lat:team2.log];
+	team1.dis = [[self ping] GetDistance:team1.lat:team1.log];
+	team2.dis = [[self ping] GetDistance:team2.lat:team2.log];
 
-	team1.radian = [[self ping] SetRadian:team1.lat :team1.log];
-	team2.radian = [[self ping] SetRadian:team2.lat :team2.log];
-	NSLog(@"%f", team1.radian);
+	team1.radian = [[self ping] GetRadian:team1.lat:team1.log];
+	team2.radian = [[self ping] GetRadian:team2.lat:team2.log];
 	
-	team1.arrowName = [[self ping] SetArrowImage:team1.dis
-												:0];
-	team2.arrowName = [[self ping] SetArrowImage:team2.dis
-												:0];
+	team1.arrowName = [[self ping] GetArrowImage:team1.dis:0];
+	team2.arrowName = [[self ping] GetArrowImage:team2.dis:0];
 }
 -(void) ImageDataSet{
 
 	
 	teamArrow1.image = [UIImage imageNamed:team1.arrowName];
 	teamArrow2.image = [UIImage imageNamed:team2.arrowName];
-	teamName1.text = [[self ping] SetTeamLabel:team1.name
+	teamName1.text = [[self ping] GetTeamLabel:team1.name
 											  :team1.arrowName];
-	teamName2.text = [[self ping] SetTeamLabel:team2.name
+	teamName2.text = [[self ping] GetTeamLabel:team2.name
 											  :team2.arrowName];
 	
 	if(!ping_enable){
@@ -197,6 +194,7 @@
 	pingButton.enabled = NO;
 }
 
+//Ping버튼이 눌렸을때
 -(IBAction) PingOut{	
 	region.center = location;
 	[gameStage setRegion:region animated:YES];
@@ -208,17 +206,24 @@
 	
 }
 
--(IBAction) Catch{
-	
+
+-(void)MenuOpen{
+	menu.frame = CGRectMake(195.0f,312.0f, menu.frame.size.width, menu.frame.size.height);
+	[self.view addSubview:menu];
+	menu_enable = TRUE;
 }
 
--(IBAction) MenuOut{
-	
-
-	
-	
-	
+-(void)MenuClose{
+	[menu removeFromSuperview];
+	menu_enable = FALSE;
 }
-
+-(IBAction) CallMenu{
+	if(!menu_enable){
+		[self MenuOpen];
+	}
+	else{
+		[self MenuClose];
+	}
+}
 
 @end

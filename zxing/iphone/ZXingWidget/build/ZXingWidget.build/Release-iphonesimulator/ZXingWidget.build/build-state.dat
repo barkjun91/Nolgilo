@@ -1,7 +1,7 @@
 TZXingWidget
 v7
 r0
-t327417093.818926
+t327469852.270371
 cCheck dependencies
 cProcessPCH++ /var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZXingWidget_Prefix-gzzecboedjtbsahhbdrzimfjzidr/ZXingWidget_Prefix.pch.gch ZXingWidget_Prefix.pch normal i386 c++ com.apple.compilers.gcc.4_2
 cProcessPCH++ /var/folders/of/ofWCUnjIHhO9DLsbxAuhL++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ZXingWidget_Prefix-cyzerocysclqdqcqaxnlhtbvoedr/ZXingWidget_Prefix.pch.gch ZXingWidget_Prefix.pch normal i386 objective-c++ com.apple.compilers.gcc.4_2
@@ -4545,7 +4545,7 @@ s2515312
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies327417093#327417093#0(0"0(0#1#0"8626271680#0"0#
+lSLF07#2@18"Check dependencies327469852#327469852#0(0"0(0#1#0"8623595872#0"0#
 
 CCompileC build/ZXingWidget.build/Release-iphonesimulator/ZXingWidget.build/Objects-normal/i386/AddContactAction.o /Users/goyange/Desktop/goyange-Nolgilo-fa392d3/zxing/iphone/ZXingWidget/Classes/actions/AddContactAction.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s327390774.874469

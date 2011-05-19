@@ -21,7 +21,7 @@
 //함수명 : SetTeamName
 //리턴값 : NSString : 어떤 팀인지를 확인해 준다.
 //인자값 : (int)teamnumber : 몇번째 팀인지 알려준다.
--(NSString *)SetTeamName:(int)teamnumber
+-(NSString *)GetTeamName:(int)teamnumber
 {
 	NSString *teamname;
 	
@@ -30,7 +30,7 @@
 	return teamname;
 }
 
--(double)SetLat:(int)teamnumber{
+-(double)GetLat:(int)teamnumber{
 	double teamlat;
 	NSArray *location = [[datalist objectAtIndex:teamnumber+2] 
 						 componentsSeparatedByString: @"/"];
@@ -39,7 +39,7 @@
 	return teamlat;
 
 }
--(double)SetLog:(int)teamnumber{
+-(double)GetLog:(int)teamnumber{
 	double teamlog;
 	NSArray *location = [[datalist objectAtIndex:teamnumber+2] 
 						 componentsSeparatedByString: @"/"];
@@ -53,8 +53,8 @@
 //상대방의 거리에 따른 화살표 이미지 정보
 //dis:(double)상대방과 남은 거리, set:(double)맵 크기에 따른 증감값
 
--(NSString *) SetArrowImage:(double)dis
-						   :(double)set{
+-(NSString *)GetArrowImage:(double)dis
+						  :(double)set{
 	NSString *arrowimage;
 	
 	if(dis >(0.06+set)){
@@ -84,7 +84,7 @@
 //상대방과 내 위치를 비교하여 거리를 계산한다. 
 //(double)o_lat : 상대방의 위도, (double) o_log : 상대방의 경도
 
--(double)SetDistance:(double)o_lat
+-(double)GetDistance:(double)o_lat
 					:(double)o_log{
 	double dx = mylat - o_lat;
 	double dy = mylog - o_log;
@@ -99,7 +99,7 @@
 //상대방과 내 위치를 비교하여 각도를 구한다.
 //(double)o_lat : 상대방의 위도, (double) o_log : 상대방의 경도
 
--(double)SetRadian:(double)o_lat
+-(double)GetRadian:(double)o_lat
 				  :(double)o_log{
 
 	double dx = mylat - o_lat;
@@ -117,8 +117,8 @@
 //상대방의 화살표에 맞는 이름을 출력한다.
 //(NSString)name:상대방 팀 네임 / (NSString)arrowname:화살표 이름
 
--(NSString *) SetTeamLabel:(NSString *)teamName
-						  :(NSString *)arrowImage{
+-(NSString *)GetTeamLabel:(NSString *)teamName
+						 :(NSString *)arrowImage{
 	
 	NSString *nameFormat;
 	

@@ -18,7 +18,7 @@
 
 @interface PingGameViewController : UIViewController<MKMapViewDelegate, CLLocationManagerDelegate> {
 	IBOutlet MKMapView *gameStage;
-
+	IBOutlet UIView *message, *menu;
 	IBOutlet UIButton *pingButton, *menuButton;
 	double heading;
 	
@@ -33,7 +33,7 @@
 	IBOutlet UILabel *teamName1, *teamName2;
 	IBOutlet UIImageView *teamArrow1, *teamArrow2;
 
-	bool ping_enable;
+	bool ping_enable, menu_enable;
 	
 	CLLocationManager *locationManager;
 	CLLocationCoordinate2D location;
@@ -49,6 +49,5 @@
 @property (nonatomic, retain) MKMapView *gameStage; 
 
 -(IBAction) PingOut;
--(IBAction) MenuOut;
--(IBAction) Catch;
+-(IBAction) CallMenu;
 @end
