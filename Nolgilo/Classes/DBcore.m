@@ -32,4 +32,16 @@
 	
 }
 
+-(NSString *) SpotData{
+	NSString * sql = [NSString
+					  stringWithFormat:
+					  //순서-이름-좌표-스코어/ 
+					  @"%s", "1-숭실대입구역-37.496325/126.953588-20"];
+	return sql;
+}
+
+-(void) SpotGet{
+	
+}
+
 @end

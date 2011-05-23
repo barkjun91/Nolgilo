@@ -14,6 +14,7 @@
 
 #import "GameStage.h"
 #import "PingGameCore.h"
+#import "SpotCore.h"
 
 
 @interface PingGameViewController : UIViewController<MKMapViewDelegate, CLLocationManagerDelegate> {
@@ -41,7 +42,7 @@
 	MKCoordinateRegion region;
 
 	PingGameCore *ping;
-	
+	SpotCore *spot;
 }
 
 @property (nonatomic, retain) CLLocationManager *locationManager;;
@@ -50,4 +51,5 @@
 
 -(IBAction) PingOut;
 -(IBAction) CallMenu;
+-(IBAction) SpotCatch;
 @end

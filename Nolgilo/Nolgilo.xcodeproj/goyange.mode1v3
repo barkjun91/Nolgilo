@@ -202,24 +202,24 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>7AFC706D1383F4A400480029</string>
+				<string>7A481EDB1389F098004B1D29</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>PingGameViewController.m</string>
+				<string>SpotCore.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>7AFC706E1383F4A400480029</string>
+						<string>7A481EDC1389F098004B1D29</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>PingGameViewController.m</string>
+						<string>SpotCore.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>7A481EA21389E8BF004B1D29</string>
+						<string>7A481EE41389F099004B1D29</string>
 						<key>history</key>
 						<array>
-							<string>7AAAEB941384CB2800873682</string>
+							<string>7A481ECF1389F090004B1D29</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -231,11 +231,11 @@
 			<key>Geometry</key>
 			<dict>
 				<key>Frame</key>
-				<string>{{0, 20}, {1116, 645}}</string>
+				<string>{{0, 20}, {946, 670}}</string>
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>164 60 1116 686 0 0 1280 778 </string>
+				<string>15 62 946 711 0 0 1280 778 </string>
 			</dict>
 		</dict>
 		<dict>
@@ -256,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>7A481EA31389E8BF004B1D29</string>
+						<string>7A481EE51389F099004B1D29</string>
 						<key>history</key>
 						<array>
 							<string>7AAAEB951384CB2800873682</string>
@@ -282,6 +282,46 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
+				<string>7AFC706D1383F4A400480029</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>PingGameViewController.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>7AFC706E1383F4A400480029</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>PingGameViewController.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>7A481EE61389F099004B1D29</string>
+						<key>history</key>
+						<array>
+							<string>7AAAEB941384CB2800873682</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1116, 645}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>164 60 1116 686 0 0 1280 778 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
 				<string>7A2B98001383F45000562730</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>PingGameCore.h</string>
@@ -296,7 +336,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>7A481EA41389E8BF004B1D29</string>
+						<string>7A481EE71389F099004B1D29</string>
 						<key>history</key>
 						<array>
 							<string>7AAAEB961384CB2800873682</string>
@@ -404,12 +444,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>72</integer>
-									<integer>71</integer>
+									<integer>15</integer>
+									<integer>3</integer>
+									<integer>1</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 701}, {275, 659}}</string>
+							<string>{{0, 0}, {275, 659}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -444,7 +486,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PingGameViewController.m</string>
+								<string>SpotCore.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -452,11 +494,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>PingGameViewController.m</string>
+										<string>SpotCore.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7A481E9F1389E8BF004B1D29</string>
+										<string>7A481EE31389F099004B1D29</string>
 										<key>history</key>
 										<array>
 											<string>7ABB90DC131B808C00437FC4</string>
@@ -475,7 +517,6 @@
 											<string>7AC7FF7E1379C0DF004CE211</string>
 											<string>7AC7FF801379C0DF004CE211</string>
 											<string>7AC7FF861379C139004CE211</string>
-											<string>7AC700071379CAAC004CE211</string>
 											<string>7A8B9584137A4AAF00761CB8</string>
 											<string>7A17D03413838A93006D7C33</string>
 											<string>7A17D03513838A93006D7C33</string>
@@ -487,16 +528,19 @@
 											<string>7AFC70AA1383F7BF00480029</string>
 											<string>7AFC70F11383F99000480029</string>
 											<string>7AFC71821383FCC900480029</string>
-											<string>7AFC71831383FCC900480029</string>
-											<string>7AAAEAE11384B6F600873682</string>
-											<string>7AAAEAE21384B6F600873682</string>
 											<string>7AAAEAE31384B6F600873682</string>
 											<string>7AAAEAE41384B6F600873682</string>
 											<string>7AAAEAE51384B6F600873682</string>
 											<string>7AAAEAE71384B6F600873682</string>
-											<string>7AAAEB6E1384C83700873682</string>
-											<string>7AAAEB6F1384C83700873682</string>
-											<string>7AAAEB931384CB2800873682</string>
+											<string>7A481EB71389EE06004B1D29</string>
+											<string>7A481EB81389EE06004B1D29</string>
+											<string>7A481ED31389F098004B1D29</string>
+											<string>7A481ED41389F098004B1D29</string>
+											<string>7A481ED51389F098004B1D29</string>
+											<string>7A481ED61389F098004B1D29</string>
+											<string>7A481ED71389F098004B1D29</string>
+											<string>7A481ED81389F098004B1D29</string>
+											<string>7A481ED91389F098004B1D29</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -694,12 +738,16 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>7A481EE11389F098004B1D29</string>
+		<string>7A481EE21389F098004B1D29</string>
 		<string>7AB4DBD31303BBA100DE0AA8</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>7A2B98001383F45000562730</string>
-		<string>7AFC71051383FA5200480029</string>
 		<string>7AFC706D1383F4A400480029</string>
+		<string>7AFC71051383FA5200480029</string>
 		<string>/Users/goyange/Project/Nolgilo/Nolgilo/Nolgilo.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>7A481EDB1389F098004B1D29</string>
 	</array>
 	<key>WindowString</key>
 	<string>3 60 1277 718 0 0 1280 778 </string>
@@ -740,6 +788,8 @@
 							<string>99pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1071,7 +1121,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>7AAAEAE01384B6E000873682</string>
+				<string>7A481ED21389F098004B1D29</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

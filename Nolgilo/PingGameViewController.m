@@ -33,10 +33,22 @@
 	}
 	return ping;
 }
+-(SpotCore *) spot
+{
+	if(!spot){
+		spot = [[SpotCore alloc] init];
+	}
+	return spot;
+}
+
+- (void)SpotBuilding{
+	
+}
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+	[self SpotBuilding];
+	
 	span.latitudeDelta = 0.002;
 	span.longitudeDelta = 0.002;
 	
@@ -224,6 +236,9 @@
 	else{
 		[self MenuClose];
 	}
+}
+-(IBAction) SpotCatch{
+	
 }
 
 @end
