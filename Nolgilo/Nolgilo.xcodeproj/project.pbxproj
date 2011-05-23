@@ -36,8 +36,6 @@
 		71E0E4CC13446D5800AFE39F /* gradientBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E0E4CB13446D5800AFE39F /* gradientBackground.png */; };
 		71FD080F13445D5F008DB7AB /* TableHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FD080E13445D5F008DB7AB /* TableHandler.m */; };
 		7A00600E1379B15500F3CDE4 /* pingable.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A00600C1379B15500F3CDE4 /* pingable.png */; };
-		7A17D12A13839609006D7C33 /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A17D12913839601006D7C33 /* libZXingWidget.a */; };
-		7A17D16813839898006D7C33 /* QRcodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A17D16613839898006D7C33 /* QRcodeViewController.m */; };
 		7A17D16913839898006D7C33 /* QRcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A17D16713839898006D7C33 /* QRcodeViewController.xib */; };
 		7AAAEB8E1384CA9700873682 /* menubg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AAAEB8D1384CA9700873682 /* menubg.png */; };
 		7AB4DBD91303BCBE00DE0AA8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBD81303BCBE00DE0AA8 /* AudioToolbox.framework */; };
@@ -57,23 +55,6 @@
 		7AD45EF113778A9100C1548B /* s_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD45EED13778A9100C1548B /* s_arrow.png */; };
 		7AE698591383DE7500193AC2 /* DBcore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE698581383DE7500193AC2 /* DBcore.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7A17D12813839601006D7C33 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7A17D12113839601006D7C33 /* ZXingWidget.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = ZXingWidget;
-		};
-		7A17D12B13839628006D7C33 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7A17D12113839601006D7C33 /* ZXingWidget.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = ZXingWidget;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,9 +99,6 @@
 		71FD080D13445D5F008DB7AB /* TableHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableHandler.h; sourceTree = "<group>"; };
 		71FD080E13445D5F008DB7AB /* TableHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableHandler.m; sourceTree = "<group>"; };
 		7A00600C1379B15500F3CDE4 /* pingable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pingable.png; path = ../Resource/pingable.png; sourceTree = SOURCE_ROOT; };
-		7A17D12113839601006D7C33 /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = ../zxing/iphone/ZXingWidget/ZXingWidget.xcodeproj; sourceTree = SOURCE_ROOT; };
-		7A17D16513839898006D7C33 /* QRcodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRcodeViewController.h; sourceTree = "<group>"; };
-		7A17D16613839898006D7C33 /* QRcodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRcodeViewController.m; sourceTree = "<group>"; };
 		7A17D16713839898006D7C33 /* QRcodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = QRcodeViewController.xib; path = Classes/QRcodeViewController.xib; sourceTree = "<group>"; };
 		7AAAEB8D1384CA9700873682 /* menubg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menubg.png; path = ../Resource/menubg.png; sourceTree = SOURCE_ROOT; };
 		7AB4DBD81303BCBE00DE0AA8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -157,7 +135,6 @@
 				7AB4DBD91303BCBE00DE0AA8 /* AudioToolbox.framework in Frameworks */,
 				7AB4DBDB1303BCBE00DE0AA8 /* CoreLocation.framework in Frameworks */,
 				7AB4DBDD1303BCBE00DE0AA8 /* MapKit.framework in Frameworks */,
-				7A17D12A13839609006D7C33 /* libZXingWidget.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,19 +308,8 @@
 		7A17D01813838A0F006D7C33 /* QrCodeReader */ = {
 			isa = PBXGroup;
 			children = (
-				7A17D12113839601006D7C33 /* ZXingWidget.xcodeproj */,
-				7A17D16513839898006D7C33 /* QRcodeViewController.h */,
-				7A17D16613839898006D7C33 /* QRcodeViewController.m */,
 			);
 			name = QrCodeReader;
-			sourceTree = "<group>";
-		};
-		7A17D12213839601006D7C33 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7A17D12913839601006D7C33 /* libZXingWidget.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		7AD45EE213778A6D00C1548B /* arrow */ = {
@@ -373,7 +339,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				7A17D12C13839628006D7C33 /* PBXTargetDependency */,
 			);
 			name = Nolgilo;
 			productName = Nolgilo;
@@ -398,28 +363,12 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 7A17D12213839601006D7C33 /* Products */;
-					ProjectRef = 7A17D12113839601006D7C33 /* ZXingWidget.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Nolgilo */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		7A17D12913839601006D7C33 /* libZXingWidget.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libZXingWidget.a;
-			remoteRef = 7A17D12813839601006D7C33 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -476,20 +425,11 @@
 				7107944F134F050B006A4D36 /* PingGameViewController.m in Sources */,
 				710794A5134F0A20006A4D36 /* GameStage.m in Sources */,
 				715717FF135438B900FC5012 /* PingGameCore.m in Sources */,
-				7A17D16813839898006D7C33 /* QRcodeViewController.m in Sources */,
 				7AE698591383DE7500193AC2 /* DBcore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7A17D12C13839628006D7C33 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ZXingWidget;
-			targetProxy = 7A17D12B13839628006D7C33 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		71A125191328E47A00C1BC87 /* InfoPlist.strings */ = {
