@@ -162,8 +162,8 @@
 	mylog = log;
 	
 	
-	[[self db] DataBaseConnect:team]; //DB를 연결시킨다.
-	NSString *coredata = [[self db] OtherTeamData]; //다른팀의 정보를 가지고 온다.
+	 //DB를 연결시킨다.
+	NSString *coredata = [[self db] DataBaseConnect:team]; //다른팀의 정보를 가지고 온다.
 	
     [self DataSetting:coredata]; //가져온 정보를 정제한다.
 }

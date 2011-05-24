@@ -11,11 +11,17 @@
 
 @implementation DBcore
 
--(void) DataBaseConnect:(NSString *)conteam{
-	
-}
 
--(NSString *) OtherTeamData{
+
+-(NSString *) OtherTeamData:(NSString *)team1
+						   :(NSString *)team2{
+	
+	NSURL *team1_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%s",team1]];
+	NSURL *team2_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%s",team2]];
+
+	t1_response = [NSString stringWithContentsOfURL:team1_url encoding:NSUTF8StringEncoding error:NULL];
+	NSLog(@"response %@", response);
+	
 	NSString * sql = [NSString
 					  stringWithFormat:
 					  @"%s:%s:%s:%s:%s:%s","B","C","37.550413/126.921336","37.549533/126.918680","1","1"];
@@ -29,6 +35,26 @@
 	//마니산 : 37.611602/126.434827
 	
 	return sql;
+	
+}
+
+-(NSString *) DataBaseConnect:(NSString *)conteam{
+	NSString * datalist;
+	
+	if([conteam isEqualToString: @"A"])
+	{
+		datalist = [self OtherTeamData:@"B":@"C"];
+	}
+	else if([conteam isEqualToString: @"B"])
+	{
+		datalist = [self OtherTeamData:@"A":@"C"];
+	}
+	else
+	{
+		datalist = [self OtherTeamData:@"A":@"B"];
+	}
+	
+	return datalist;
 	
 }
 

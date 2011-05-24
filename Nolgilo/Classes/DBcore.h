@@ -10,10 +10,10 @@
 
 
 @interface DBcore : NSObject {
-
+	NSString *response;
 }
 
 
--(void) DataBaseConnect:(NSString *)conteam;
--(NSString *) OtherTeamData;
+-(NSString *) DataBaseConnect:(NSString *)conteam;
+
 @end

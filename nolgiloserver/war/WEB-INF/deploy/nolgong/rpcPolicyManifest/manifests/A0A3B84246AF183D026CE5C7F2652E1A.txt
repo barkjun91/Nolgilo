@@ -1,0 +1,2 @@
+serviceClass: com.nolgong.client.GreetingService
+path: 902738B9277762C8B171AF6474249F1F.gwt.rpc

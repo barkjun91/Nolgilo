@@ -13,5 +13,4 @@
 @interface SpotCore : NSObject {
 	NSMutableArray *datalist;
 }
-
 @end
