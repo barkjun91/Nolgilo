@@ -11,17 +11,28 @@
 #import <MapKit/MKAnnotation.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MKMapView.h>
+#import <ZXingWidgetController.h>
 
 #import "GameStage.h"
 #import "PingGameCore.h"
 #import "SpotCore.h"
 
 
-@interface PingGameViewController : UIViewController<MKMapViewDelegate, CLLocationManagerDelegate> {
+@interface PingGameViewController : UIViewController<ZXingDelegate, MKMapViewDelegate, CLLocationManagerDelegate> {
 	IBOutlet MKMapView *gameStage;
-	IBOutlet UIView *message, *menu;
+	IBOutlet UIView *message, *menu, *qrcode;
 	IBOutlet UIButton *pingButton, *menuButton;
+	NSString * scanResults;
+	
 	double heading;
+	
+	struct infolist{
+		NSString* teamid;
+		NSString* userid;
+		NSString* qrimage;
+		long score;
+		int spotnum;
+	}info;
 	
 	struct other {
 		NSString* name;
@@ -34,6 +45,8 @@
 	IBOutlet UILabel *teamName1, *teamName2;
 	IBOutlet UIImageView *teamArrow1, *teamArrow2;
 
+	IBOutlet UIImageView *qrcodeimage;
+	
 	bool ping_enable, menu_enable;
 	
 	CLLocationManager *locationManager;
@@ -52,4 +65,7 @@
 -(IBAction) PingOut;
 -(IBAction) CallMenu;
 -(IBAction) SpotCatch;
+-(IBAction) TeamCatch;
+-(IBAction) QRCodeButton;
+-(IBAction) QRCodeCancel;
 @end

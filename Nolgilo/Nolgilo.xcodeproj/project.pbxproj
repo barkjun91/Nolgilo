@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* NolgiloAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NolgiloAppDelegate.m */; };
-		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589B0D05DD56006BFB54 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.mm */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		2899E5220DE3E06400AC0155 /* NolgiloViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* NolgiloViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* NolgiloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* NolgiloViewController.m */; };
-		7107944F134F050B006A4D36 /* PingGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7107944D134F050B006A4D36 /* PingGameViewController.m */; };
+		7107944F134F050B006A4D36 /* PingGameViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */; };
 		71079450134F050B006A4D36 /* PingGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7107944E134F050B006A4D36 /* PingGameViewController.xib */; };
 		71079462134F0666006A4D36 /* TeamA.png in Resources */ = {isa = PBXBuildFile; fileRef = 71079461134F0666006A4D36 /* TeamA.png */; };
 		710794A5134F0A20006A4D36 /* GameStage.m in Sources */ = {isa = PBXBuildFile; fileRef = 710794A4134F0A20006A4D36 /* GameStage.m */; };
@@ -38,6 +38,11 @@
 		7A00600E1379B15500F3CDE4 /* pingable.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A00600C1379B15500F3CDE4 /* pingable.png */; };
 		7A17D16913839898006D7C33 /* QRcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A17D16713839898006D7C33 /* QRcodeViewController.xib */; };
 		7A481EAD1389E948004B1D29 /* SpotCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A481EAC1389E948004B1D29 /* SpotCore.m */; };
+		7A5E6B35138F420B00F4CC11 /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5E6A8D138F3D6E00F4CC11 /* libZXingWidget.a */; };
+		7A5E6B59138F443300F4CC11 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5E6B58138F443300F4CC11 /* libiconv.dylib */; };
+		7A5E6C2E138F68E700F4CC11 /* pingteamA.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5E6C2B138F68E700F4CC11 /* pingteamA.png */; };
+		7A5E6C2F138F68E700F4CC11 /* pingteamB.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5E6C2C138F68E700F4CC11 /* pingteamB.png */; };
+		7A5E6C30138F68E700F4CC11 /* pingteamC.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5E6C2D138F68E700F4CC11 /* pingteamC.png */; };
 		7AAAEB8E1384CA9700873682 /* menubg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AAAEB8D1384CA9700873682 /* menubg.png */; };
 		7AB4DBD91303BCBE00DE0AA8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBD81303BCBE00DE0AA8 /* AudioToolbox.framework */; };
 		7AB4DBDB1303BCBE00DE0AA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBDA1303BCBE00DE0AA8 /* CoreLocation.framework */; };
@@ -57,6 +62,23 @@
 		7AE698591383DE7500193AC2 /* DBcore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE698581383DE7500193AC2 /* DBcore.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7A5E6A8C138F3D6E00F4CC11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A5E6A85138F3D6E00F4CC11 /* ZXingWidget.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libZXingWidget.a */;
+			remoteInfo = ZXingWidget;
+		};
+		7A5E6B3B138F422500F4CC11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A5E6A85138F3D6E00F4CC11 /* ZXingWidget.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D /* ZXingWidget */;
+			remoteInfo = ZXingWidget;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* NolgiloAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NolgiloAppDelegate.h; sourceTree = "<group>"; };
@@ -68,10 +90,10 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28D7ACF60DDB3853001CB0EB /* NolgiloViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NolgiloViewController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* NolgiloViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NolgiloViewController.m; sourceTree = "<group>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Nolgilo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nolgilo_Prefix.pch; sourceTree = "<group>"; };
 		7107944C134F050B006A4D36 /* PingGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PingGameViewController.h; path = ../PingGameViewController.h; sourceTree = "<group>"; };
-		7107944D134F050B006A4D36 /* PingGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PingGameViewController.m; path = ../PingGameViewController.m; sourceTree = "<group>"; };
+		7107944D134F050B006A4D36 /* PingGameViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PingGameViewController.mm; path = ../PingGameViewController.mm; sourceTree = "<group>"; };
 		7107944E134F050B006A4D36 /* PingGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PingGameViewController.xib; sourceTree = "<group>"; };
 		71079461134F0666006A4D36 /* TeamA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TeamA.png; path = ../Resource/TeamA.png; sourceTree = SOURCE_ROOT; };
 		710794A3134F0A20006A4D36 /* GameStage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStage.h; sourceTree = "<group>"; };
@@ -103,6 +125,11 @@
 		7A17D16713839898006D7C33 /* QRcodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = QRcodeViewController.xib; path = Classes/QRcodeViewController.xib; sourceTree = "<group>"; };
 		7A481EAB1389E948004B1D29 /* SpotCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotCore.h; sourceTree = "<group>"; };
 		7A481EAC1389E948004B1D29 /* SpotCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotCore.m; sourceTree = "<group>"; };
+		7A5E6A85138F3D6E00F4CC11 /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = ../zxing/iphone/ZXingWidget/ZXingWidget.xcodeproj; sourceTree = SOURCE_ROOT; };
+		7A5E6B58138F443300F4CC11 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		7A5E6C2B138F68E700F4CC11 /* pingteamA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pingteamA.png; path = ../Resource/pingteamA.png; sourceTree = SOURCE_ROOT; };
+		7A5E6C2C138F68E700F4CC11 /* pingteamB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pingteamB.png; path = ../Resource/pingteamB.png; sourceTree = SOURCE_ROOT; };
+		7A5E6C2D138F68E700F4CC11 /* pingteamC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pingteamC.png; path = ../Resource/pingteamC.png; sourceTree = SOURCE_ROOT; };
 		7AAAEB8D1384CA9700873682 /* menubg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menubg.png; path = ../Resource/menubg.png; sourceTree = SOURCE_ROOT; };
 		7AB4DBD81303BCBE00DE0AA8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7AB4DBDA1303BCBE00DE0AA8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -138,6 +165,8 @@
 				7AB4DBD91303BCBE00DE0AA8 /* AudioToolbox.framework in Frameworks */,
 				7AB4DBDB1303BCBE00DE0AA8 /* CoreLocation.framework in Frameworks */,
 				7AB4DBDD1303BCBE00DE0AA8 /* MapKit.framework in Frameworks */,
+				7A5E6B35138F420B00F4CC11 /* libZXingWidget.a in Frameworks */,
+				7A5E6B59138F443300F4CC11 /* libiconv.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				32CA4F630368D1EE00C91783 /* Nolgilo_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
+				29B97316FDCFA39411CA2CEA /* main.mm */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -207,6 +236,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A5E6B58138F443300F4CC11 /* libiconv.dylib */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
@@ -242,7 +272,7 @@
 				7ABB8FE1131B730D00437FC4 /* MapViewController.h */,
 				7ABB8FE2131B730D00437FC4 /* MapViewController.m */,
 				7107944C134F050B006A4D36 /* PingGameViewController.h */,
-				7107944D134F050B006A4D36 /* PingGameViewController.m */,
+				7107944D134F050B006A4D36 /* PingGameViewController.mm */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -288,6 +318,7 @@
 		714D747B132A098400FB57A0 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				7A5E6C29138F68C300F4CC11 /* QrCode */,
 				7A00600A1379B14900F3CDE4 /* button */,
 				7AD45EE213778A6D00C1548B /* arrow */,
 				7AC4155C1373F82300C37DF3 /* w_tile.png */,
@@ -313,8 +344,27 @@
 		7A17D01813838A0F006D7C33 /* QrCodeReader */ = {
 			isa = PBXGroup;
 			children = (
+				7A5E6A85138F3D6E00F4CC11 /* ZXingWidget.xcodeproj */,
 			);
 			name = QrCodeReader;
+			sourceTree = "<group>";
+		};
+		7A5E6A86138F3D6E00F4CC11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A5E6A8D138F3D6E00F4CC11 /* libZXingWidget.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A5E6C29138F68C300F4CC11 /* QrCode */ = {
+			isa = PBXGroup;
+			children = (
+				7A5E6C2B138F68E700F4CC11 /* pingteamA.png */,
+				7A5E6C2C138F68E700F4CC11 /* pingteamB.png */,
+				7A5E6C2D138F68E700F4CC11 /* pingteamC.png */,
+			);
+			name = QrCode;
 			sourceTree = "<group>";
 		};
 		7AD45EE213778A6D00C1548B /* arrow */ = {
@@ -344,6 +394,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7A5E6B3C138F422500F4CC11 /* PBXTargetDependency */,
 			);
 			name = Nolgilo;
 			productName = Nolgilo;
@@ -368,12 +419,28 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7A5E6A86138F3D6E00F4CC11 /* Products */;
+					ProjectRef = 7A5E6A85138F3D6E00F4CC11 /* ZXingWidget.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Nolgilo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7A5E6A8D138F3D6E00F4CC11 /* libZXingWidget.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libZXingWidget.a;
+			remoteRef = 7A5E6A8C138F3D6E00F4CC11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -406,6 +473,9 @@
 				7A00600E1379B15500F3CDE4 /* pingable.png in Resources */,
 				7A17D16913839898006D7C33 /* QRcodeViewController.xib in Resources */,
 				7AAAEB8E1384CA9700873682 /* menubg.png in Resources */,
+				7A5E6C2E138F68E700F4CC11 /* pingteamA.png in Resources */,
+				7A5E6C2F138F68E700F4CC11 /* pingteamB.png in Resources */,
+				7A5E6C30138F68E700F4CC11 /* pingteamC.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D60589B0D05DD56006BFB54 /* main.mm in Sources */,
 				1D3623260D0F684500981E51 /* NolgiloAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* NolgiloViewController.m in Sources */,
 				7ABB8FD2131B706D00437FC4 /* LoadingViewController.m in Sources */,
@@ -427,7 +497,7 @@
 				711BDBB01341D4B5007A6B3D /* GameInfoViewController.m in Sources */,
 				711BDBC81341D521007A6B3D /* RootGameListViewController.m in Sources */,
 				71FD080F13445D5F008DB7AB /* TableHandler.m in Sources */,
-				7107944F134F050B006A4D36 /* PingGameViewController.m in Sources */,
+				7107944F134F050B006A4D36 /* PingGameViewController.mm in Sources */,
 				710794A5134F0A20006A4D36 /* GameStage.m in Sources */,
 				715717FF135438B900FC5012 /* PingGameCore.m in Sources */,
 				7AE698591383DE7500193AC2 /* DBcore.m in Sources */,
@@ -436,6 +506,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A5E6B3C138F422500F4CC11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZXingWidget;
+			targetProxy = 7A5E6B3B138F422500F4CC11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		71A125191328E47A00C1BC87 /* InfoPlist.strings */ = {

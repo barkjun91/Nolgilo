@@ -39,6 +39,7 @@
 //	[self.view addSubview:mapViewController.view];
 //	[self.view addSubview:gameListViewController.view];
 	[self.view addSubview:pingGameViewController.view];
+	[loadingViewController.view removeFromSuperview];
 	
 	[UIView commitAnimations];
 

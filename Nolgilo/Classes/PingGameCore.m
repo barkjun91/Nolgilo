@@ -168,6 +168,7 @@
     [self DataSetting:coredata]; //가져온 정보를 정제한다.
 }
 
+
 @end
 
 

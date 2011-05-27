@@ -19,7 +19,6 @@
 	NSURL *team1_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%s",team1]];
 	NSURL *team2_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%s",team2]];
 
-	t1_response = [NSString stringWithContentsOfURL:team1_url encoding:NSUTF8StringEncoding error:NULL];
 	NSLog(@"response %@", response);
 	
 	NSString * sql = [NSString
