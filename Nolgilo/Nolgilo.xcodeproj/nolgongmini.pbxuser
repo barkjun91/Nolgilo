@@ -251,6 +251,9 @@
 			71B837871390C387002E5BAF /* PBXTextBookmark */ = 71B837871390C387002E5BAF /* PBXTextBookmark */;
 			71B8378A1390C4C9002E5BAF /* PBXTextBookmark */ = 71B8378A1390C4C9002E5BAF /* PBXTextBookmark */;
 			71B8378B1390C4C9002E5BAF /* PBXTextBookmark */ = 71B8378B1390C4C9002E5BAF /* PBXTextBookmark */;
+			71B8378E1390CA12002E5BAF /* PBXTextBookmark */ = 71B8378E1390CA12002E5BAF /* PBXTextBookmark */;
+			71B8378F1390CB91002E5BAF /* PBXTextBookmark */ = 71B8378F1390CB91002E5BAF /* PBXTextBookmark */;
+			71B837901390CB91002E5BAF /* PBXTextBookmark */ = 71B837901390CB91002E5BAF /* PBXTextBookmark */;
 			71DC0E7A136FDFE1002E5657 = 71DC0E7A136FDFE1002E5657 /* PBXTextBookmark */;
 			71DC0E80136FE67F002E5657 = 71DC0E80136FE67F002E5657 /* PBXTextBookmark */;
 			71DC0E8C136FE6D1002E5657 = 71DC0E8C136FE6D1002E5657 /* PBXTextBookmark */;
@@ -508,9 +511,9 @@
 	};
 	7107944D134F050B006A4D36 /* PingGameViewController.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {880, 4787}}";
-			sepNavSelRange = "{8303, 0}";
-			sepNavVisRange = "{7150, 1427}";
+			sepNavIntBoundsRect = "{{0, 0}, {880, 4826}}";
+			sepNavSelRange = "{7439, 0}";
+			sepNavVisRange = "{7053, 1344}";
 			sepNavWindowFrame = "{{0, 9}, {721, 993}}";
 		};
 	};
@@ -1176,7 +1179,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 297";
 		rLen = 0;
-		rLoc = 8529;
+		rLoc = 8530;
 		rType = 0;
 		vrLen = 1213;
 		vrLoc = 6082;
@@ -1244,7 +1247,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1174, 3343}}";
 			sepNavSelRange = "{4856, 0}";
-			sepNavVisRange = "{4147, 838}";
+			sepNavVisRange = "{4147, 873}";
 		};
 	};
 	71B836F31390ACB0002E5BAF /* XCBuildMessageTextBookmark */ = {
@@ -1330,7 +1333,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 290";
 		rLen = 0;
-		rLoc = 8345;
+		rLoc = 8346;
 		rType = 0;
 		vrLen = 1275;
 		vrLoc = 6082;
@@ -1360,7 +1363,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 291";
 		rLen = 0;
-		rLoc = 8306;
+		rLoc = 8307;
 		rType = 0;
 		vrLen = 1357;
 		vrLoc = 6082;
@@ -1370,7 +1373,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 294";
 		rLen = 0;
-		rLoc = 8341;
+		rLoc = 8342;
 		rType = 0;
 		vrLen = 1357;
 		vrLoc = 6082;
@@ -1380,7 +1383,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 286";
 		rLen = 0;
-		rLoc = 7721;
+		rLoc = 7722;
 		rType = 0;
 		vrLen = 1275;
 		vrLoc = 6198;
@@ -1390,7 +1393,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 306";
 		rLen = 0;
-		rLoc = 7721;
+		rLoc = 7722;
 		rType = 0;
 		vrLen = 1453;
 		vrLoc = 6277;
@@ -1400,7 +1403,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 306";
 		rLen = 0;
-		rLoc = 7721;
+		rLoc = 7722;
 		rType = 0;
 		vrLen = 1453;
 		vrLoc = 6277;
@@ -1410,7 +1413,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 306";
 		rLen = 0;
-		rLoc = 7720;
+		rLoc = 7721;
 		rType = 0;
 		vrLen = 1480;
 		vrLoc = 6277;
@@ -1430,7 +1433,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 320";
 		rLen = 0;
-		rLoc = 8341;
+		rLoc = 8342;
 		rType = 0;
 		vrLen = 1284;
 		vrLoc = 6740;
@@ -1440,7 +1443,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 320";
 		rLen = 0;
-		rLoc = 8318;
+		rLoc = 8319;
 		rType = 0;
 		vrLen = 1299;
 		vrLoc = 6740;
@@ -1450,7 +1453,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 320";
 		rLen = 0;
-		rLoc = 8318;
+		rLoc = 8319;
 		rType = 0;
 		vrLen = 1296;
 		vrLoc = 6740;
@@ -1470,7 +1473,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 320";
 		rLen = 0;
-		rLoc = 8318;
+		rLoc = 8319;
 		rType = 0;
 		vrLen = 1297;
 		vrLoc = 6740;
@@ -1480,7 +1483,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 307";
 		rLen = 0;
-		rLoc = 7689;
+		rLoc = 7690;
 		rType = 0;
 		vrLen = 1298;
 		vrLoc = 6740;
@@ -1530,7 +1533,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 305";
 		rLen = 0;
-		rLoc = 7689;
+		rLoc = 7690;
 		rType = 0;
 		vrLen = 1280;
 		vrLoc = 6741;
@@ -1540,7 +1543,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 308";
 		rLen = 0;
-		rLoc = 7689;
+		rLoc = 7690;
 		rType = 0;
 		vrLen = 1375;
 		vrLoc = 6767;
@@ -1550,7 +1553,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 302";
 		rLen = 0;
-		rLoc = 7343;
+		rLoc = 7344;
 		rType = 0;
 		vrLen = 1295;
 		vrLoc = 6767;
@@ -1560,7 +1563,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 314";
 		rLen = 0;
-		rLoc = 7720;
+		rLoc = 7721;
 		rType = 0;
 		vrLen = 1293;
 		vrLoc = 6767;
@@ -1570,7 +1573,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 314";
 		rLen = 0;
-		rLoc = 7689;
+		rLoc = 7690;
 		rType = 0;
 		vrLen = 1294;
 		vrLoc = 6767;
@@ -1580,7 +1583,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 303";
 		rLen = 0;
-		rLoc = 7341;
+		rLoc = 7342;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 6767;
@@ -1590,7 +1593,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 314";
 		rLen = 0;
-		rLoc = 7689;
+		rLoc = 7690;
 		rType = 0;
 		vrLen = 1295;
 		vrLoc = 6767;
@@ -1600,7 +1603,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 314";
 		rLen = 0;
-		rLoc = 7689;
+		rLoc = 7690;
 		rType = 0;
 		vrLen = 1296;
 		vrLoc = 6767;
@@ -1610,7 +1613,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 314";
 		rLen = 0;
-		rLoc = 7689;
+		rLoc = 7690;
 		rType = 0;
 		vrLen = 1295;
 		vrLoc = 6767;
@@ -1620,7 +1623,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 314";
 		rLen = 0;
-		rLoc = 7689;
+		rLoc = 7690;
 		rType = 0;
 		vrLen = 1268;
 		vrLoc = 6767;
@@ -1640,7 +1643,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 314";
 		rLen = 0;
-		rLoc = 7689;
+		rLoc = 7690;
 		rType = 0;
 		vrLen = 1233;
 		vrLoc = 6801;
@@ -1650,7 +1653,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 308";
 		rLen = 0;
-		rLoc = 7689;
+		rLoc = 7690;
 		rType = 0;
 		vrLen = 1364;
 		vrLoc = 6801;
@@ -1660,7 +1663,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 308";
 		rLen = 0;
-		rLoc = 7427;
+		rLoc = 7428;
 		rType = 0;
 		vrLen = 1148;
 		vrLoc = 7225;
@@ -1674,7 +1677,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 339";
 		rLen = 0;
-		rLoc = 8291;
+		rLoc = 8292;
 		rType = 0;
 		vrLen = 1322;
 		vrLoc = 7274;
@@ -1694,7 +1697,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 308";
 		rLen = 0;
-		rLoc = 7476;
+		rLoc = 7477;
 		rType = 0;
 		vrLen = 1312;
 		vrLoc = 7274;
@@ -1714,7 +1717,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 339";
 		rLen = 0;
-		rLoc = 8303;
+		rLoc = 8304;
 		rType = 0;
 		vrLen = 1312;
 		vrLoc = 7274;
@@ -1734,7 +1737,7 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 308";
 		rLen = 0;
-		rLoc = 7388;
+		rLoc = 7389;
 		rType = 0;
 		vrLen = 1406;
 		vrLoc = 7150;
@@ -1754,12 +1757,42 @@
 		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
 		name = "PingGameViewController.mm: 339";
 		rLen = 0;
-		rLoc = 8303;
+		rLoc = 8304;
 		rType = 0;
 		vrLen = 1427;
 		vrLoc = 7150;
 	};
 	71B8378B1390C4C9002E5BAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 715717FE135438B900FC5012 /* PingGameCore.m */;
+		name = "PingGameCore.m: 73";
+		rLen = 0;
+		rLoc = 1469;
+		rType = 0;
+		vrLen = 1577;
+		vrLoc = 2027;
+	};
+	71B8378E1390CA12002E5BAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 71B836EC1390AC37002E5BAF /* OverlayView.m */;
+		name = "OverlayView.m: 154";
+		rLen = 0;
+		rLoc = 4856;
+		rType = 0;
+		vrLen = 873;
+		vrLoc = 4147;
+	};
+	71B8378F1390CB91002E5BAF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */;
+		name = "PingGameViewController.mm: 309";
+		rLen = 0;
+		rLoc = 7439;
+		rType = 0;
+		vrLen = 1344;
+		vrLoc = 7053;
+	};
+	71B837901390CB91002E5BAF /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 715717FE135438B900FC5012 /* PingGameCore.m */;
 		name = "PingGameCore.m: 73";

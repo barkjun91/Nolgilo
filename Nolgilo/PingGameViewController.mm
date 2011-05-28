@@ -299,6 +299,7 @@
 	
 }
 
+
 -(void) OnTimer:(NSTimer *)timer
 {
 	[self fadeView:message:FALSE];

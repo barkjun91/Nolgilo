@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>71B8378B1390C4C9002E5BAF</string>
+						<string>71B837901390CB91002E5BAF</string>
 						<key>history</key>
 						<array>
 							<string>71B8376C1390C10B002E5BAF</string>
@@ -396,7 +396,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>71B8378A1390C4C9002E5BAF</string>
+										<string>71B8378F1390CB91002E5BAF</string>
 										<key>history</key>
 										<array>
 											<string>71A125251328E4DA00C1BC87</string>
@@ -637,10 +637,10 @@
 	<array>
 		<string>71B836E01390A863002E5BAF</string>
 		<string>71B836E11390A863002E5BAF</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>71C5F09A131DFC0900F2BC31</string>
 		<string>71B837741390C1C6002E5BAF</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/nolgongmini/Project/Nolgilo/Nolgilo/Nolgilo.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -1025,7 +1025,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
