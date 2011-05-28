@@ -20,7 +20,7 @@
 
 @interface PingGameViewController : UIViewController<ZXingDelegate, MKMapViewDelegate, CLLocationManagerDelegate> {
 	IBOutlet MKMapView *gameStage;
-	IBOutlet UIView *message, *menu, *qrcode;
+	IBOutlet UIView *menu, *qrcode;
 	IBOutlet UIButton *pingButton, *menuButton;
 	NSString * scanResults;
 	
@@ -45,7 +45,7 @@
 	IBOutlet UILabel *teamName1, *teamName2;
 	IBOutlet UIImageView *teamArrow1, *teamArrow2;
 
-	IBOutlet UIImageView *qrcodeimage;
+	IBOutlet UIImageView *qrcodeimage, *message;
 	
 	bool ping_enable, menu_enable;
 	

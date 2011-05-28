@@ -250,6 +250,7 @@
 	[menu removeFromSuperview];
 	menu_enable = FALSE;
 }
+
 -(IBAction) CallMenu{
 	if(!menu_enable){
 		[self MenuOpen];
@@ -265,7 +266,7 @@
 	[self MenuClose];
 	ZXingWidgetController *widController = [[ZXingWidgetController alloc] initWithDelegate:self showCancel:YES OneDMode:NO];
 	QRCodeReader* qrcodeReader = [[QRCodeReader alloc] init];
-	NSSet *readers = [[NSSet alloc ] initWithObjects:qrcodeReader,nil];
+	NSSet *readers = [[NSSet alloc] initWithObjects:qrcodeReader,nil];
 	[qrcodeReader release];
 	widController.readers = readers;
 	[readers release];
@@ -280,6 +281,53 @@
 	[qrcode removeFromSuperview];
 }
 
+-(void)fadeView:(UIView *) v: (BOOL) appare{
+	if(appare){
+		v.alpha = 0;
+		[UIView beginAnimations:nil context:nil];
+		[UIView setAnimationDuration:0.5];
+		[UIView setAnimationDelegate:self];
+		v.alpha = 1;
+		[UIView commitAnimations];
+	}else {
+		[UIView beginAnimations:nil context:nil];
+		[UIView setAnimationDuration:0.5];
+		[UIView setAnimationDelegate:self];
+		v.alpha = 0;
+		[UIView commitAnimations];
+	}
+	
+}
+
+-(void) OnTimer:(NSTimer *)timer
+{
+	[self fadeView:message:FALSE];
+}
+
+-(void) SetMessage:(NSString *)imagename{
+	message.image  = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", imagename]];
+	[NSTimer scheduledTimerWithTimeInterval:5.0
+									 target:self
+								   selector:@selector(OnTimer:)
+								   userInfo:nil
+									repeats:NO
+	 ];
+	[self fadeView:message:TRUE];
+}
+
+- (void) wrongQRCode{
+	[self SetMessage:@"wrongQR"];
+}
+
+-(void) CatchingTeam:(NSString *)teamname{
+	if([teamname isEqualToString:info.teamid]){
+		[self wrongQRCode];
+	}
+	else{
+		[self SetMessage:[NSString stringWithFormat:@"catching%@", teamname]];
+	}
+}
+
 #pragma mark -
 #pragma mark ZXingDelegateMethods
 
@@ -287,14 +335,19 @@
 	[[UIApplication sharedApplication] setStatusBarHidden:YES];
 	scanResults = result;
 	if (self.isViewLoaded) {
-		
+		if([[scanResults substringToIndex:8] isEqualToString:@"PingGame"]){
+			[self CatchingTeam:[scanResults substringFromIndex:14]];
+		}
+		else{
+			[self wrongQRCode];
+		}
 	}
-	[self dismissModalViewControllerAnimated:YES];
+	[self dismissModalViewControllerAnimated:NO];
 }
 
 - (void)zxingControllerDidCancel:(ZXingWidgetController*)controller {
 	[[UIApplication sharedApplication] setStatusBarHidden:YES];
-	[self dismissModalViewControllerAnimated:YES];
+	[self dismissModalViewControllerAnimated:NO];
 }
 
 
