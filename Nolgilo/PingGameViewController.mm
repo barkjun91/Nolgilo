@@ -54,24 +54,21 @@
 	NSLog(@"update");
 }
 
-- (void)userinit{
-	info.teamid = @"A";
-	if([info.teamid isEqualToString: @"A"]){
-		info.qrimage = @"pingteamA.png";
-	}
-	else if([info.teamid isEqualToString: @"B"]){
-		info.qrimage = @"pingteamB.png";
-	}
-	else {
-		info.qrimage = @"pingteamC.png";
-	}
-	qrcodeimage.image = [UIImage imageNamed:info.qrimage];
+
+
+- (void)userinit:(NSString *)teamselect{
+	info.teamid = teamselect;
+	info.teamlabel = [[self ping] SetTeamLabel:info.teamid];
+	info.qrimage = [[self ping] SetQRImage:info.teamid];
 	
-	[NSTimer scheduledTimerWithTimeInterval:2.0 
+	qrcodeimage.image = [UIImage imageNamed:info.qrimage];
+	teamLabel.image = [UIImage imageNamed:info.teamlabel];
+	
+/*	[NSTimer scheduledTimerWithTimeInterval:2.0 
 									 target:self
 								   selector:@selector(Update:)
 								   userInfo:nil 
-									repeats:YES];
+									repeats:YES];*/
 }
 
 
@@ -86,7 +83,6 @@
 	
 	self.locationManager = [[CLLocationManager alloc] init];	
 	[[GameStage alloc] StageInit:gameStage];
-	[self userinit];
 	
 	ping_enable = FALSE;
 	menu_enable = FALSE;
@@ -294,6 +290,7 @@
 	[qrcode removeFromSuperview];
 }
 
+
 -(void)fadeView:(UIView *) v: (BOOL) appare{
 	if(appare){
 		v.alpha = 0;
@@ -332,6 +329,7 @@
 - (void) wrongQRCode{
 	[self SetMessage:@"wrongQR"];
 }
+
 
 -(void) CatchingTeam:(NSString *)teamid{
 	if([teamid isEqualToString:info.teamid]){

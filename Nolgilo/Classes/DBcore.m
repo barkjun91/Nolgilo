@@ -7,7 +7,6 @@
 //
 
 #import "DBcore.h"
-#import "JSON.h"
 
 @implementation DBcore
 
@@ -76,6 +75,13 @@
 	[NSURL URLWithString:json];
 }
 	
+
+-(void)Update:(NSTimer *)timer{
+	[[self ping] UpdateLoc:info.teamid 
+						  :location.latitude 
+						  :location.longitude];
+	NSLog(@"update");
+}
 
 -(bool)GetTeamStatus:(NSString *)teamid{
 	return YES;

@@ -55,5 +55,26 @@
     [super dealloc];
 }
 
+-(void)ReQuestion:(NSString *)teamid{
+	
+	UIAlertView *message = [[UIAlertView alloc]
+							initWithTitle:@"팀선택"
+							message:[NSString stringWithFormat:@"정말로 %@팀을 선택하실건가요?", teamid]
+							delegate:nil
+							cancelButtonTitle:@"아니오"
+							otherButtonTitles:@"예",nil];
+	[message show];
+	[message release];
+};
 
+-(IBAction)TeamAselect{
+	NSLog(@"asdf");
+//	[self ReQuestion:@"A"];
+}
+-(IBAction)TeamBselect{
+//	[self ReQuestion:@"B"];
+}
+-(IBAction)TeamCselect{
+//	[self ReQuestion:@"C"];
+}
 @end

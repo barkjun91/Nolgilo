@@ -29,4 +29,8 @@
 -(NSString *)GetTeamLabel:(NSString *)teamName:(NSString *)arrowImage;
 -(bool)GetTeam:(NSString *)teamid;
 -(void)UpdateLoc:(NSString *)teamid :(double)lat :(double)log;
+
+- (NSString *)SetTeamLabel:(NSString *)teamid;
+- (NSString *)SetQRImage:(NSString *)teamid;
+
 @end

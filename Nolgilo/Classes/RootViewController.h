@@ -9,17 +9,20 @@
 #import <UIKit/UIKit.h>
 
 @class LoadingViewController;
-@class MapViewController;
-@class RootGameListViewController;
-@class PingGameViewController;
+//@class RootGameListViewController;
+
+
+//이녀석은 나중에 RootGameLIstView로 집어넣을 예정.
+@class GameTeamSelectController;
+
 
 @interface RootViewController : UIViewController {
     LoadingViewController* loadingViewController;
-    MapViewController* mapViewController;
-	RootGameListViewController* gameListViewController;
-	PingGameViewController* pingGameViewController;
+//	RootGameListViewController* gameListViewController;
+
+	
+	GameTeamSelectController* gameTeamSelectController;
 }
 
 -(IBAction) TitleOnFlipView;
--(void) GameStartView;
 @end

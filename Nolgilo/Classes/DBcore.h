@@ -17,4 +17,5 @@
 -(NSString *) DataBaseConnect:(NSString *)conteam;
 -(bool)TeamCatch:(NSString *)teamid;
 -(void)PostMyLoc:(NSString *)teamid :(double)lat :(double)log;
+
 @end

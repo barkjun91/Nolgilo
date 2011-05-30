@@ -10,7 +10,14 @@
 
 @implementation GameListViewController
 
-@synthesize list;
+
+-(GameList *) gamelist
+{
+	if(!gamelist){
+		gamelist = [[GameList alloc] init];
+	}
+	return gamelist;
+}
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -25,8 +32,8 @@
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {	
-	[self.list fillList];
+- (void)viewDidLoad {
+    [super viewDidLoad];
 }
 
 
@@ -53,10 +60,36 @@
 
 
 - (void)dealloc {
-	[self.list release];
     [super dealloc];
 }
 
+#pragma mark Table view methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	return 1;
+}
+
+// Customize the number of rows in the table view.
+- (NSInteger)tableView:(UITableView *)tableView 
+ numberOfRowsInSection:(NSInteger)section {
+	return 0;
+}
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView 
+		 cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"any-cell"];
+	if(cell == nil){
+		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"any-cell"] autorelease];
+	}
+	
+	cell.textLabel.text = @"test";
+	return cell;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+}
 
 
 @end

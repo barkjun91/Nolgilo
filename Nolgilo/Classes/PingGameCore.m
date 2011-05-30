@@ -18,6 +18,17 @@
 	}
 	return db;
 }
+
+- (NSString *)SetTeamLabel:(NSString *)teamid{
+	NSString *teamlabel = [NSString stringWithFormat:@"Team%@.png", teamid];
+	return teamlabel;
+}
+
+- (NSString *)SetQRImage:(NSString *)teamid{
+	NSString *teamQR = [NSString stringWithFormat:@"catching%@.png", teamid];
+	return teamQR;
+}
+
 //함수명 : SetTeamName
 //리턴값 : NSString : 어떤 팀인지를 확인해 준다.
 //인자값 : (int)teamnumber : 몇번째 팀인지 알려준다.

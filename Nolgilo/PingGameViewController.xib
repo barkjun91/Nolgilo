@@ -12,9 +12,9 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="1"/>
 			<integer value="57"/>
 			<integer value="33"/>
-			<integer value="1"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -487,6 +487,14 @@
 					</object>
 					<int key="connectionID">73</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">teamLabel</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="378520942"/>
+					</object>
+					<int key="connectionID">74</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -760,7 +768,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">73</int>
+			<int key="maxID">74</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -841,6 +849,7 @@
 							<string>qrcodeimage</string>
 							<string>teamArrow1</string>
 							<string>teamArrow2</string>
+							<string>teamLabel</string>
 							<string>teamName1</string>
 							<string>teamName2</string>
 						</object>
@@ -852,6 +861,7 @@
 							<string>UIImageView</string>
 							<string>UIButton</string>
 							<string>UIView</string>
+							<string>UIImageView</string>
 							<string>UIImageView</string>
 							<string>UIImageView</string>
 							<string>UIImageView</string>
@@ -872,6 +882,7 @@
 							<string>qrcodeimage</string>
 							<string>teamArrow1</string>
 							<string>teamArrow2</string>
+							<string>teamLabel</string>
 							<string>teamName1</string>
 							<string>teamName2</string>
 						</object>
@@ -911,6 +922,10 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">teamArrow2</string>
+								<string key="candidateClassName">UIImageView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">teamLabel</string>
 								<string key="candidateClassName">UIImageView</string>
 							</object>
 							<object class="IBToOneOutletInfo">

@@ -17,5 +17,4 @@
 @property (nonatomic, retain) IBOutlet UIView *window;
 @property (nonatomic, retain) IBOutlet UINavigationController * navController;
 
-
 @end

@@ -7,11 +7,8 @@
 //
 
 #import "RootViewController.h"
-
 #import "LoadingViewController.h"
-#import "MapViewController.h"
-#import "RootGameListViewController.h"
-#import "PingGameViewController.h"
+#import "GameTeamSelectController.h"
 
 @implementation RootViewController
 
@@ -21,10 +18,9 @@
     [super viewDidLoad];
 	
 	loadingViewController = [[LoadingViewController alloc] initWithNibName:@"LoadingViewController" bundle:nil];
-	mapViewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
-	gameListViewController = [[RootGameListViewController alloc] initWithNibName:@"RootGameListViewController" bundle:nil];
-	pingGameViewController = [[PingGameViewController alloc] initWithNibName:@"PingGameViewController" bundle:nil];
-
+//	gameListViewController = [[RootGameListViewController alloc] initWithNibName:@"RootGameListViewController" bundle:nil];
+	
+	gameTeamSelectController = [[GameTeamSelectController alloc] initWithNibName:@"GameTeamSelectController" bundle:nil];
 	[self.view addSubview:loadingViewController.view];
 }
 
@@ -32,31 +28,16 @@
 
 - (IBAction) TitleOnFlipView 
 {
-	
+
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.7];
     [UIView setAnimationTransition: UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
-//	[self.view addSubview:mapViewController.view];
+	[self.view addSubview:gameTeamSelectController.view];
 //	[self.view addSubview:gameListViewController.view];
-	[self.view addSubview:pingGameViewController.view];
 	[loadingViewController.view removeFromSuperview];
 	
 	[UIView commitAnimations];
 
 }
 
-- (void) GameStartView
-{
-	NSLog(@"root");
-	
-	/*
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.7];
-    [UIView setAnimationTransition: UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
-	[self.view addSubview:mapViewController.view];
-//	[self.view addSubview:gameListViewController.view];
-	[UIView commitAnimations];
-	 */
-	
-}
 @end

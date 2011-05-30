@@ -30,6 +30,7 @@
 		NSString* teamid;
 		NSString* userid;
 		NSString* qrimage;
+		NSString* teamlabel;
 		long score;
 		int spotnum;
 	}info;
@@ -45,7 +46,7 @@
 	IBOutlet UILabel *teamName1, *teamName2;
 	IBOutlet UIImageView *teamArrow1, *teamArrow2;
 
-	IBOutlet UIImageView *qrcodeimage, *message;
+	IBOutlet UIImageView *qrcodeimage, *message, *teamLabel;
 	
 	bool ping_enable, menu_enable;
 	
@@ -68,4 +69,6 @@
 -(IBAction) TeamCatch;
 -(IBAction) QRCodeButton;
 -(IBAction) QRCodeCancel;
+
+- (void)userinit:(NSString *)teamselect;
 @end

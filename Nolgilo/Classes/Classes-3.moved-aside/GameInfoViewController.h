@@ -10,7 +10,9 @@
 
 
 @interface GameInfoViewController : UIViewController {
-
 }
 
+-(IBAction)TeamAselect;
+-(IBAction)TeamBselect;
+-(IBAction)TeamCselect;
 @end

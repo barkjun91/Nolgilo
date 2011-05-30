@@ -12,17 +12,13 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2899E5220DE3E06400AC0155 /* NolgiloViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* NolgiloViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		28D7ACF80DDB3853001CB0EB /* NolgiloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* NolgiloViewController.m */; };
 		7107944F134F050B006A4D36 /* PingGameViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */; };
 		71079450134F050B006A4D36 /* PingGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7107944E134F050B006A4D36 /* PingGameViewController.xib */; };
 		71079462134F0666006A4D36 /* TeamA.png in Resources */ = {isa = PBXBuildFile; fileRef = 71079461134F0666006A4D36 /* TeamA.png */; };
 		710794A5134F0A20006A4D36 /* GameStage.m in Sources */ = {isa = PBXBuildFile; fileRef = 710794A4134F0A20006A4D36 /* GameStage.m */; };
 		711BDBA91341D4A0007A6B3D /* GameListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711BDBA71341D4A0007A6B3D /* GameListViewController.m */; };
 		711BDBAA1341D4A0007A6B3D /* GameListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711BDBA81341D4A0007A6B3D /* GameListViewController.xib */; };
-		711BDBB01341D4B5007A6B3D /* GameInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711BDBAE1341D4B5007A6B3D /* GameInfoViewController.m */; };
-		711BDBB11341D4B5007A6B3D /* GameInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711BDBAF1341D4B5007A6B3D /* GameInfoViewController.xib */; };
 		711BDBC81341D521007A6B3D /* RootGameListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711BDBC61341D521007A6B3D /* RootGameListViewController.m */; };
 		711BDBC91341D521007A6B3D /* RootGameListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711BDBC71341D521007A6B3D /* RootGameListViewController.xib */; };
 		7134675F133B3DBF00DCA096 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7134675E133B3DBF00DCA096 /* icon2.png */; };
@@ -41,7 +37,11 @@
 		71B837711390C194002E5BAF /* catchingB.png in Resources */ = {isa = PBXBuildFile; fileRef = 71B8376E1390C194002E5BAF /* catchingB.png */; };
 		71B837721390C194002E5BAF /* catchingC.png in Resources */ = {isa = PBXBuildFile; fileRef = 71B8376F1390C194002E5BAF /* catchingC.png */; };
 		71E0E4CC13446D5800AFE39F /* gradientBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E0E4CB13446D5800AFE39F /* gradientBackground.png */; };
-		71FD080F13445D5F008DB7AB /* TableHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FD080E13445D5F008DB7AB /* TableHandler.m */; };
+		71E26F771393AEE2005A86E5 /* GameList.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E26F761393AEE2005A86E5 /* GameList.m */; };
+		71E2723A1393CD19005A86E5 /* GameTeamSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E272381393CD19005A86E5 /* GameTeamSelectController.m */; };
+		71E2723B1393CD19005A86E5 /* GameTeamSelectController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E272391393CD19005A86E5 /* GameTeamSelectController.xib */; };
+		71E273EF1393DD1C005A86E5 /* TeamB.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E273ED1393DD1C005A86E5 /* TeamB.png */; };
+		71E273F01393DD1C005A86E5 /* TeamC.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E273EE1393DD1C005A86E5 /* TeamC.png */; };
 		7A00600E1379B15500F3CDE4 /* pingable.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A00600C1379B15500F3CDE4 /* pingable.png */; };
 		7A17D16913839898006D7C33 /* QRcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A17D16713839898006D7C33 /* QRcodeViewController.xib */; };
 		7A481EAD1389E948004B1D29 /* SpotCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A481EAC1389E948004B1D29 /* SpotCore.m */; };
@@ -56,8 +56,6 @@
 		7AB4DBDD1303BCBE00DE0AA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBDC1303BCBE00DE0AA8 /* MapKit.framework */; };
 		7ABB8FD2131B706D00437FC4 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB8FD0131B706D00437FC4 /* LoadingViewController.m */; };
 		7ABB8FD3131B706D00437FC4 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABB8FD1131B706D00437FC4 /* LoadingViewController.xib */; };
-		7ABB8FE4131B730D00437FC4 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB8FE2131B730D00437FC4 /* MapViewController.m */; };
-		7ABB8FE5131B730D00437FC4 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABB8FE3131B730D00437FC4 /* MapViewController.xib */; };
 		7ABB9037131B770B00437FC4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB9036131B770B00437FC4 /* RootViewController.m */; };
 		7AC4155D1373F82300C37DF3 /* w_tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AC4155C1373F82300C37DF3 /* w_tile.png */; };
 		7AD45EE713778A7F00C1548B /* vs_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD45EE413778A7F00C1548B /* vs_arrow.png */; };
@@ -67,15 +65,6 @@
 		7AD45EEF13778A9100C1548B /* m_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD45EEB13778A9100C1548B /* m_arrow.png */; };
 		7AD45EF113778A9100C1548B /* s_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD45EED13778A9100C1548B /* s_arrow.png */; };
 		7AE698591383DE7500193AC2 /* DBcore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE698581383DE7500193AC2 /* DBcore.m */; };
-		7AFE893013932EA400FD8352 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE891F13932EA400FD8352 /* NSObject+JSON.m */; };
-		7AFE893113932EA400FD8352 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE892113932EA400FD8352 /* SBJsonParser.m */; };
-		7AFE893213932EA400FD8352 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE892313932EA400FD8352 /* SBJsonStreamParser.m */; };
-		7AFE893313932EA400FD8352 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE892513932EA400FD8352 /* SBJsonStreamParserAdapter.m */; };
-		7AFE893413932EA400FD8352 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE892713932EA400FD8352 /* SBJsonStreamParserState.m */; };
-		7AFE893513932EA400FD8352 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE892913932EA400FD8352 /* SBJsonStreamWriter.m */; };
-		7AFE893613932EA400FD8352 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE892B13932EA400FD8352 /* SBJsonStreamWriterState.m */; };
-		7AFE893713932EA400FD8352 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE892D13932EA400FD8352 /* SBJsonTokeniser.m */; };
-		7AFE893813932EA400FD8352 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE892F13932EA400FD8352 /* SBJsonWriter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,10 +91,7 @@
 		1D6058910D05DD3D006BFB54 /* Nolgilo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nolgilo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E5210DE3E06400AC0155 /* NolgiloViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NolgiloViewController.xib; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		28D7ACF60DDB3853001CB0EB /* NolgiloViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NolgiloViewController.h; sourceTree = "<group>"; };
-		28D7ACF70DDB3853001CB0EB /* NolgiloViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NolgiloViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Nolgilo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nolgilo_Prefix.pch; sourceTree = "<group>"; };
 		7107944C134F050B006A4D36 /* PingGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PingGameViewController.h; path = ../PingGameViewController.h; sourceTree = "<group>"; };
@@ -117,9 +103,6 @@
 		711BDBA61341D4A0007A6B3D /* GameListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameListViewController.h; sourceTree = "<group>"; };
 		711BDBA71341D4A0007A6B3D /* GameListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameListViewController.m; sourceTree = "<group>"; };
 		711BDBA81341D4A0007A6B3D /* GameListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameListViewController.xib; path = Classes/GameListViewController.xib; sourceTree = "<group>"; };
-		711BDBAD1341D4B5007A6B3D /* GameInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameInfoViewController.h; sourceTree = "<group>"; };
-		711BDBAE1341D4B5007A6B3D /* GameInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameInfoViewController.m; sourceTree = "<group>"; };
-		711BDBAF1341D4B5007A6B3D /* GameInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameInfoViewController.xib; path = Classes/GameInfoViewController.xib; sourceTree = "<group>"; };
 		711BDBC51341D521007A6B3D /* RootGameListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootGameListViewController.h; sourceTree = "<group>"; };
 		711BDBC61341D521007A6B3D /* RootGameListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootGameListViewController.m; sourceTree = "<group>"; };
 		711BDBC71341D521007A6B3D /* RootGameListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RootGameListViewController.xib; path = Classes/RootGameListViewController.xib; sourceTree = "<group>"; };
@@ -142,8 +125,13 @@
 		71B8376E1390C194002E5BAF /* catchingB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = catchingB.png; path = ../Resource/catchingB.png; sourceTree = SOURCE_ROOT; };
 		71B8376F1390C194002E5BAF /* catchingC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = catchingC.png; path = ../Resource/catchingC.png; sourceTree = SOURCE_ROOT; };
 		71E0E4CB13446D5800AFE39F /* gradientBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradientBackground.png; path = ../Resource/gradientBackground.png; sourceTree = SOURCE_ROOT; };
-		71FD080D13445D5F008DB7AB /* TableHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableHandler.h; sourceTree = "<group>"; };
-		71FD080E13445D5F008DB7AB /* TableHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableHandler.m; sourceTree = "<group>"; };
+		71E26F751393AEE2005A86E5 /* GameList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameList.h; sourceTree = "<group>"; };
+		71E26F761393AEE2005A86E5 /* GameList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameList.m; sourceTree = "<group>"; };
+		71E272371393CD19005A86E5 /* GameTeamSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTeamSelectController.h; sourceTree = "<group>"; };
+		71E272381393CD19005A86E5 /* GameTeamSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTeamSelectController.m; sourceTree = "<group>"; };
+		71E272391393CD19005A86E5 /* GameTeamSelectController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameTeamSelectController.xib; path = Classes/GameTeamSelectController.xib; sourceTree = "<group>"; };
+		71E273ED1393DD1C005A86E5 /* TeamB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TeamB.png; path = ../Resource/TeamB.png; sourceTree = SOURCE_ROOT; };
+		71E273EE1393DD1C005A86E5 /* TeamC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TeamC.png; path = ../Resource/TeamC.png; sourceTree = SOURCE_ROOT; };
 		7A00600C1379B15500F3CDE4 /* pingable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pingable.png; path = ../Resource/pingable.png; sourceTree = SOURCE_ROOT; };
 		7A17D16713839898006D7C33 /* QRcodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = QRcodeViewController.xib; path = Classes/QRcodeViewController.xib; sourceTree = "<group>"; };
 		7A481EAB1389E948004B1D29 /* SpotCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotCore.h; sourceTree = "<group>"; };
@@ -161,9 +149,6 @@
 		7ABB8FCF131B706D00437FC4 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
 		7ABB8FD0131B706D00437FC4 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		7ABB8FD1131B706D00437FC4 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoadingViewController.xib; path = Classes/LoadingViewController.xib; sourceTree = "<group>"; };
-		7ABB8FE1131B730D00437FC4 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
-		7ABB8FE2131B730D00437FC4 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		7ABB8FE3131B730D00437FC4 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MapViewController.xib; path = Classes/MapViewController.xib; sourceTree = "<group>"; };
 		7ABB9035131B770B00437FC4 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		7ABB9036131B770B00437FC4 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		7AC4155C1373F82300C37DF3 /* w_tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = w_tile.png; path = ../Resource/w_tile.png; sourceTree = SOURCE_ROOT; };
@@ -175,25 +160,6 @@
 		7AD45EED13778A9100C1548B /* s_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s_arrow.png; path = ../Resource/s_arrow.png; sourceTree = SOURCE_ROOT; };
 		7AE698571383DE7500193AC2 /* DBcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBcore.h; sourceTree = "<group>"; };
 		7AE698581383DE7500193AC2 /* DBcore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBcore.m; sourceTree = "<group>"; };
-		7AFE891D13932EA400FD8352 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = "../../stig-json-framework-7048419/Classes/JSON.h"; sourceTree = SOURCE_ROOT; };
-		7AFE891E13932EA400FD8352 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+JSON.h"; path = "../../stig-json-framework-7048419/Classes/NSObject+JSON.h"; sourceTree = SOURCE_ROOT; };
-		7AFE891F13932EA400FD8352 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+JSON.m"; path = "../../stig-json-framework-7048419/Classes/NSObject+JSON.m"; sourceTree = SOURCE_ROOT; };
-		7AFE892013932EA400FD8352 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = "../../stig-json-framework-7048419/Classes/SBJsonParser.h"; sourceTree = SOURCE_ROOT; };
-		7AFE892113932EA400FD8352 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = "../../stig-json-framework-7048419/Classes/SBJsonParser.m"; sourceTree = SOURCE_ROOT; };
-		7AFE892213932EA400FD8352 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParser.h; path = "../../stig-json-framework-7048419/Classes/SBJsonStreamParser.h"; sourceTree = SOURCE_ROOT; };
-		7AFE892313932EA400FD8352 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParser.m; path = "../../stig-json-framework-7048419/Classes/SBJsonStreamParser.m"; sourceTree = SOURCE_ROOT; };
-		7AFE892413932EA400FD8352 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAdapter.h; path = "../../stig-json-framework-7048419/Classes/SBJsonStreamParserAdapter.h"; sourceTree = SOURCE_ROOT; };
-		7AFE892513932EA400FD8352 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAdapter.m; path = "../../stig-json-framework-7048419/Classes/SBJsonStreamParserAdapter.m"; sourceTree = SOURCE_ROOT; };
-		7AFE892613932EA400FD8352 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserState.h; path = "../../stig-json-framework-7048419/Classes/SBJsonStreamParserState.h"; sourceTree = SOURCE_ROOT; };
-		7AFE892713932EA400FD8352 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserState.m; path = "../../stig-json-framework-7048419/Classes/SBJsonStreamParserState.m"; sourceTree = SOURCE_ROOT; };
-		7AFE892813932EA400FD8352 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriter.h; path = "../../stig-json-framework-7048419/Classes/SBJsonStreamWriter.h"; sourceTree = SOURCE_ROOT; };
-		7AFE892913932EA400FD8352 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriter.m; path = "../../stig-json-framework-7048419/Classes/SBJsonStreamWriter.m"; sourceTree = SOURCE_ROOT; };
-		7AFE892A13932EA400FD8352 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterState.h; path = "../../stig-json-framework-7048419/Classes/SBJsonStreamWriterState.h"; sourceTree = SOURCE_ROOT; };
-		7AFE892B13932EA400FD8352 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterState.m; path = "../../stig-json-framework-7048419/Classes/SBJsonStreamWriterState.m"; sourceTree = SOURCE_ROOT; };
-		7AFE892C13932EA400FD8352 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonTokeniser.h; path = "../../stig-json-framework-7048419/Classes/SBJsonTokeniser.h"; sourceTree = SOURCE_ROOT; };
-		7AFE892D13932EA400FD8352 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonTokeniser.m; path = "../../stig-json-framework-7048419/Classes/SBJsonTokeniser.m"; sourceTree = SOURCE_ROOT; };
-		7AFE892E13932EA400FD8352 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = "../../stig-json-framework-7048419/Classes/SBJsonWriter.h"; sourceTree = SOURCE_ROOT; };
-		7AFE892F13932EA400FD8352 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = "../../stig-json-framework-7048419/Classes/SBJsonWriter.m"; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Nolgilo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Nolgilo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -222,19 +188,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7AFE891A13932E9800FD8352 /* JSON */,
 				7A17D01813838A0F006D7C33 /* QrCodeReader */,
+				71E273AC1393D7E5005A86E5 /* Delegate */,
 				71079448134F04A4006A4D36 /* Model */,
 				711BDB831341CC3F007A6B3D /* GameList */,
 				710A3B04133A0C1A0055B6A2 /* Game */,
-				1D3623240D0F684500981E51 /* NolgiloAppDelegate.h */,
-				1D3623250D0F684500981E51 /* NolgiloAppDelegate.m */,
-				7ABB8FCF131B706D00437FC4 /* LoadingViewController.h */,
-				7ABB8FD0131B706D00437FC4 /* LoadingViewController.m */,
-				7ABB9035131B770B00437FC4 /* RootViewController.h */,
-				7ABB9036131B770B00437FC4 /* RootViewController.m */,
-				28D7ACF60DDB3853001CB0EB /* NolgiloViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* NolgiloViewController.m */,
+				71E273AD1393D7F6005A86E5 /* LoadingView */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -272,8 +231,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				714D746D132A095000FB57A0 /* logo */,
+				71E273F11393DD20005A86E5 /* TeamLabel */,
 				714D747A132A097200FB57A0 /* xib */,
+				714D746D132A095000FB57A0 /* logo */,
 				714D747B132A098400FB57A0 /* image */,
 				8D1107310486CEB800E47090 /* Nolgilo-Info.plist */,
 				71A125191328E47A00C1BC87 /* InfoPlist.strings */,
@@ -303,8 +263,6 @@
 			children = (
 				719C1B5E1333557400E7C276 /* GameModel.h */,
 				719C1B5F1333557400E7C276 /* GameModel.m */,
-				71FD080D13445D5F008DB7AB /* TableHandler.h */,
-				71FD080E13445D5F008DB7AB /* TableHandler.m */,
 				710794A3134F0A20006A4D36 /* GameStage.h */,
 				710794A4134F0A20006A4D36 /* GameStage.m */,
 				715717FD135438B900FC5012 /* PingGameCore.h */,
@@ -313,6 +271,8 @@
 				7AE698581383DE7500193AC2 /* DBcore.m */,
 				7A481EAB1389E948004B1D29 /* SpotCore.h */,
 				7A481EAC1389E948004B1D29 /* SpotCore.m */,
+				71E26F751393AEE2005A86E5 /* GameList.h */,
+				71E26F761393AEE2005A86E5 /* GameList.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -320,8 +280,6 @@
 		710A3B04133A0C1A0055B6A2 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				7ABB8FE1131B730D00437FC4 /* MapViewController.h */,
-				7ABB8FE2131B730D00437FC4 /* MapViewController.m */,
 				7107944C134F050B006A4D36 /* PingGameViewController.h */,
 				7107944D134F050B006A4D36 /* PingGameViewController.mm */,
 			);
@@ -333,10 +291,10 @@
 			children = (
 				711BDBA61341D4A0007A6B3D /* GameListViewController.h */,
 				711BDBA71341D4A0007A6B3D /* GameListViewController.m */,
-				711BDBAD1341D4B5007A6B3D /* GameInfoViewController.h */,
-				711BDBAE1341D4B5007A6B3D /* GameInfoViewController.m */,
 				711BDBC51341D521007A6B3D /* RootGameListViewController.h */,
 				711BDBC61341D521007A6B3D /* RootGameListViewController.m */,
+				71E272371393CD19005A86E5 /* GameTeamSelectController.h */,
+				71E272381393CD19005A86E5 /* GameTeamSelectController.m */,
 			);
 			name = GameList;
 			sourceTree = "<group>";
@@ -353,13 +311,11 @@
 		714D747A132A097200FB57A0 /* xib */ = {
 			isa = PBXGroup;
 			children = (
+				71E272391393CD19005A86E5 /* GameTeamSelectController.xib */,
 				7A17D16713839898006D7C33 /* QRcodeViewController.xib */,
-				711BDBAF1341D4B5007A6B3D /* GameInfoViewController.xib */,
 				711BDBC71341D521007A6B3D /* RootGameListViewController.xib */,
 				711BDBA81341D4A0007A6B3D /* GameListViewController.xib */,
-				7ABB8FE3131B730D00437FC4 /* MapViewController.xib */,
 				7ABB8FD1131B706D00437FC4 /* LoadingViewController.xib */,
-				2899E5210DE3E06400AC0155 /* NolgiloViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				7107944E134F050B006A4D36 /* PingGameViewController.xib */,
 			);
@@ -379,7 +335,6 @@
 				714D748B132A09FD00FB57A0 /* Default.png */,
 				7AAAEB8D1384CA9700873682 /* menubg.png */,
 				7171ABAF1328D65B004127CE /* title.jpg */,
-				71079461134F0666006A4D36 /* TeamA.png */,
 				7134675E133B3DBF00DCA096 /* icon2.png */,
 			);
 			name = image;
@@ -394,6 +349,36 @@
 				71B8370C1390B325002E5BAF /* wrongQR.png */,
 			);
 			name = messageBox;
+			sourceTree = "<group>";
+		};
+		71E273AC1393D7E5005A86E5 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* NolgiloAppDelegate.h */,
+				1D3623250D0F684500981E51 /* NolgiloAppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		71E273AD1393D7F6005A86E5 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				7ABB8FCF131B706D00437FC4 /* LoadingViewController.h */,
+				7ABB8FD0131B706D00437FC4 /* LoadingViewController.m */,
+				7ABB9035131B770B00437FC4 /* RootViewController.h */,
+				7ABB9036131B770B00437FC4 /* RootViewController.m */,
+			);
+			name = LoadingView;
+			sourceTree = "<group>";
+		};
+		71E273F11393DD20005A86E5 /* TeamLabel */ = {
+			isa = PBXGroup;
+			children = (
+				71079461134F0666006A4D36 /* TeamA.png */,
+				71E273ED1393DD1C005A86E5 /* TeamB.png */,
+				71E273EE1393DD1C005A86E5 /* TeamC.png */,
+			);
+			name = TeamLabel;
 			sourceTree = "<group>";
 		};
 		7A00600A1379B14900F3CDE4 /* button */ = {
@@ -441,32 +426,6 @@
 				7AD45EE613778A7F00C1548B /* xm_arrow.png */,
 			);
 			name = arrow;
-			sourceTree = "<group>";
-		};
-		7AFE891A13932E9800FD8352 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				7AFE891D13932EA400FD8352 /* JSON.h */,
-				7AFE891E13932EA400FD8352 /* NSObject+JSON.h */,
-				7AFE891F13932EA400FD8352 /* NSObject+JSON.m */,
-				7AFE892013932EA400FD8352 /* SBJsonParser.h */,
-				7AFE892113932EA400FD8352 /* SBJsonParser.m */,
-				7AFE892213932EA400FD8352 /* SBJsonStreamParser.h */,
-				7AFE892313932EA400FD8352 /* SBJsonStreamParser.m */,
-				7AFE892413932EA400FD8352 /* SBJsonStreamParserAdapter.h */,
-				7AFE892513932EA400FD8352 /* SBJsonStreamParserAdapter.m */,
-				7AFE892613932EA400FD8352 /* SBJsonStreamParserState.h */,
-				7AFE892713932EA400FD8352 /* SBJsonStreamParserState.m */,
-				7AFE892813932EA400FD8352 /* SBJsonStreamWriter.h */,
-				7AFE892913932EA400FD8352 /* SBJsonStreamWriter.m */,
-				7AFE892A13932EA400FD8352 /* SBJsonStreamWriterState.h */,
-				7AFE892B13932EA400FD8352 /* SBJsonStreamWriterState.m */,
-				7AFE892C13932EA400FD8352 /* SBJsonTokeniser.h */,
-				7AFE892D13932EA400FD8352 /* SBJsonTokeniser.m */,
-				7AFE892E13932EA400FD8352 /* SBJsonWriter.h */,
-				7AFE892F13932EA400FD8352 /* SBJsonWriter.m */,
-			);
-			name = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -537,16 +496,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				2899E5220DE3E06400AC0155 /* NolgiloViewController.xib in Resources */,
 				7ABB8FD3131B706D00437FC4 /* LoadingViewController.xib in Resources */,
-				7ABB8FE5131B730D00437FC4 /* MapViewController.xib in Resources */,
 				7171AB791328B26F004127CE /* icon.jpg in Resources */,
 				7171ABB01328D65B004127CE /* title.jpg in Resources */,
 				71A1251A1328E47A00C1BC87 /* InfoPlist.strings in Resources */,
 				714D748C132A09FD00FB57A0 /* Default.png in Resources */,
 				7134675F133B3DBF00DCA096 /* icon2.png in Resources */,
 				711BDBAA1341D4A0007A6B3D /* GameListViewController.xib in Resources */,
-				711BDBB11341D4B5007A6B3D /* GameInfoViewController.xib in Resources */,
 				711BDBC91341D521007A6B3D /* RootGameListViewController.xib in Resources */,
 				7182D407134327480047DA4D /* menutitle.png in Resources */,
 				71E0E4CC13446D5800AFE39F /* gradientBackground.png in Resources */,
@@ -569,6 +525,9 @@
 				71B837701390C194002E5BAF /* catchingA.png in Resources */,
 				71B837711390C194002E5BAF /* catchingB.png in Resources */,
 				71B837721390C194002E5BAF /* catchingC.png in Resources */,
+				71E2723B1393CD19005A86E5 /* GameTeamSelectController.xib in Resources */,
+				71E273EF1393DD1C005A86E5 /* TeamB.png in Resources */,
+				71E273F01393DD1C005A86E5 /* TeamC.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,29 +540,18 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.mm in Sources */,
 				1D3623260D0F684500981E51 /* NolgiloAppDelegate.m in Sources */,
-				28D7ACF80DDB3853001CB0EB /* NolgiloViewController.m in Sources */,
 				7ABB8FD2131B706D00437FC4 /* LoadingViewController.m in Sources */,
-				7ABB8FE4131B730D00437FC4 /* MapViewController.m in Sources */,
 				7ABB9037131B770B00437FC4 /* RootViewController.m in Sources */,
 				719C1B601333557400E7C276 /* GameModel.m in Sources */,
 				711BDBA91341D4A0007A6B3D /* GameListViewController.m in Sources */,
-				711BDBB01341D4B5007A6B3D /* GameInfoViewController.m in Sources */,
 				711BDBC81341D521007A6B3D /* RootGameListViewController.m in Sources */,
-				71FD080F13445D5F008DB7AB /* TableHandler.m in Sources */,
 				7107944F134F050B006A4D36 /* PingGameViewController.mm in Sources */,
 				710794A5134F0A20006A4D36 /* GameStage.m in Sources */,
 				715717FF135438B900FC5012 /* PingGameCore.m in Sources */,
 				7AE698591383DE7500193AC2 /* DBcore.m in Sources */,
 				7A481EAD1389E948004B1D29 /* SpotCore.m in Sources */,
-				7AFE893013932EA400FD8352 /* NSObject+JSON.m in Sources */,
-				7AFE893113932EA400FD8352 /* SBJsonParser.m in Sources */,
-				7AFE893213932EA400FD8352 /* SBJsonStreamParser.m in Sources */,
-				7AFE893313932EA400FD8352 /* SBJsonStreamParserAdapter.m in Sources */,
-				7AFE893413932EA400FD8352 /* SBJsonStreamParserState.m in Sources */,
-				7AFE893513932EA400FD8352 /* SBJsonStreamWriter.m in Sources */,
-				7AFE893613932EA400FD8352 /* SBJsonStreamWriterState.m in Sources */,
-				7AFE893713932EA400FD8352 /* SBJsonTokeniser.m in Sources */,
-				7AFE893813932EA400FD8352 /* SBJsonWriter.m in Sources */,
+				71E26F771393AEE2005A86E5 /* GameList.m in Sources */,
+				71E2723A1393CD19005A86E5 /* GameTeamSelectController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
