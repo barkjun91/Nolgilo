@@ -150,6 +150,27 @@
 	[datalist setArray:sourceData];
 }
 
+//함수명 : GetTeam
+//리턴값 : void
+//팀을 잡게되면 호출되는 함수, 팀 이름을 받아와 유효성을 검사하고, 맞을경우 서버에 상대팀을 목록에서 삭제한다.
+//teamid:(NSString) 잡은 팀의 이름
+
+-(bool)GetTeam:(NSString *)teamid{
+	if([[self db] TeamCatch:teamid]){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+	
+}
+
+-(void)UpdateLoc:(NSString *)teamid
+				:(double)lat
+				:(double)log{	
+	[[self db] PostMyLoc:teamid:lat:log];
+}
+
 //함수명 : init
 //리턴값 : void
 //PingGameCore를 초기화 시켜주는 함수

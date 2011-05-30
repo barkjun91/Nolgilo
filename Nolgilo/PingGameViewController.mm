@@ -47,7 +47,12 @@
 	
 }
 
-
+-(void)Update:(NSTimer *)timer{
+	[[self ping] UpdateLoc:info.teamid 
+						  :location.latitude 
+						  :location.longitude];
+	NSLog(@"update");
+}
 
 - (void)userinit{
 	info.teamid = @"A";
@@ -61,8 +66,15 @@
 		info.qrimage = @"pingteamC.png";
 	}
 	qrcodeimage.image = [UIImage imageNamed:info.qrimage];
-
+	
+	[NSTimer scheduledTimerWithTimeInterval:2.0 
+									 target:self
+								   selector:@selector(Update:)
+								   userInfo:nil 
+									repeats:YES];
 }
+
+
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -83,6 +95,7 @@
 
 	[locationManager startUpdatingHeading];
 	[locationManager startUpdatingLocation];
+	
 }
 
 
@@ -320,12 +333,15 @@
 	[self SetMessage:@"wrongQR"];
 }
 
--(void) CatchingTeam:(NSString *)teamname{
-	if([teamname isEqualToString:info.teamid]){
+-(void) CatchingTeam:(NSString *)teamid{
+	if([teamid isEqualToString:info.teamid]){
 		[self wrongQRCode];
 	}
 	else{
-		[self SetMessage:[NSString stringWithFormat:@"catching%@", teamname]];
+		if([[self ping] GetTeam:teamid]){
+			[self SetMessage:[NSString stringWithFormat:@"catching%@", teamid]];
+		}
+		
 	}
 }
 

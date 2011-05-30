@@ -27,4 +27,6 @@
 -(double)GetLog:(int)teamnumber;
 -(double)GetRadian:(double)o_lat:(double)o_log;
 -(NSString *)GetTeamLabel:(NSString *)teamName:(NSString *)arrowImage;
+-(bool)GetTeam:(NSString *)teamid;
+-(void)UpdateLoc:(NSString *)teamid :(double)lat :(double)log;
 @end

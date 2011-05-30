@@ -7,7 +7,7 @@
 //
 
 #import "DBcore.h"
-
+#import "JSON.h"
 
 @implementation DBcore
 
@@ -16,10 +16,10 @@
 -(NSString *) OtherTeamData:(NSString *)team1
 						   :(NSString *)team2{
 	
-	NSURL *team1_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%s",team1]];
-	NSURL *team2_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%s",team2]];
-
-	NSLog(@"response %@", response);
+	NSURL *team1_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%@",team1]];
+	NSURL *team2_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%@",team2]];
+	
+	
 	
 	NSString * sql = [NSString
 					  stringWithFormat:
@@ -67,6 +67,26 @@
 
 -(void) SpotGet{
 	
+}
+
+-(void)PostMyLoc:(NSString *)teamid
+				:(double) lat
+				:(double) log{
+	NSString *json = [NSString stringWithFormat:@"http://localhost:8888/test?id=%@&latitude=%f&longitude=%f",teamid,lat,log];
+	[NSURL URLWithString:json];
+}
+	
+
+-(bool)GetTeamStatus:(NSString *)teamid{
+	return YES;
+}
+
+//함수명 : TeamCatch
+//리턴값 : bool
+//상대팀이 잡혀있는 상태면 False를 반환하고,
+//만일 상대팀이 잡혀있지 않는 상태라면, 상대팀을 잡았다는 명령을 날린후, TRUE반환.
+-(bool) TeamCatch:(NSString *)teamid{
+	return TRUE;
 }
 
 @end
