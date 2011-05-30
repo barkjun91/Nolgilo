@@ -5806,9 +5806,10 @@
 	};
 	71E272381393CD19005A86E5 /* GameTeamSelectController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 1237}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1174, 1300}}";
 			sepNavSelRange = "{2480, 0}";
-			sepNavVisRange = "{652, 1928}";
+			sepNavVisRange = "{503, 796}";
+			sepNavWindowFrame = "{{15, 4}, {721, 993}}";
 		};
 	};
 	71E2723E1393CD8B005A86E5 /* PBXTextBookmark */ = {
@@ -9436,7 +9437,7 @@
 	};
 	7AE698581383DE7500193AC2 /* DBcore.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {887, 1197}}";
+			sepNavIntBoundsRect = "{{0, 0}, {887, 1210}}";
 			sepNavSelRange = "{1651, 0}";
 			sepNavVisRange = "{891, 989}";
 		};

@@ -74,14 +74,7 @@
 	NSString *json = [NSString stringWithFormat:@"http://localhost:8888/test?id=%@&latitude=%f&longitude=%f",teamid,lat,log];
 	[NSURL URLWithString:json];
 }
-	
 
--(void)Update:(NSTimer *)timer{
-	[[self ping] UpdateLoc:info.teamid 
-						  :location.latitude 
-						  :location.longitude];
-	NSLog(@"update");
-}
 
 -(bool)GetTeamStatus:(NSString *)teamid{
 	return YES;
