@@ -25,7 +25,7 @@
 }
 
 - (NSString *)SetQRImage:(NSString *)teamid{
-	NSString *teamQR = [NSString stringWithFormat:@"catching%@.png", teamid];
+	NSString *teamQR = [NSString stringWithFormat:@"pingteam%@.png", teamid];
 	return teamQR;
 }
 
