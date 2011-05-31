@@ -7,22 +7,36 @@
 //
 
 #import "DBcore.h"
+#import "JSON.h"
 
 @implementation DBcore
 
 
 
--(NSString *) OtherTeamData:(NSString *)team1
+-(NSArray *) OtherTeamData:(NSString *)team1
 						   :(NSString *)team2{
 	
-	NSURL *team1_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%@",team1]];
-	NSURL *team2_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%@",team2]];
+//	NSURL *team1_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%@",team1]];
+//	NSURL *team2_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%@",team2]];
+
+	NSURL *test_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@",team1]];
+	NSString *response = [NSString stringWithContentsOfURL:test_url encoding:NSUTF8StringEncoding error:NULL];
+	NSLog(@"response : %@", response);
+	NSDictionary *responseDic = [response JSONValue];
+	NSMutableArray *data = [NSMutableArray arrayWithCapacity:2];
+	[data addObject:responseDic];
+
+	test_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@",team2]];
+	response = [NSString stringWithContentsOfURL:test_url encoding:NSUTF8StringEncoding error:NULL];
+	NSLog(@"response : %@", response);
+	responseDic = [response JSONValue];
+	[data addObject:responseDic];
 	
 	
 	
-	NSString * sql = [NSString
+/*	NSString * sql = [NSString
 					  stringWithFormat:
-					  @"%s:%s:%s:%s:%s:%s","B","C","37.550413/126.921336","37.549533/126.918680","1","1"];
+					  @"%s:%s:%s:%s:%s:%s","B","C","37.550413/126.921336","37.549533/126.918680","1","1"];*/
 	//파라미터 
 	//초콜릿집ㅋㅋㅋ : 37.549533/126.918680
 	//숭실대 할리스커피 : 37.4951027/126.957455
@@ -32,12 +46,12 @@
     //홍대 조폭떡볶이 : 37.550413/126.921336
 	//마니산 : 37.611602/126.434827
 	
-	return sql;
+	return data;
 	
 }
 
--(NSString *) DataBaseConnect:(NSString *)conteam{
-	NSString * datalist;
+-(NSArray *) DataBaseConnect:(NSString *)conteam{
+	NSArray * datalist;
 	
 	if([conteam isEqualToString: @"A"])
 	{
@@ -46,6 +60,7 @@
 	else if([conteam isEqualToString: @"B"])
 	{
 		datalist = [self OtherTeamData:@"A":@"C"];
+		
 	}
 	else
 	{
@@ -60,7 +75,7 @@
 	NSString * sql = [NSString
 					  stringWithFormat:
 					  //순서-이름-좌표-스코어/ 
-					  @"%s", "1-숭실대입구역-37.496325/126.953588-20"];
+					  @"%s", "1-홍대떡뽁이-37.550413/126.921336-20"];
 	return sql;
 }
 
@@ -71,8 +86,12 @@
 -(void)PostMyLoc:(NSString *)teamid
 				:(double) lat
 				:(double) log{
-	NSString *json = [NSString stringWithFormat:@"http://localhost:8888/test?id=%@&latitude=%f&longitude=%f",teamid,lat,log];
-	[NSURL URLWithString:json];
+	NSString *json = [NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&latitude=%f&longitude=%f",teamid,lat,log];
+	NSURL *url = [NSURL URLWithString:json];
+	NSString *response = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:NULL];
+		
+	NSLog(@"reponse : %@", response);
+	
 }
 
 

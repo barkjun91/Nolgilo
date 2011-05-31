@@ -11,29 +11,9 @@
 
 @implementation GameModel
 
-@synthesize coordinate;
-@synthesize mainTitle;
-@synthesize subTitle;
-
-
-
--(void) spotSet: (double) lat: 
-				 (double) lng: 
-				 (NSString *) t: 
-				 (NSString *) st: 
-				 (MKMapView *)map{
-	
-	coordinate.latitude = lat;
-	coordinate.longitude = lng;
-	self.mainTitle = t;
-	self.subTitle = st;
-	
-	[map addAnnotation:self];
-}
-
 //게임 스테이지 초기화
 
--(void) gameInit:(MKMapView *)mapview{
+-(void) GameInitMessage{
 	
 	baseAlert = [[UIAlertView alloc] 
 				 initWithTitle:@"게임 준비중"
@@ -56,24 +36,36 @@
 }
 
 
+-(void)fadeView:(UIView *) v: (BOOL) appare{
+	if(appare){
+		v.alpha = 0;
+		[UIView beginAnimations:nil context:nil];
+		[UIView setAnimationDuration:0.5];
+		[UIView setAnimationDelegate:self];
+		v.alpha = 1;
+		[UIView commitAnimations];
+	}else {
+		[UIView beginAnimations:nil context:nil];
+		[UIView setAnimationDuration:0.5];
+		[UIView setAnimationDelegate:self];
+		v.alpha = 0;
+		[UIView commitAnimations];
+	}
+	
+}
+
+
+
 -(void) performDismiss: (NSTimer *)timer{
 	
 	[baseAlert dismissWithClickedButtonIndex:0 animated:NO];
 }
 
--(NSString *)subtitle{
-	return subTitle;
-}
 
--(NSString *)maintitle{
-	return mainTitle;
-}
 
 
 
 -(void) dealloc{
-	[mainTitle release];
-	[subTitle release];
 	[super dealloc];
 }
 

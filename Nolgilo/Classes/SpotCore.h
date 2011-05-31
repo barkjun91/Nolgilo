@@ -7,10 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 #import "DBcore.h"
-#import "PingGameCore.h"
+#import "pin.h"
 
-@interface SpotCore : NSObject {
-	NSMutableArray *datalist;
+@interface SpotCore : NSObject <CLLocationManagerDelegate>{
+	NSMutableArray *arrayLat;
+	NSMutableArray *arrayLog;
+	NSArray *pindatalist;
+	
+	DBcore *db;
+	pin *ann;
 }
+
+@property (nonatomic, retain) NSMutableArray *arrayLat;
+@property (nonatomic, retain) NSMutableArray *arrayLog;
+
+-(void)initSpot;
+-(void)addPin:(MKMapView *)mapview;
+
 @end

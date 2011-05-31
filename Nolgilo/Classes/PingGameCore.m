@@ -7,9 +7,12 @@
 //
 
 #import "PingGameCore.h"
+#import "JSON.h"
 #import <math.h>
 
 @implementation PingGameCore
+
+@synthesize datalist;
 
 -(DBcore *) db
 {
@@ -35,27 +38,35 @@
 -(NSString *)GetTeamName:(int)teamnumber
 {
 	NSString *teamname;
+	NSDictionary *team = [datalist objectAtIndex:teamnumber];
+	teamname = [team objectForKey:@"id"];
 	
-	teamname = [datalist objectAtIndex:teamnumber];
+	
+	
+//	teamname = [datalist objectAtIndex:teamnumber];
 	
 	return teamname;
 }
 
 -(double)GetLat:(int)teamnumber{
 	double teamlat;
-	NSArray *location = [[datalist objectAtIndex:teamnumber+2] 
-						 componentsSeparatedByString: @"/"];
+	NSDictionary *team = [datalist objectAtIndex:teamnumber];
 	
-	teamlat = [[location objectAtIndex:0] doubleValue];
+//	NSArray *location = [[datalist objectAtIndex:teamnumber+2] 
+//						 componentsSeparatedByString: @"/"];
+	
+	teamlat = [[team objectForKey:@"latitude"] doubleValue];
 	return teamlat;
 
 }
 -(double)GetLog:(int)teamnumber{
 	double teamlog;
-	NSArray *location = [[datalist objectAtIndex:teamnumber+2] 
-						 componentsSeparatedByString: @"/"];
+	NSDictionary *team = [datalist objectAtIndex:teamnumber];
+//	NSArray *location = [[datalist objectAtIndex:teamnumber+2] 
+//						 componentsSeparatedByString: @"/"];
 
-	teamlog = [[location objectAtIndex:1] doubleValue];
+	teamlog = [[team objectForKey:@"longitude"] doubleValue];
+//	teamlog = [[location objectAtIndex:1] doubleValue];
 	return teamlog;
 }
 
@@ -155,11 +166,15 @@
 //각팀에 대한 정보를 Setting한다.
 //(NSString)datastring:json으로 받은 데이터
 
--(void)DataSetting:(NSString *)datastring{
+/*
+-(void)DataSetting:(NSArray *)datastring{
+	NSDictionary *response = [datastring JSONValue];
+	
 	NSArray *sourceData = [datastring componentsSeparatedByString: @":"];
 	datalist = [NSMutableArray arrayWithCapacity:[sourceData count]];
 	[datalist setArray:sourceData];
 }
+ */
 
 //함수명 : GetTeam
 //리턴값 : void
@@ -195,12 +210,15 @@
 	
 	
 	 //DB를 연결시킨다.
-	NSString *coredata = [[self db] DataBaseConnect:team]; //다른팀의 정보를 가지고 온다.
-	
-    [self DataSetting:coredata]; //가져온 정보를 정제한다.
+	self.datalist = [[self db] DataBaseConnect:team];
+//	NSArray *coredata = [[self db] DataBaseConnect:team]; //다른팀의 정보를 가지고 온다.
+//    [self DataSetting:coredata]; //가져온 정보를 정제한다.
 }
 
-
+- (void)dealloc {
+	[datalist release];
+	[super dealloc];
+}
 @end
 
 

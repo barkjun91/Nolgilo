@@ -12,7 +12,7 @@
 
 @interface PingGameCore : NSObject {
 	NSString * TeamName;
-	NSMutableArray *datalist;
+	NSArray *datalist;
 	double mylat;
 	double mylog;
 	
@@ -32,5 +32,7 @@
 
 - (NSString *)SetTeamLabel:(NSString *)teamid;
 - (NSString *)SetQRImage:(NSString *)teamid;
+
+@property (nonatomic, retain) NSArray *datalist;
 
 @end

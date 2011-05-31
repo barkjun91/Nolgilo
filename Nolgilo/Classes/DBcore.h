@@ -10,12 +10,11 @@
 
 
 @interface DBcore : NSObject {
-	NSString *response;
 }
 
 
--(NSString *) DataBaseConnect:(NSString *)conteam;
+-(NSArray *) DataBaseConnect:(NSString *)conteam;
 -(bool)TeamCatch:(NSString *)teamid;
 -(void)PostMyLoc:(NSString *)teamid :(double)lat :(double)log;
-
+-(NSString *) SpotData;
 @end
