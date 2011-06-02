@@ -16,7 +16,7 @@
 #import "GameStage.h"
 #import "PingGameCore.h"
 #import "SpotCore.h"
-
+#import "GameModel.h"
 
 @interface PingGameViewController : UIViewController<ZXingDelegate, MKMapViewDelegate, CLLocationManagerDelegate> {
 	IBOutlet MKMapView *gameStage;
@@ -57,6 +57,7 @@
 
 	PingGameCore *ping;
 	SpotCore *spot;
+	GameModel *game;
 }
 
 @property (nonatomic, retain) CLLocationManager *locationManager;;

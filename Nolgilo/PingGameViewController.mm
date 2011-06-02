@@ -43,16 +43,20 @@
 	return spot;
 }
 
-- (void)SpotBuilding{
-	
+-(GameModel *) game
+{
+	if(!game){
+		game = [[GameModel alloc] init];
+	}
+	return game;
 }
 
--(void)Update:(NSTimer *)timer{
-	[[self ping] UpdateLoc:info.teamid 
-						  :location.latitude 
-						  :location.longitude];
-	NSLog(@"update");
+- (void)SpotBuilding{
+	[[self spot] initSpot];
+	[[self spot]addPin:gameStage];
 }
+
+
 
 
 
@@ -64,11 +68,6 @@
 	qrcodeimage.image = [UIImage imageNamed:info.qrimage];
 	teamLabel.image = [UIImage imageNamed:info.teamlabel];
 	
-/*	[NSTimer scheduledTimerWithTimeInterval:2.0 
-									 target:self
-								   selector:@selector(Update:)
-								   userInfo:nil 
-									repeats:YES];*/
 }
 
 
@@ -77,7 +76,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self SpotBuilding];
-	
+	[[self game] GameInitMessage];
+
 	span.latitudeDelta = 0.002;
 	span.longitudeDelta = 0.002;
 	
@@ -147,6 +147,10 @@
 	region.center = location;
 	region.span = span;
 	[gameStage setRegion:region animated:YES];
+	[[self ping] UpdateLoc:info.teamid 
+						  :location.latitude 
+						  :location.longitude];
+	NSLog(@"update");
 	
 }
 
@@ -175,7 +179,7 @@
 }
 
 -(void) DataSet{
-	[[self ping] init:location.latitude:location.longitude:@"A"];
+	[[self ping] init:location.latitude:location.longitude:info.teamid];
 	
 	team1.name = [[self ping] GetTeamName:0];
 	team2.name = [[self ping] GetTeamName:1];
@@ -291,28 +295,9 @@
 }
 
 
--(void)fadeView:(UIView *) v: (BOOL) appare{
-	if(appare){
-		v.alpha = 0;
-		[UIView beginAnimations:nil context:nil];
-		[UIView setAnimationDuration:0.5];
-		[UIView setAnimationDelegate:self];
-		v.alpha = 1;
-		[UIView commitAnimations];
-	}else {
-		[UIView beginAnimations:nil context:nil];
-		[UIView setAnimationDuration:0.5];
-		[UIView setAnimationDelegate:self];
-		v.alpha = 0;
-		[UIView commitAnimations];
-	}
-	
-}
-
-
 -(void) OnTimer:(NSTimer *)timer
 {
-	[self fadeView:message:FALSE];
+	[[self game] fadeView:message:FALSE];
 }
 
 -(void) SetMessage:(NSString *)imagename{
@@ -323,7 +308,7 @@
 								   userInfo:nil
 									repeats:NO
 	 ];
-	[self fadeView:message:TRUE];
+	[[self game] fadeView:message:TRUE];
 }
 
 - (void) wrongQRCode{
@@ -365,5 +350,15 @@
 	[self dismissModalViewControllerAnimated:NO];
 }
 
+#pragma mark -
+#pragma mark MapAnotation
 
+-(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation{
+	MKPinAnnotationView* pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"asdf"];
+	pinView.pinColor = MKPinAnnotationColorPurple;
+	pinView.animatesDrop = YES;
+	pinView.canShowCallout = YES;
+	
+	return pinView;
+}
 @end

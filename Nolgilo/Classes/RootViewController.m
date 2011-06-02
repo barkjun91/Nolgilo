@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "LoadingViewController.h"
 #import "GameTeamSelectController.h"
+#import "GameListViewController.h"
 
 @implementation RootViewController
 
@@ -18,9 +19,9 @@
     [super viewDidLoad];
 	
 	loadingViewController = [[LoadingViewController alloc] initWithNibName:@"LoadingViewController" bundle:nil];
-//	gameListViewController = [[RootGameListViewController alloc] initWithNibName:@"RootGameListViewController" bundle:nil];
+	gameListViewController = [[GameListViewController alloc] initWithNibName:@"GameListViewController" bundle:nil];
 	
-	gameTeamSelectController = [[GameTeamSelectController alloc] initWithNibName:@"GameTeamSelectController" bundle:nil];
+//	gameTeamSelectController = [[GameTeamSelectController alloc] initWithNibName:@"GameTeamSelectController" bundle:nil];
 	[self.view addSubview:loadingViewController.view];
 }
 
@@ -32,8 +33,8 @@
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.7];
     [UIView setAnimationTransition: UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
-	[self.view addSubview:gameTeamSelectController.view];
-//	[self.view addSubview:gameListViewController.view];
+//	[self.view addSubview:gameTeamSelectController.view];
+	[self.view addSubview:gameListViewController.view];
 	[loadingViewController.view removeFromSuperview];
 	
 	[UIView commitAnimations];

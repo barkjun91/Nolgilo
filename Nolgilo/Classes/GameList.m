@@ -11,10 +11,7 @@
 
 @implementation GameList
 
-- (NSArray *)SetGameList {
-    NSArray *gameList;
-    gameList = [[NSArray alloc] initWithObjects:@"육개장", @"삼선 짬뽕", @"물만두", @"만안전석", @"칠리새우", @"짜장면",nil];
-	
-	return gameList;
+-(void)tableSetting:(UITableView *)tableView{
+
 }
 @end

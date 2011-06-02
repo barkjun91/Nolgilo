@@ -34,6 +34,61 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    list.separatorStyle = UITableViewCellSeparatorStyleNone;
+//    list.rowHeight = TABLE_VIEW_CUSTOM_HEIGHT;
+//    list.backgroundColor = [UIColor blueColor];
+}
+
+
+
+
+//테이블뷰 설정
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+	return 1;
+}
+
+//줄 몇개 쓸건가여?
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+	return 3;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *CellID = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
+    
+    if(cell != nil){
+        cell = nil;
+    }
+    
+    if(cell == nil){
+        
+        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellID] autorelease];    
+        
+        UIImage *customIndicator = [UIImage imageNamed:@"image_more.png"];
+        cell.accessoryView = [[[UIImageView alloc] initWithImage:customIndicator] autorelease];
+        
+        //메인 label 생성, 초기화
+        mainLabel = [[[UILabel alloc] initWithFrame:CGRectMake(
+                                                             IMAGE_WIDTH + cell.indentationWidth,
+                                                             (tableView.rowHeight - LABEL_HEIGHT * 2)/2,
+                                                             tableView.bounds.size.width -
+                                                             IMAGE_WIDTH - customIndicator.size.width - cell.indentationWidth,
+                                                             LABEL_HEIGHT)] autorelease];
+        mainLabel.tag = MAIN_LABEL_TAG;
+        mainLabel.backgroundColor = [UIColor clearColor];
+        mainLabel.highlightedTextColor = [UIColor whiteColor];
+        mainLabel.font = [UIFont systemFontOfSize:MAIN_LABEL_TEXTSIZE];
+        
+        [cell.contentView addSubview:mainLabel];
+        
+        mainLabel.text = @"테스트 메인입니다";
+    }
+    
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 
@@ -62,34 +117,5 @@
 - (void)dealloc {
     [super dealloc];
 }
-
-#pragma mark Table view methods
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return 1;
-}
-
-// Customize the number of rows in the table view.
-- (NSInteger)tableView:(UITableView *)tableView 
- numberOfRowsInSection:(NSInteger)section {
-	return 0;
-}
-
-// Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView 
-		 cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"any-cell"];
-	if(cell == nil){
-		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"any-cell"] autorelease];
-	}
-	
-	cell.textLabel.text = @"test";
-	return cell;
-}
-
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-}
-
 
 @end

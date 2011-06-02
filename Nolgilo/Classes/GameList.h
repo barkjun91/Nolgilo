@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 
 
+
+
+
 @interface GameList : NSObject {
 	
 }
--(NSArray *)SetGameList;
+-(void)tableSetting:(UITableView *)tableView;
 @end

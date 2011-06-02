@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class LoadingViewController;
-//@class RootGameListViewController;
+@class GameListViewController;
 
 
 //이녀석은 나중에 RootGameLIstView로 집어넣을 예정.
@@ -18,10 +18,10 @@
 
 @interface RootViewController : UIViewController {
     LoadingViewController* loadingViewController;
-//	RootGameListViewController* gameListViewController;
-
+	GameListViewController* gameListViewController;
+    
 	
-	GameTeamSelectController* gameTeamSelectController;
+//	GameTeamSelectController* gameTeamSelectController;
 }
 
 -(IBAction) TitleOnFlipView;
