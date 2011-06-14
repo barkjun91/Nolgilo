@@ -5,49 +5,47 @@ import java.util.List;
 import javax.jdo.PersistenceManager;
 import javax.jdo.Query;
 
-public class LocationDao {
-	
+public class RoomDao {
 	private ConnectionMaker connectionMaker;
 	
-	public LocationDao(ConnectionMaker connectionMaker) {
+	public RoomDao(ConnectionMaker connectionMaker){
 		this.connectionMaker = connectionMaker;
 	}
-	
-	public void add(Location location) {
+	public void add(Room room){
 		PersistenceManager pm = connectionMaker.makeConnection();
-		try {
-			pm.makePersistent(location);
+		try{
+			pm.makePersistent(room);
 		} finally {
 			pm.close();
 		}
-
 	}
 	
-	public Location get(String id) {
+	public Room get(String id){
 		return get(id, true);
 	}
-
-	public Location get(String id, boolean detach) {
+	
+	public Room get(String id, boolean detach){
 		PersistenceManager pm = connectionMaker.makeConnection();
-		Location location = null;
+		Room room = null;
 		
 		try {
-			Query query = pm.newQuery(Location.class);
+			Query query = pm.newQuery(Room.class);
 		    query.setFilter("id == idParam");
 		    query.declareParameters("String idParam");
 		    
-		    List<Location> results = (List<Location>) query.execute(id);
+		    List<Room> results = (List<Room>) query.execute(id);
 			if (!results.isEmpty()) {
-				Location result = results.get(0);
+				Room result = results.get(0);
 				if (detach) {
-					location = pm.detachCopy(result);
+					room = pm.detachCopy(result);
 				} else {
-					location = result;
+					room = result;
 				}
 			}
 		} finally {
 			pm.close();
 		}
-		return location;
+		return room;
+		
 	}
 }

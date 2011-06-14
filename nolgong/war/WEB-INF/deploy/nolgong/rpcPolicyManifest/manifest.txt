@@ -1,3 +1,2 @@
 # Module nolgong
 # RPC service class, partial path of RPC policy file
-com.nolgong.client.GreetingService, 902738B9277762C8B171AF6474249F1F.gwt.rpc

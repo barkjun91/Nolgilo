@@ -34,9 +34,11 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    list.separatorStyle = UITableViewCellSeparatorStyleNone;
-//    list.rowHeight = TABLE_VIEW_CUSTOM_HEIGHT;
-//    list.backgroundColor = [UIColor blueColor];
+    
+    list.backgroundColor = [UIColor clearColor];
+    list.separatorStyle = UITableViewCellSeparatorStyleNone;
+    list.rowHeight = TABLE_VIEW_CUSTOM_HEIGHT;
+    
 }
 
 
@@ -49,7 +51,7 @@
 
 //줄 몇개 쓸건가여?
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-	return 3;
+	return 1 ;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -64,7 +66,7 @@
         
         cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellID] autorelease];    
         
-        UIImage *customIndicator = [UIImage imageNamed:@"image_more.png"];
+        UIImage *customIndicator = [UIImage imageNamed:@"moreselect.png"];
         cell.accessoryView = [[[UIImageView alloc] initWithImage:customIndicator] autorelease];
         
         //메인 label 생성, 초기화
@@ -81,7 +83,53 @@
         
         [cell.contentView addSubview:mainLabel];
         
-        mainLabel.text = @"테스트 메인입니다";
+        
+        subLabel = [[[UILabel alloc] initWithFrame:CGRectMake(IMAGE_WIDTH + cell.indentationWidth,
+                                                              (tableView.rowHeight - LABEL_HEIGHT * 2) / 2 + LABEL_HEIGHT,
+                                                              mainLabel.bounds.size.width,
+                                                              LABEL_HEIGHT)] autorelease];
+        
+        subLabel.tag = SUB_LABEL_TAG;
+        subLabel.backgroundColor = [UIColor clearColor];
+        subLabel.textColor = mainLabel.textColor;
+        subLabel.highlightedTextColor = mainLabel.highlightedTextColor;
+        subLabel.font = [UIFont systemFontOfSize:MAIN_LABEL_TEXTSIZE-2];
+        
+        [cell.contentView addSubview:subLabel];
+        
+        cell.backgroundView = [[[UIImageView alloc] init] autorelease] ;
+        cell.selectedBackgroundView = [[[UIImageView alloc] init] autorelease];	
+        
+        mainLabel.text = @"놀공발전소 Test";
+        subLabel.text = @"홍대";
+        
+        UIImage *cellBackGroundImage;
+		UIImage *cellBackGroundSelected;
+		
+		NSUInteger sectionRow = [tableView numberOfRowsInSection:[indexPath section]];
+		NSUInteger currentRow = [indexPath row];
+		
+		
+		if (currentRow == 0 && sectionRow == 1) {
+			cellBackGroundImage = [UIImage imageNamed:@"cell_one.png"];
+			cellBackGroundSelected = [UIImage imageNamed:@"cell_one_highlight.png"];
+		}else if (currentRow == 0) {
+			cellBackGroundImage = [UIImage imageNamed:@"top.png"];
+			cellBackGroundSelected = [UIImage imageNamed:@"top_highlight.png"];
+		}else if (currentRow == sectionRow - 1) {
+			cellBackGroundImage = [UIImage imageNamed:@"bottom.png"];
+			cellBackGroundSelected = [UIImage imageNamed:@"bottom_highlight.png"];
+		}else {
+			cellBackGroundImage = [UIImage imageNamed:@"mid.png"];
+			cellBackGroundSelected = [UIImage imageNamed:@"mid_highlight.png"];
+		}
+		
+		((UIImageView *)cell.backgroundView).image = cellBackGroundImage;
+		((UIImageView *)cell.selectedBackgroundView).image = cellBackGroundSelected;
+		
+//		int cellImage = (currentRow % 3) + 1;
+//		cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"image_%d.png",cellImage]];
+        
     }
     
     return cell;

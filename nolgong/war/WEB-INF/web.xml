@@ -15,10 +15,20 @@
     <servlet-name>TestServlet</servlet-name>
     <servlet-class>com.nolgong.servlet.TestServlet</servlet-class>
   </servlet>
+	
+  <servlet>
+    <servlet-name>RoomServlet</servlet-name>
+    <servlet-class>com.nolgong.servlet.RoomServlet</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>TestServlet</servlet-name>
     <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RoomServlet</servlet-name>
+    <url-pattern>/room</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>
