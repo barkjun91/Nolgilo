@@ -32,15 +32,20 @@ public class RoomServlet extends HttpServlet{
 		String subtitle = request.getParameter("subtitle");
 		String connuser = request.getParameter("connuser");
 		String state = request.getParameter("state");
-		
 		Gson gson = new Gson();
 		String json = "NA";
 		try {
 			Query query = pm.newQuery(Room.class);
-			query.setFilter("roomid == idParam");
-			query.declareParameters("String idParam");
+			List<Room> results;
+			if(roomid.equals("ALL")){
+				results = (List<Room>) query.execute();
+				
+			} else {
+				query.setFilter("roomid == idParam");
+				query.declareParameters("String idParam");
+				results = (List<Room>) query.execute(roomid);
+			}
 			
-			List<Room> results = (List<Room>) query.execute(roomid);
 			Room room = null;
 			if(results.isEmpty()){
 				if(maintitle != null){
@@ -52,7 +57,7 @@ public class RoomServlet extends HttpServlet{
 					room.setState(state);
 					pm.makePersistent(room);
 				}
-			} else {
+			} else if (results.size() == 1){
 				room = results.get(0);
 				if(state != null){
 					//room is full?
@@ -63,7 +68,9 @@ public class RoomServlet extends HttpServlet{
 					room.setConnuser(connuser);
 				}
 			}
-			if(room == null){
+			if (results != null && results.size() > 1) {
+				json = gson.toJson(results);
+			} else if(room == null){
 				json = gson.toJson("No such Room");
 			} else {
 				json = gson.toJson(room);

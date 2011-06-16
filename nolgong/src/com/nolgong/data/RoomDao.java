@@ -29,6 +29,7 @@ public class RoomDao {
 		Room room = null;
 		
 		try {
+			
 			Query query = pm.newQuery(Room.class);
 		    query.setFilter("id == idParam");
 		    query.declareParameters("String idParam");
