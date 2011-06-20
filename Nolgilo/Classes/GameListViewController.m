@@ -11,10 +11,10 @@
 @implementation GameListViewController
 
 
--(GameList *) gamelist
+-(GameListCore *) gamelist
 {
 	if(!gamelist){
-		gamelist = [[GameList alloc] init];
+		gamelist = [[GameListCore alloc] init];
 	}
 	return gamelist;
 }
@@ -46,21 +46,28 @@
 
 //테이블뷰 설정
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-	return 1;
+	return 1 ;
 }
 
 //줄 몇개 쓸건가여?
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-	return 1 ;
+	[[self gamelist] RoomListData];
+	NSInteger count;
+	count = [[self gamelist] GetCount];
+	
+	return count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellID = @"Cell";
+	NSUInteger sectionRow = [tableView numberOfRowsInSection:[indexPath section]];
+	NSUInteger currentRow = [indexPath row];
+	
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
     
-    if(cell != nil){
-        cell = nil;
-    }
+//    if(cell != nil){
+//       cell = nil;
+//    }
     
     if(cell == nil){
         
@@ -72,11 +79,12 @@
         //메인 label 생성, 초기화
         mainLabel = [[[UILabel alloc] initWithFrame:CGRectMake(
                                                              IMAGE_WIDTH + cell.indentationWidth,
-                                                             (tableView.rowHeight - LABEL_HEIGHT * 2)/2,
+                                                             (tableView.rowHeight - LABEL_HEIGHT * 2)/2+20,
                                                              tableView.bounds.size.width -
                                                              IMAGE_WIDTH - customIndicator.size.width - cell.indentationWidth,
                                                              LABEL_HEIGHT)] autorelease];
         mainLabel.tag = MAIN_LABEL_TAG;
+        mainLabel.textColor = [UIColor whiteColor];
         mainLabel.backgroundColor = [UIColor clearColor];
         mainLabel.highlightedTextColor = [UIColor whiteColor];
         mainLabel.font = [UIFont systemFontOfSize:MAIN_LABEL_TEXTSIZE];
@@ -84,7 +92,7 @@
         [cell.contentView addSubview:mainLabel];
         
         
-        subLabel = [[[UILabel alloc] initWithFrame:CGRectMake(IMAGE_WIDTH + cell.indentationWidth,
+/*        subLabel = [[[UILabel alloc] initWithFrame:CGRectMake(IMAGE_WIDTH + cell.indentationWidth,
                                                               (tableView.rowHeight - LABEL_HEIGHT * 2) / 2 + LABEL_HEIGHT,
                                                               mainLabel.bounds.size.width,
                                                               LABEL_HEIGHT)] autorelease];
@@ -96,21 +104,23 @@
         subLabel.font = [UIFont systemFontOfSize:MAIN_LABEL_TEXTSIZE-2];
         
         [cell.contentView addSubview:subLabel];
-        
+*/      
         cell.backgroundView = [[[UIImageView alloc] init] autorelease] ;
         cell.selectedBackgroundView = [[[UIImageView alloc] init] autorelease];	
-        
-        mainLabel.text = @"놀공발전소 Test";
-        subLabel.text = @"홍대";
+	
+		int rows = (currentRow % [[self gamelist] GetCount]);
+        mainLabel.text = [[self gamelist] GetMainTitle:rows];
+        subLabel.text = [[self gamelist] GetSubTitle:rows];
+        NSString *room_state = [[self gamelist] GetState:rows];
         
         UIImage *cellBackGroundImage;
 		UIImage *cellBackGroundSelected;
 		
-		NSUInteger sectionRow = [tableView numberOfRowsInSection:[indexPath section]];
-		NSUInteger currentRow = [indexPath row];
-		
-		
-		if (currentRow == 0 && sectionRow == 1) {
+		cellBackGroundImage = [UIImage imageNamed:@"table_cell.png"];
+        cellBackGroundSelected = [UIImage imageNamed:@"table_cell_sel.png"];        
+        
+    
+/*		if (currentRow == 0 && sectionRow == 1) {
 			cellBackGroundImage = [UIImage imageNamed:@"cell_one.png"];
 			cellBackGroundSelected = [UIImage imageNamed:@"cell_one_highlight.png"];
 		}else if (currentRow == 0) {
@@ -123,12 +133,11 @@
 			cellBackGroundImage = [UIImage imageNamed:@"mid.png"];
 			cellBackGroundSelected = [UIImage imageNamed:@"mid_highlight.png"];
 		}
-		
+*/		
 		((UIImageView *)cell.backgroundView).image = cellBackGroundImage;
 		((UIImageView *)cell.selectedBackgroundView).image = cellBackGroundSelected;
 		
-//		int cellImage = (currentRow % 3) + 1;
-//		cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"image_%d.png",cellImage]];
+		cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_room.png",room_state]];
         
     }
     

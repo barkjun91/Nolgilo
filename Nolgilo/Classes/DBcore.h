@@ -14,7 +14,9 @@
 
 
 -(NSArray *) DataBaseConnect:(NSString *)conteam;
+-(NSArray *) RoomListData;
 -(bool)TeamCatch:(NSString *)teamid;
 -(void)PostMyLoc:(NSString *)teamid :(double)lat :(double)log;
 -(NSString *) SpotData;
+
 @end

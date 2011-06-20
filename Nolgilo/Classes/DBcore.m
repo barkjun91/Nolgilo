@@ -25,7 +25,7 @@
 	NSDictionary *responseDic = [response JSONValue];
 	NSMutableArray *data = [NSMutableArray arrayWithCapacity:2];
 	[data addObject:responseDic];
-
+ 
 	test_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@",team2]];
 	response = [NSString stringWithContentsOfURL:test_url encoding:NSUTF8StringEncoding error:NULL];
 	NSLog(@"response : %@", response);
@@ -92,6 +92,15 @@
 		
 	NSLog(@"reponse : %@", response);
 	
+}
+
+-(NSArray *) RoomListData{
+	
+	NSURL *test_url = [NSURL URLWithString:@"http://nolgilo.appspot.com/room?roomid=ALL"];
+	NSString *response = [NSString stringWithContentsOfURL:test_url encoding:NSUTF8StringEncoding error:NULL];
+	NSArray *data = [response JSONValue];
+	
+	return data;
 }
 
 
