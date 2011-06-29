@@ -12,17 +12,11 @@
 @class GameListViewController;
 
 
-//이녀석은 나중에 RootGameLIstView로 집어넣을 예정.
-@class GameTeamSelectController;
-
-
 @interface RootViewController : UIViewController {
     LoadingViewController* loadingViewController;
 	GameListViewController* gameListViewController;
     
-	
-//	GameTeamSelectController* gameTeamSelectController;
-}
+	}
 
 -(IBAction) TitleOnFlipView;
 @end

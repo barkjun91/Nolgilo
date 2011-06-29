@@ -25,15 +25,27 @@
 //커스텀 셀 높이
 #define TABLE_VIEW_CUSTOM_HEIGHT 100
 
+@class PingGameViewController;
 
 @interface GameListViewController : UIViewController<UITableViewDelegate, UITableViewDataSource> {
 	GameListCore *gamelist;
-	
+    PingGameViewController* pingGameViewController;
+    
+	IBOutlet UIView *roomlist, *createroom, *joinroom;
 	IBOutlet UITableView *list;
+    IBOutlet UILabel *Connect_User, *Game_Start, *Maintitle, *Subtitle;
+    IBOutlet UIButton *exitroom;
+    
+    NSTimer *updateConnuser;
     
     UILabel *mainLabel;
     UILabel *subLabel;
+    
+    NSUInteger select_row;
+    
+    int room_connect_user;
+    int teamName;
 	
 }
-
+-(IBAction) exitRoom;
 @end

@@ -14,10 +14,23 @@
 	DBcore *db;
 	
 	NSArray *roomlist;
+    
+    NSMutableArray *idlist;
+    NSMutableArray *maintitlelist;
+    NSMutableArray *subtitlelist;
+    NSMutableArray *consuerlist;
+    NSMutableArray *statelist;
+    
+    NSInteger count;
+    int roomid;
 }
 -(void)RoomListData;
 -(NSInteger)GetCount;
 -(NSString *)GetMainTitle:(int)number;
+-(NSInteger)GetRoomid;
 -(NSString *)GetSubTitle:(int)number;
 -(NSString *)GetState:(int)number;
+-(bool)GetRoomState:(int)number;
+-(int)GetConnectUser:(int)number;
+-(void)RoomExit:(int)number;
 @end

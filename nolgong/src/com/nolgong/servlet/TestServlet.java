@@ -41,17 +41,20 @@ public class TestServlet extends HttpServlet {
 		String latitude = request.getParameter("latitude");
 		String longitude = request.getParameter("longitude");
 		String state = request.getParameter("state");
+		String roomid = request.getParameter("roomid");
+		String ping = request.getParameter("ping");
 		
 		Gson gson = new Gson();
 		String json = "NA";
 		try {
 			Query query = pm.newQuery(Location.class);
-		    query.setFilter("id == idParam");
+		    query.setFilter("roomid == idParam");
 		    query.declareParameters("String idParam");
 
-		    List<Location> results = (List<Location>) query.execute(id);
+		    List<Location> results = (List<Location>)query.execute(roomid);
+		    
 		    Location location = null;
-			if (results.isEmpty()) {
+			if (results.size() < 4) {
 				if (latitude != null) {
 					// creation
 					location = new Location();
@@ -59,15 +62,29 @@ public class TestServlet extends HttpServlet {
 					location.setLatitude(latitude);
 					location.setLongitude(longitude);
 					location.setState(state);
+					location.setRoomid(roomid);
+					location.setPing(ping);
+		
 					pm.makePersistent(location);
 				}
 			} else {
-				location = results.get(0);
+				if(id.equals("A")){ location = results.get(0);}
+				else if(id.equals("B")){ location = results.get(1);	}
+				else { location = results.get(2); }
+				
 				if (latitude != null) {
 					// update
 					location.setLatitude(latitude);
 					location.setLongitude(longitude);
+				}
+				if(state != null){
 					location.setState(state);
+				}
+				if(ping != null){
+					location.setPing(ping);
+				}
+				if(roomid != null){
+					location.setRoomid(roomid);
 				}
 			}
 			if (location == null) {

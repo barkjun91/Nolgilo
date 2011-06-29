@@ -61,7 +61,6 @@ public class RoomServlet extends HttpServlet{
 				room = results.get(0);
 				if(state != null){
 					//room is full?
-					room.setConnuser(connuser);
 					room.setState(state);
 				}else if(connuser != null){
 					//user join?

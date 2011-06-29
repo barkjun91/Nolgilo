@@ -12,11 +12,22 @@
 @interface DBcore : NSObject {
 }
 
+/* --- 핑게임 관련 부분 함수 ----*/
+-(NSArray *) DataBaseConnect:(NSString *)conteam:(NSInteger)roomid;
+-(bool)TeamCatch:(NSString *)teamid:(NSInteger)roomid;
+-(void)PostMyLoc:(NSString *)teamid :(double)lat :(double)log:(NSInteger)roomid;
+-(NSString *) SpotData:(NSInteger)roomid;
+-(void)initMyLoc:(NSString *)teamid :(double)lat :(double)log:(NSInteger)roomid;
+-(void)PingOut:(NSString *)team1:(NSString *)team2:(NSString *)myteam:(NSInteger)roomid;
+-(NSString *)PingCheck:(NSString *)teamid:(NSInteger)roomid;
+-(void)PingCheckEnd:(NSString *)teamid:(NSInteger)roomid;
+-(NSDictionary *)PingTeamInfo:(NSString *)teamid:(NSInteger)roomid;
+-(void)alterExit:(NSString *)teamid:(NSInteger)roomid;
 
--(NSArray *) DataBaseConnect:(NSString *)conteam;
+
+
+/* --- 대기룸 관련 부분 함수 ----*/
 -(NSArray *) RoomListData;
--(bool)TeamCatch:(NSString *)teamid;
--(void)PostMyLoc:(NSString *)teamid :(double)lat :(double)log;
--(NSString *) SpotData;
-
+-(void)RoomConnectUpdate:(int)roomid:(int)connuser;
+-(int)RoomConnectUser:(int)roomid;
 @end

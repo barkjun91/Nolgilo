@@ -12,7 +12,7 @@
 
 @implementation PingGameCore
 
-@synthesize datalist;
+@synthesize datalist, pingdata;
 
 -(DBcore *) db
 {
@@ -40,8 +40,7 @@
 	NSString *teamname;
 	NSDictionary *team = [datalist objectAtIndex:teamnumber];
 	teamname = [team objectForKey:@"id"];
-	
-	
+	NSLog(@"%@", [team objectForKey:@"roomid"]);
 	
 //	teamname = [datalist objectAtIndex:teamnumber];
 	
@@ -182,7 +181,7 @@
 //teamid:(NSString) 잡은 팀의 이름
 
 -(bool)GetTeam:(NSString *)teamid{
-	if([[self db] TeamCatch:teamid]){
+	if([[self db] TeamCatch:teamid:myroomid]){
 		return TRUE;
 	}
 	else{
@@ -190,11 +189,60 @@
 	}
 	
 }
+-(void)InitLoc:(NSString *)teamid
+              :(double)lat
+              :(double)log{	
+	[[self db] initMyLoc:teamid:lat:log:myroomid];
+}
 
 -(void)UpdateLoc:(NSString *)teamid
 				:(double)lat
 				:(double)log{	
-	[[self db] PostMyLoc:teamid:lat:log];
+	[[self db] PostMyLoc:teamid:lat:log:myroomid];
+}
+
+-(void)ConnectDB:(NSString *)team{    
+    //DB를 연결시킨다.
+    self.datalist = [[self db] DataBaseConnect:team:myroomid];
+}
+
+-(void)PingCheckEnd:(NSString *)teamid:(NSString *)pingid{
+    NSString *pingteam;
+    pingteam = [[self db]PingCheck:teamid :myroomid];
+    
+    if([pingteam isEqual:pingid]){
+        [[self db]PingCheckEnd:teamid :myroomid];
+    }
+}
+
+-(void)PingTeamInfo:(NSString *)teamid{
+    self.pingdata = [[self db] PingTeamInfo:teamid:myroomid];
+}
+
+-(NSString *)PingCheck:(NSString *)teamid{
+    NSString *pingteam;
+    
+    pingteam = [[self db] PingCheck:teamid:myroomid];
+    [self PingTeamInfo:pingteam];
+    
+    return pingteam;
+}
+
+-(double) GetPingLat{
+    double lat;
+    lat = [[pingdata objectForKey:@"latitude"] doubleValue];
+    
+    return lat;
+}
+-(double) GetPingLog{
+    double log;
+    log = [[pingdata objectForKey:@"longitude"] doubleValue];
+    
+    return log;    
+}
+
+-(void)alterExit:(NSString *)teamid{
+    [[self db] alterExit:teamid:myroomid];
 }
 
 //함수명 : init
@@ -204,19 +252,20 @@
 
 -(void)init:(double)lat
 		   :(double)log
-		   :(NSString *)team{
+           :(NSInteger)roomid{
+    
 	mylat = lat;
 	mylog = log;
+	myroomid = roomid;
 	
 	
-	 //DB를 연결시킨다.
-	self.datalist = [[self db] DataBaseConnect:team];
 //	NSArray *coredata = [[self db] DataBaseConnect:team]; //다른팀의 정보를 가지고 온다.
 //    [self DataSetting:coredata]; //가져온 정보를 정제한다.
 }
 
 - (void)dealloc {
 	[datalist release];
+    [pingdata release];
 	[super dealloc];
 }
 @end

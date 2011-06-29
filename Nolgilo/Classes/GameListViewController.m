@@ -7,6 +7,7 @@
 //
 
 #import "GameListViewController.h"
+#import "PingGameViewController.h"
 
 @implementation GameListViewController
 
@@ -38,6 +39,8 @@
     list.backgroundColor = [UIColor clearColor];
     list.separatorStyle = UITableViewCellSeparatorStyleNone;
     list.rowHeight = TABLE_VIEW_CUSTOM_HEIGHT;
+    
+    pingGameViewController = [[PingGameViewController alloc] initWithNibName:@"PingGameViewController" bundle:nil];
     
 }
 
@@ -138,17 +141,112 @@
 		((UIImageView *)cell.selectedBackgroundView).image = cellBackGroundSelected;
 		
 		cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_room.png",room_state]];
-        
     }
-    
+
     return cell;
+}
+-(int) ConnectUser{
+    int connect_user=0;
+    connect_user = [[self gamelist] GetConnectUser:select_row];
+    return connect_user;
+}
+
+-(void)GameStart{
+   
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.7];
+    [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
+	[self.view addSubview:pingGameViewController.view];
+    [pingGameViewController userinit:teamName:[[self gamelist] GetRoomid]];
+	[UIView commitAnimations];
+    
+}
+
+-(void)teamSetting{
+    if(teamName == 0){
+        NSLog(@"초기화!");
+        teamName = room_connect_user;        
+    }
+    else{
+        if(teamName > room_connect_user){
+            NSLog(@"교환");
+            teamName = room_connect_user;
+        }
+    }
+}
+
+-(void) RoomJoin{
+/*  
+
+*/
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.7];
+    [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
+	[self.view addSubview:joinroom];
+    room_connect_user = [self ConnectUser];
+    Connect_User.text = [NSString stringWithFormat:@"%d", room_connect_user];
+    Maintitle.text = [[self gamelist] GetMainTitle:select_row];
+    Subtitle.text = [[self gamelist] GetSubTitle:select_row];
+	[UIView commitAnimations];
+    
+    [self teamSetting];
+    
+    if(room_connect_user == 3){
+        Game_Start.hidden = NO;
+        [self performSelector:@selector(ReadyGame) withObject:NULL afterDelay:5.0];
+    }
+    else{
+        updateConnuser = [[NSTimer scheduledTimerWithTimeInterval:4.0
+                                                           target:self
+                                                         selector:@selector(connuser:)
+                                                         userInfo:nil
+                                                          repeats:YES] retain]; 
+
+    }
+    //   [self performSelector:@selector(connuser) withObject:NULL afterDelay:4.0];
+}
+
+-(void) connuser:(NSTimer*)timer
+{
+    room_connect_user = [[self gamelist] GetConnectUser:select_row];
+    [self teamSetting];
+    Connect_User.text = [NSString stringWithFormat:@"%d", room_connect_user];
+    if(room_connect_user == 3){
+        [updateConnuser invalidate];
+        //[updateConnuser release];
+        Game_Start.hidden = NO;
+        [self performSelector:@selector(ReadyGame) withObject:NULL afterDelay:5.0];
+    }
+}
+
+-(void) ReadyGame{
+    exitroom.hidden = YES;
+    [self GameStart];
+}
+
+-(void) RoomExit{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.7];
+    [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromLeft forView:self.view cache:YES];
+	[joinroom removeFromSuperview];
+	[UIView commitAnimations];
+    
+    Game_Start.hidden = YES;
+
+    [updateConnuser invalidate];
+    [updateConnuser release];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    select_row = [indexPath row];
+    if([[self gamelist] GetRoomState:select_row]){
+        [self RoomJoin];
+    }
+    else{
+        NSLog(@"CLOSE!!!");        
+    }
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-
-
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -170,6 +268,10 @@
     // e.g. self.myOutlet = nil;
 }
 
+-(IBAction)exitRoom{
+    [self RoomExit];
+    [[self gamelist] RoomExit:select_row];
+}
 
 - (void)dealloc {
     [super dealloc];

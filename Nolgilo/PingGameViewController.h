@@ -17,8 +17,12 @@
 #import "PingGameCore.h"
 #import "SpotCore.h"
 #import "GameModel.h"
+@class ResultViewController;
 
 @interface PingGameViewController : UIViewController<ZXingDelegate, MKMapViewDelegate, CLLocationManagerDelegate> {
+    
+    ResultViewController* resultViewController;
+    
 	IBOutlet MKMapView *gameStage;
 	IBOutlet UIView *menu, *qrcode;
 	IBOutlet UIButton *pingButton, *menuButton;
@@ -33,6 +37,7 @@
 		NSString* teamlabel;
 		long score;
 		int spotnum;
+        NSInteger roomid;
 	}info;
 	
 	struct other {
@@ -46,10 +51,10 @@
 	IBOutlet UILabel *teamName1, *teamName2;
 	IBOutlet UIImageView *teamArrow1, *teamArrow2;
 
-	IBOutlet UIImageView *qrcodeimage, *message, *teamLabel;
-	
-	bool ping_enable, menu_enable;
-	
+	IBOutlet UIImageView *qrcodeimage, *message, *teamLabel, *alterbox;
+	IBOutlet UILabel *altermessage;
+    
+	bool ping_enable, menu_enable, locupdate;
 	CLLocationManager *locationManager;
 	CLLocationCoordinate2D location;
 	MKCoordinateSpan span;
@@ -58,6 +63,8 @@
 	PingGameCore *ping;
 	SpotCore *spot;
 	GameModel *game;
+    
+    NSTimer *pingcheck;
 }
 
 @property (nonatomic, retain) CLLocationManager *locationManager;;
@@ -68,8 +75,9 @@
 -(IBAction) CallMenu;
 -(IBAction) SpotCatch;
 -(IBAction) TeamCatch;
+-(IBAction) GameExit;
 -(IBAction) QRCodeButton;
 -(IBAction) QRCodeCancel;
 
-- (void)userinit:(NSString *)teamselect;
+- (void)userinit:(int)teamselect:(NSInteger)roomid;
 @end

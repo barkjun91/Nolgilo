@@ -9,7 +9,7 @@
 
 #import <QRCodeReader.h>
 #import "PingGameViewController.h"
-
+#import "ResultViewController.h"
 
 @implementation PingGameViewController
 
@@ -52,22 +52,32 @@
 }
 
 - (void)SpotBuilding{
-	[[self spot] initSpot];
-	[[self spot]addPin:gameStage];
+//	[[self spot] initSpot];
+//	[[self spot]addPin:gameStage];
 }
 
 
 
 
 
-- (void)userinit:(NSString *)teamselect{
-	info.teamid = teamselect;
+- (void)userinit:(int)teamselect:(NSInteger)roomid{
+    if(teamselect == 1){
+        info.teamid = @"A";
+    }
+    else if(teamselect == 2){
+        info.teamid = @"B";
+    }
+    else{
+        info.teamid = @"C";
+        altermessage.textColor = [UIColor blackColor];
+    }
+    info.roomid = roomid;
 	info.teamlabel = [[self ping] SetTeamLabel:info.teamid];
 	info.qrimage = [[self ping] SetQRImage:info.teamid];
 	
 	qrcodeimage.image = [UIImage imageNamed:info.qrimage];
 	teamLabel.image = [UIImage imageNamed:info.teamlabel];
-	
+    alterbox.image = [UIImage imageNamed:[NSString stringWithFormat:@"team%@Alerts.png", info.teamid]];
 }
 
 
@@ -86,15 +96,75 @@
 	
 	ping_enable = FALSE;
 	menu_enable = FALSE;
+    locupdate = FALSE;
+    
+    pingcheck = [[NSTimer scheduledTimerWithTimeInterval:4.0
+                                                  target:self
+                                                selector:@selector(pingcheck:)
+                                                userInfo:nil
+                                                 repeats:YES] retain]; 
 	locationManager.delegate = self;
 	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 
 	[locationManager startUpdatingHeading];
 	[locationManager startUpdatingLocation];
 	
+    resultViewController = [[ResultViewController alloc] initWithNibName:@"ResultViewController" bundle:nil];
+    
 }
 
+-(void) pingcheck:(NSTimer*)timer
+{
+    NSString *pingteam;
+    pingteam = [[self ping] PingCheck:info.teamid];
+    if([pingteam isEqual:@"0"]){
+    }
+    else{
+        altermessage.text = [NSString stringWithFormat:@"%@팀에서 발사된 핑이 감지되었습니다", pingteam];
+        double radian, lat, log, dis;
+        NSString *arrowName;
+        
+        lat = [[self ping]GetPingLat];
+        log = [[self ping]GetPingLog];
+        NSLog(@"%f, %f", lat, log);
+        
+        radian = [[self ping] GetRadian:lat:log];
+        dis = [[self ping] GetDistance:lat:log];
+        
+        arrowName = [[self ping] GetArrowImage:dis:0];
+        
+        teamArrow1.transform = CGAffineTransformMakeRotation(radian);
+		teamName1.transform = CGAffineTransformMakeRotation(radian);
+        
+        
+        teamArrow1.image = [UIImage imageNamed:arrowName];
+        teamName1.text = [[self ping] GetTeamLabel:pingteam
+                                                  :arrowName];
+        
+        [NSTimer scheduledTimerWithTimeInterval:4.0
+                                         target:self
+                                       selector:@selector(show:)
+                                       userInfo:nil
+                                        repeats:NO
+        ];
+        
+        altermessage.hidden = NO;
+        alterbox.hidden = NO;
+        ping_enable = TRUE;
+        
+        teamArrow1.hidden = NO;
+        teamName1.hidden = NO;
+        [[self ping] PingCheckEnd:info.teamid:pingteam];
+    }
 
+}
+-(void) show: (NSTimer *)timer{
+	altermessage.hidden = YES;
+	alterbox.hidden = YES;
+    teamArrow1.hidden = YES;
+    teamName1.hidden = YES;
+    ping_enable = FALSE;
+}
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -128,7 +198,7 @@
 
 	gameStage.transform = CGAffineTransformMakeRotation(heading);
 	
-	if(ping){
+	if(ping_enable){
 		teamName1.transform = CGAffineTransformMakeRotation(team1.radian+heading);
 		teamArrow1.transform = CGAffineTransformMakeRotation(team1.radian+heading);
 		teamName2.transform = CGAffineTransformMakeRotation(team2.radian+heading);
@@ -147,10 +217,19 @@
 	region.center = location;
 	region.span = span;
 	[gameStage setRegion:region animated:YES];
-	[[self ping] UpdateLoc:info.teamid 
-						  :location.latitude 
-						  :location.longitude];
-	NSLog(@"update");
+    if(locupdate != TRUE){
+        [[self ping] init:location.latitude:location.longitude:info.roomid];
+        [[self ping] InitLoc:info.teamid 
+                            :location.latitude
+                            :location.longitude];
+        locupdate = TRUE;
+    }
+    else{
+        [[self ping] UpdateLoc:info.teamid 
+                              :location.latitude 
+                              :location.longitude];
+    }
+//	NSLog(@"update");
 	
 }
 
@@ -179,11 +258,11 @@
 }
 
 -(void) DataSet{
-	[[self ping] init:location.latitude:location.longitude:info.teamid];
+	[[self ping] ConnectDB:info.teamid];
 	
 	team1.name = [[self ping] GetTeamName:0];
 	team2.name = [[self ping] GetTeamName:1];
-	
+    
 	team1.lat = [[self ping] GetLat:0];
 	team1.log = [[self ping] GetLog:0];
 	team2.lat = [[self ping] GetLat:1];
@@ -238,6 +317,7 @@
 	teamName2.hidden = NO;
 	teamArrow2.hidden = NO;
 	pingButton.enabled = NO;
+    ping_enable = YES;
 }
 
 //Ping버튼이 눌렸을때
@@ -254,7 +334,7 @@
 
 
 -(void)MenuOpen{
-	menu.frame = CGRectMake(195.0f,312.0f, menu.frame.size.width, menu.frame.size.height);
+	menu.frame = CGRectMake(195.0f,272.0f, menu.frame.size.width, menu.frame.size.height);
 	[self.view addSubview:menu];
 	menu_enable = TRUE;
 }
@@ -275,6 +355,34 @@
 -(IBAction) SpotCatch{
 	
 }
+
+-(IBAction) GameExit{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"게임종료" 
+                                                    message:@"게임을 종료하실건가요?\n 게임을 종료하면 같은방에 다시 참여하실 수 없습니다."
+                                                   delegate:self
+                                          cancelButtonTitle:@"아니오"
+                                          otherButtonTitles:@"네", nil];
+    [alert show];
+    [alert release];	
+}
+
+-(void)goResult{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.7];
+    [UIView setAnimationTransition: UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
+	[self.view addSubview:resultViewController.view];
+    [resultViewController resultinit:info.teamid:info.score:@"Lose"];
+	[UIView commitAnimations];    
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if(buttonIndex){
+        [[self ping] alterExit:info.teamid];
+        NSLog(@"정상적으로 종료가 되었습니다.");
+        [self goResult];
+    }
+}
+
 -(IBAction) TeamCatch{
 	[self MenuClose];
 	ZXingWidgetController *widController = [[ZXingWidgetController alloc] initWithDelegate:self showCancel:YES OneDMode:NO];
