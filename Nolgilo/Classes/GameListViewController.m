@@ -193,6 +193,7 @@
     
     if(room_connect_user == 3){
         Game_Start.hidden = NO;
+        exitroom.hidden = YES;
         [self performSelector:@selector(ReadyGame) withObject:NULL afterDelay:5.0];
     }
     else{
@@ -203,7 +204,6 @@
                                                           repeats:YES] retain]; 
 
     }
-    //   [self performSelector:@selector(connuser) withObject:NULL afterDelay:4.0];
 }
 
 -(void) connuser:(NSTimer*)timer
@@ -215,13 +215,14 @@
         [updateConnuser invalidate];
         //[updateConnuser release];
         Game_Start.hidden = NO;
+        exitroom.hidden = YES;
         [self performSelector:@selector(ReadyGame) withObject:NULL afterDelay:5.0];
     }
 }
 
 -(void) ReadyGame{
-    exitroom.hidden = YES;
     [self GameStart];
+    [[self gamelist] RoomClose:[[self gamelist] GetRoomid]]];
 }
 
 -(void) RoomExit{
@@ -243,7 +244,13 @@
         [self RoomJoin];
     }
     else{
-        NSLog(@"CLOSE!!!");        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"참여불가" 
+                                                        message:@"이미 게임이 진행중입니다."
+                                                       delegate:self
+                                              cancelButtonTitle:@"확인"
+                                              otherButtonTitles:nil];     
+        [alert show];
+        [alert release];
     }
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

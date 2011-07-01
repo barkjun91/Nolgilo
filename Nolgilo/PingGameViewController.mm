@@ -98,6 +98,9 @@
 	menu_enable = FALSE;
     locupdate = FALSE;
     
+    
+    info.score = 0;
+    
     pingcheck = [[NSTimer scheduledTimerWithTimeInterval:4.0
                                                   target:self
                                                 selector:@selector(pingcheck:)
@@ -431,8 +434,11 @@
 	else{
 		if([[self ping] GetTeam:teamid]){
 			[self SetMessage:[NSString stringWithFormat:@"catching%@", teamid]];
+            info.score += 30;
 		}
-		
+        else{
+            [self wrongQRCode];
+        }
 	}
 }
 

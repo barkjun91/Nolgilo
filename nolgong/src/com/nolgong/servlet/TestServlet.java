@@ -43,34 +43,42 @@ public class TestServlet extends HttpServlet {
 		String state = request.getParameter("state");
 		String roomid = request.getParameter("roomid");
 		String ping = request.getParameter("ping");
-		
+		int size;
 		Gson gson = new Gson();
 		String json = "NA";
+		
 		try {
 			Query query = pm.newQuery(Location.class);
 		    query.setFilter("roomid == idParam");
 		    query.declareParameters("String idParam");
 
 		    List<Location> results = (List<Location>)query.execute(roomid);
-		    
+		    size = results.size();
 		    Location location = null;
-			if (results.size() < 4) {
-				if (latitude != null) {
+		    
+			if (size < 3) {
+				if (latitude != null && ping != null && state != null) {
 					// creation
 					location = new Location();
+					location.setRoomid(roomid);
 					location.setId(id);
 					location.setLatitude(latitude);
 					location.setLongitude(longitude);
 					location.setState(state);
-					location.setRoomid(roomid);
 					location.setPing(ping);
 		
 					pm.makePersistent(location);
 				}
 			} else {
-				if(id.equals("A")){ location = results.get(0);}
-				else if(id.equals("B")){ location = results.get(1);	}
-				else { location = results.get(2); }
+				
+				for(int i=0; i<size; i++){
+					if(id.equals(results.get(i).getId()))
+						location = results.get(i);
+						
+				}
+				//if(id.equals("A")){ location = results.get(0);}
+				//else if(id.equals("B")){ location = results.get(1);	}
+				//else if(id.equals("C")){ location = results.get(2); }
 				
 				if (latitude != null) {
 					// update

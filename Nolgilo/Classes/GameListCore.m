@@ -114,6 +114,10 @@
     [consuerlist replaceObjectAtIndex:number withObject:[NSString stringWithFormat:@"%d",user]];
 }
 
+-(void)RoomClose:(NSInteger)roomid{
+    [[self db] RoomClose:roomid];
+}
+
 -(void)SetMaintitle{
     NSDictionary *data; 
     for(int i=0; i<count; i++){

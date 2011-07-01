@@ -16,5 +16,5 @@
 }
 
 -(IBAction) goRoomList;
--(void) resultinit:(NSString *)teamid:(double)sc:(NSString *)state;
+-(void) resultinit:(NSString *)teamid:(long)sc:(NSString *)state;
 @end

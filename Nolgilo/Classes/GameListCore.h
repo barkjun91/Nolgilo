@@ -33,4 +33,5 @@
 -(bool)GetRoomState:(int)number;
 -(int)GetConnectUser:(int)number;
 -(void)RoomExit:(int)number;
+-(void)RoomClose:(NSInteger)roomid;
 @end

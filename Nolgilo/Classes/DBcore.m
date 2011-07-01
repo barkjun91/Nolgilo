@@ -15,17 +15,17 @@
 
 /* --- 핑게임 관련 부분 함수 ----*/
 -(void)alterExit:(NSString *)teamid :(NSInteger)roomid{
-    NSString *url = [NSString stringWithFormat:@"http://localhost:8888/test?id=%@&roomid=%d&state=%d", teamid, roomid, 2];
+    NSString *url = [NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&roomid=%d&state=%d", teamid, roomid, 2];
     NSURL *exit_url = [NSURL URLWithString:url];
 	NSString *response = [NSString stringWithContentsOfURL:exit_url encoding:NSUTF8StringEncoding error:NULL];
 }
 
 -(NSDictionary *)PingTeamInfo:(NSString *)teamid
                    :(NSInteger)roomid{
-    NSURL *test_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%@&roomid=%d",teamid,roomid]];
+    NSURL *test_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&roomid=%d",teamid,roomid]];
 	NSString *response = [NSString stringWithContentsOfURL:test_url encoding:NSUTF8StringEncoding error:NULL];
     
-    //	NSLog(@"response : %@", response);
+    //NSLog(@"response : %@", response);
     //  NSLog(@"%@ %@ %d", team1, team2, roomid);
     
     NSDictionary *responseDic = [response JSONValue];
@@ -36,14 +36,14 @@
 -(void)PingCheckEnd:(NSString *)teamid
                     :(NSInteger)roomid
 {
-    NSURL *ping_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%@&roomid=%d&ping=0",teamid,roomid]];
+    NSURL *ping_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&roomid=%d&ping=0",teamid,roomid]];
     NSString *response = [NSString stringWithContentsOfURL:ping_url encoding:NSUTF8StringEncoding error:NULL];
 }
 
 -(NSString *)PingCheck:(NSString *)teamid 
                       :(NSInteger)roomid{
     NSString *pingteam;
-    NSURL *ping_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%@&roomid=%d",teamid,roomid]];
+    NSURL *ping_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&roomid=%d",teamid,roomid]];
     NSString *response = [NSString stringWithContentsOfURL:ping_url encoding:NSUTF8StringEncoding error:NULL];
     NSDictionary *responseDic = [response JSONValue];
     
@@ -56,10 +56,10 @@
               :(NSString *)team2
               :(NSString *)myteam
               :(NSInteger)roomid{
-    NSURL *ping_url =  [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%@&roomid=%d&ping=%@",team1,roomid,myteam]];
+    NSURL *ping_url =  [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&roomid=%d&ping=%@",team1,roomid,myteam]];
     NSString *response = [NSString stringWithContentsOfURL:ping_url encoding:NSUTF8StringEncoding error:NULL];
     
-    ping_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%@&roomid=%d&ping=%@",team2,roomid,myteam]];
+    ping_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&roomid=%d&ping=%@",team2,roomid,myteam]];
 	response = [NSString stringWithContentsOfURL:ping_url encoding:NSUTF8StringEncoding error:NULL];
     
     NSLog(@"정상적으로 핑이 쏴졌습니다.");
@@ -68,7 +68,7 @@
                           :(NSString *)team2
                           :(NSInteger)roomid{
 	
-    NSURL *test_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%@&roomid=%d",team1,roomid]];
+    NSURL *test_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&roomid=%d",team1,roomid]];
 	NSString *response = [NSString stringWithContentsOfURL:test_url encoding:NSUTF8StringEncoding error:NULL];
     
     //	NSLog(@"response : %@", response);
@@ -78,7 +78,7 @@
 	NSMutableArray *data = [NSMutableArray arrayWithCapacity:2];
 	[data addObject:responseDic];
     
-    test_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8888/test?id=%@&roomid=%d",team2,roomid]];
+    test_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&roomid=%d",team2,roomid]];
     
 	response = [NSString stringWithContentsOfURL:test_url encoding:NSUTF8StringEncoding error:NULL];
     
@@ -143,7 +143,7 @@
                 :(double)lat
                 :(double)log 
                 :(NSInteger)roomid{
-    NSString *json = [NSString stringWithFormat:@"http://localhost:8888/test?id=%@&latitude=%f&longitude=%f&roomid=%d&state=1&ping=0",teamid,lat,log,roomid];
+    NSString *json = [NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&latitude=%f&longitude=%f&roomid=%d&state=1&ping=0",teamid,lat,log,roomid];
 	NSLog(@"%@", json);
     
 	NSURL *url = [NSURL URLWithString:json];
@@ -155,7 +155,7 @@
 				:(double) log
                 :(NSInteger)roomid{
     
-	 NSString *json = [NSString stringWithFormat:@"http://localhost:8888/test?id=%@&latitude=%f&longitude=%f&roomid=%d",teamid,lat,log,roomid];
+	 NSString *json = [NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&latitude=%f&longitude=%f&roomid=%d",teamid,lat,log,roomid];
 	
 	NSURL *url = [NSURL URLWithString:json];
 	NSString *response = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:NULL];
@@ -173,16 +173,29 @@
 //상대팀이 잡혀있는 상태면 False를 반환하고,
 //만일 상대팀이 잡혀있지 않는 상태라면, 상대팀을 잡았다는 명령을 날린후, TRUE반환.
 -(bool) TeamCatch:(NSString *)teamid:(NSInteger)roomid{
-	return TRUE;
+    
+    NSString *pingteam;
+    NSURL *ping_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&roomid=%d",teamid,roomid]];
+    NSString *response = [NSString stringWithContentsOfURL:ping_url encoding:NSUTF8StringEncoding error:NULL];
+    NSDictionary *responseDic = [response JSONValue];
+    
+    NSLog(@"%@", response);
+    
+    pingteam = [responseDic objectForKey:@"state"];
+    
+    if([pingteam isEqualToString:@"1"]){
+        return TRUE;
+    }
+    else{
+        return FALSE;
+    }
 }
 
 
 /* --- 대기룸 관련 부분 함수 ----*/
-
-
 -(void)RoomClose:(int)roomid{
     
-    NSString *json = [NSString stringWithFormat:@"http://localhost:8888/room?roomid=%d&connuser=%d",roomid];
+    NSString *json = [NSString stringWithFormat:@"http://nolgilo.appspot.com/room?roomid=%d&connuser=%d",roomid];
     
 	NSURL *url = [NSURL URLWithString:json];
 	NSString *response = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:NULL];
@@ -191,7 +204,7 @@
 
 -(NSArray *) RoomListData{
 	 
-    NSURL *test_url = [NSURL URLWithString:@"http://localhost:8888/room?roomid=ALL"];
+    NSURL *test_url = [NSURL URLWithString:@"http://nolgilo.appspot.com/room?roomid=ALL"];
 	NSString *response = [NSString stringWithContentsOfURL:test_url encoding:NSUTF8StringEncoding error:NULL];
 	NSArray *data = [response JSONValue];
 	
@@ -199,7 +212,7 @@
 }
 
 -(void)RoomConnectUpdate:(int)roomid:(int)connuser{
-    NSString *json = [NSString stringWithFormat:@"http://localhost:8888/room?roomid=%d&connuser=%d",roomid,connuser];
+    NSString *json = [NSString stringWithFormat:@"http://nolgilo.appspot.com/room?roomid=%d&connuser=%d",roomid,connuser];
 	NSURL *url = [NSURL URLWithString:json];
 	NSString *response = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:NULL];
 	NSLog(@"reponse : %@", response);    
@@ -208,7 +221,7 @@
 -(int)RoomConnectUser:(int)roomid{
     int connect;
     
-    NSString *json = [NSString stringWithFormat:@"http://localhost:8888/room?roomid=%d",roomid];
+    NSString *json = [NSString stringWithFormat:@"http://nolgilo.appspot.com/room?roomid=%d",roomid];
 	NSURL *url = [NSURL URLWithString:json];
 	NSString *response = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:NULL];
     NSDictionary *responseDic = [response JSONValue];

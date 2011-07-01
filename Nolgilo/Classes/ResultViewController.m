@@ -39,9 +39,9 @@
     // e.g. self.myOutlet = nil;
 }
 
--(void)resultinit:(NSString *)teamid :(double)sc:(NSString *)state{
+-(void)resultinit:(NSString *)teamid :(long)sc:(NSString *)state{
     teamNameLabel.text = teamid;
-    scoreLabel.text = [NSString stringWithFormat:@"%d", sc];
+    scoreLabel.text = [NSString stringWithFormat:@"%ld", sc];
     if([state isEqualToString:@"Exit"] || [state isEqualToString:@"Lose"]){
         result.image = [UIImage imageNamed:@"Lose.png"];
     }
