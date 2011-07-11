@@ -22,6 +22,53 @@
 	return db;
 }
 
+- (int)GameResult:(NSString *)teamid{
+    NSArray *scorelist;
+    int maxscore, teamnum, teamscore;
+    
+    if([teamid isEqualToString:@"A"]){
+        teamnum = maxscore = 0;
+    }
+    else if([teamid isEqualToString:@"B"]){
+        teamnum = maxscore = 1;
+    }
+    else{
+        teamnum = maxscore = 2;
+    }
+    
+    scorelist = [[self db] GetScore:myroomid];
+    teamscore = [[scorelist objectAtIndex:teamnum] intValue];
+    
+    for(int i = 0; i<3; i++){
+        if(i != teamnum){
+            if([[scorelist objectAtIndex:i] intValue] > teamscore){
+                maxscore = i;
+            }
+        }
+    }
+    
+    if(maxscore == teamnum){
+        return 1;
+    }
+    else{
+        return 2;
+    }
+}
+
+- (bool)GameCheking:(NSString *)teamid{
+    if([[self db] GetState:teamid:myroomid] == 3)
+    {
+        return TRUE;
+    }
+    else
+    {
+        return FALSE;
+    }
+}
+
+-(void)SetScore:(NSString *)teamid :(long)score{
+    [[self db] SetScore:teamid:score:myroomid];
+}
 - (NSString *)SetTeamLabel:(NSString *)teamid{
 	NSString *teamlabel = [NSString stringWithFormat:@"Team%@.png", teamid];
 	return teamlabel;
@@ -32,14 +79,21 @@
 	return teamQR;
 }
 
-//함수명 : SetTeamName
+-(int)GetState:(NSString *)teamid{
+    int state;
+    state = [[self db]GetState:teamid:myroomid];
+    
+    return state;
+}
+
+//함수명 : GetTeamName
 //리턴값 : NSString : 어떤 팀인지를 확인해 준다.
 //인자값 : (int)teamnumber : 몇번째 팀인지 알려준다.
 -(NSString *)GetTeamName:(int)teamnumber
 {
 	NSString *teamname;
 	NSDictionary *team = [datalist objectAtIndex:teamnumber];
-	teamname = [team objectForKey:@"id"];
+	teamname = [team objectForKey:@"userid"];
 	NSLog(@"%@", [team objectForKey:@"roomid"]);
 	
 //	teamname = [datalist objectAtIndex:teamnumber];
@@ -223,8 +277,7 @@
     NSString *pingteam;
     
     pingteam = [[self db] PingCheck:teamid:myroomid];
-    [self PingTeamInfo:pingteam];
-    
+
     return pingteam;
 }
 
@@ -242,7 +295,7 @@
 }
 
 -(void)alterExit:(NSString *)teamid{
-    [[self db] alterExit:teamid:myroomid];
+    [[self db] SetTeamStatus:teamid:myroomid:2];
 }
 
 //함수명 : init

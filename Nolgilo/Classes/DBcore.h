@@ -22,9 +22,11 @@
 -(NSString *)PingCheck:(NSString *)teamid:(NSInteger)roomid;
 -(void)PingCheckEnd:(NSString *)teamid:(NSInteger)roomid;
 -(NSDictionary *)PingTeamInfo:(NSString *)teamid:(NSInteger)roomid;
--(void)alterExit:(NSString *)teamid:(NSInteger)roomid;
-
-
+-(void)SetTeamStatus:(NSString *)teamid:(NSInteger)roomid:(int)state;
+-(int)GetState:(NSString *)teamid:(NSInteger)roomid;
+- (void)SetScore:(NSString *)teamid:(long)score:(NSInteger)roomid;
+-(int)GameChecking:(NSInteger)roomid;
+-(NSArray *) GetScore:(NSInteger) roomid;
 
 /* --- 대기룸 관련 부분 함수 ----*/
 -(NSArray *) RoomListData;

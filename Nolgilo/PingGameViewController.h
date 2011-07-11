@@ -25,7 +25,9 @@
     
 	IBOutlet MKMapView *gameStage;
 	IBOutlet UIView *menu, *qrcode;
-	IBOutlet UIButton *pingButton, *menuButton;
+	IBOutlet UIButton *pingButton, *menuButton, *teamButton;
+    IBOutlet UIButton *spotcatchButton, *otherteamcatchButton;
+    
 	NSString * scanResults;
 	
 	double heading;
@@ -54,7 +56,7 @@
 	IBOutlet UIImageView *qrcodeimage, *message, *teamLabel, *alterbox;
 	IBOutlet UILabel *altermessage;
     
-	bool ping_enable, menu_enable, locupdate;
+	bool ping_enable, menu_enable, locupdate, live;
 	CLLocationManager *locationManager;
 	CLLocationCoordinate2D location;
 	MKCoordinateSpan span;

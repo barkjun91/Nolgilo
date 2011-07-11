@@ -37,6 +37,7 @@
     IBOutlet UIButton *exitroom;
     
     NSTimer *updateConnuser;
+    NSTimer *refresh;
     
     UILabel *mainLabel;
     UILabel *subLabel;

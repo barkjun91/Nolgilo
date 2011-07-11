@@ -2,6 +2,7 @@ package com.nolgong.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Collections;
 import java.util.List;
 
 import javax.jdo.PersistenceManager;
@@ -37,13 +38,19 @@ public class TestServlet extends HttpServlet {
 		response.setCharacterEncoding("UTF-8");
 		PrintWriter writer = response.getWriter();
 		PersistenceManager pm = PMF.get().getPersistenceManager();
-		String id = request.getParameter("id");
+		String userid = request.getParameter("id");
 		String latitude = request.getParameter("latitude");
 		String longitude = request.getParameter("longitude");
 		String state = request.getParameter("state");
 		String roomid = request.getParameter("roomid");
 		String ping = request.getParameter("ping");
+		String score = request.getParameter("score");
+		
 		int size;
+		int live_count;
+		
+		live_count = 0;
+		
 		Gson gson = new Gson();
 		String json = "NA";
 		
@@ -53,6 +60,7 @@ public class TestServlet extends HttpServlet {
 		    query.declareParameters("String idParam");
 
 		    List<Location> results = (List<Location>)query.execute(roomid);
+		    
 		    size = results.size();
 		    Location location = null;
 		    
@@ -61,38 +69,42 @@ public class TestServlet extends HttpServlet {
 					// creation
 					location = new Location();
 					location.setRoomid(roomid);
-					location.setId(id);
+					location.setUserid(userid);
 					location.setLatitude(latitude);
 					location.setLongitude(longitude);
 					location.setState(state);
 					location.setPing(ping);
-		
+					location.setScore(score);
+					
 					pm.makePersistent(location);
 				}
 			} else {
-				
 				for(int i=0; i<size; i++){
-					if(id.equals(results.get(i).getId()))
+					if(userid.equals(results.get(i).getUserid()))
 						location = results.get(i);
-						
+					if(results.get(i).getState().equals("0")||results.get(i).getState().equals("2"))
+						live_count += 1;	
 				}
-				//if(id.equals("A")){ location = results.get(0);}
-				//else if(id.equals("B")){ location = results.get(1);	}
-				//else if(id.equals("C")){ location = results.get(2); }
-				
 				if (latitude != null) {
 					// update
 					location.setLatitude(latitude);
 					location.setLongitude(longitude);
 				}
-				if(state != null){
+				else if(state != null){
 					location.setState(state);
 				}
-				if(ping != null){
+				else if(ping != null){
 					location.setPing(ping);
 				}
-				if(roomid != null){
-					location.setRoomid(roomid);
+				else if(score != null){
+					location.setScore(score);
+				}
+				if(live_count == 2){
+					for(int i=0; i<size; i++){
+						Location set = null;
+						set = results.get(i);
+						set.setState("3");
+					}
 				}
 			}
 			if (location == null) {

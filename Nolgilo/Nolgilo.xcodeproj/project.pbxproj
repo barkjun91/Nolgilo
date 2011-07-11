@@ -60,9 +60,11 @@
 		7AB4DBD91303BCBE00DE0AA8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBD81303BCBE00DE0AA8 /* AudioToolbox.framework */; };
 		7AB4DBDB1303BCBE00DE0AA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBDA1303BCBE00DE0AA8 /* CoreLocation.framework */; };
 		7AB4DBDD1303BCBE00DE0AA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB4DBDC1303BCBE00DE0AA8 /* MapKit.framework */; };
+		7AB7DB1013BEDE050079B6A1 /* GameEnd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AB7DB0F13BEDE050079B6A1 /* GameEnd.png */; };
 		7ABB8FD2131B706D00437FC4 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB8FD0131B706D00437FC4 /* LoadingViewController.m */; };
 		7ABB8FD3131B706D00437FC4 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABB8FD1131B706D00437FC4 /* LoadingViewController.xib */; };
 		7ABB9037131B770B00437FC4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB9036131B770B00437FC4 /* RootViewController.m */; };
+		7AC07E9613BDEC8C0013DB28 /* Catched.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AC07E9513BDEC8C0013DB28 /* Catched.png */; };
 		7AC4155D1373F82300C37DF3 /* w_tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AC4155C1373F82300C37DF3 /* w_tile.png */; };
 		7ACEFD3A13B0E49F0006F840 /* RoomlistBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ACEFD3913B0E49F0006F840 /* RoomlistBackground.png */; };
 		7AD39B0713B9BC8000762CB4 /* teamAAlerts.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD39B0413B9BC7F00762CB4 /* teamAAlerts.png */; };
@@ -179,11 +181,13 @@
 		7AB4DBD81303BCBE00DE0AA8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7AB4DBDA1303BCBE00DE0AA8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7AB4DBDC1303BCBE00DE0AA8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7AB7DB0F13BEDE050079B6A1 /* GameEnd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GameEnd.png; path = ../Resource/GameEnd.png; sourceTree = "<group>"; };
 		7ABB8FCF131B706D00437FC4 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
 		7ABB8FD0131B706D00437FC4 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		7ABB8FD1131B706D00437FC4 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoadingViewController.xib; path = Classes/LoadingViewController.xib; sourceTree = "<group>"; };
 		7ABB9035131B770B00437FC4 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		7ABB9036131B770B00437FC4 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		7AC07E9513BDEC8C0013DB28 /* Catched.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Catched.png; path = ../Resource/Catched.png; sourceTree = "<group>"; };
 		7AC4155C1373F82300C37DF3 /* w_tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = w_tile.png; path = ../Resource/w_tile.png; sourceTree = SOURCE_ROOT; };
 		7ACEFD3913B0E49F0006F840 /* RoomlistBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RoomlistBackground.png; path = ../Resource/RoomlistBackground.png; sourceTree = "<group>"; };
 		7AD39B0413B9BC7F00762CB4 /* teamAAlerts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teamAAlerts.png; path = ../Resource/teamAAlerts.png; sourceTree = "<group>"; };
@@ -455,10 +459,12 @@
 		71B8370E1390B329002E5BAF /* messageBox */ = {
 			isa = PBXGroup;
 			children = (
+				7AB7DB0F13BEDE050079B6A1 /* GameEnd.png */,
 				7AD39B0413B9BC7F00762CB4 /* teamAAlerts.png */,
 				7AD39B0513B9BC7F00762CB4 /* teamBAlerts.png */,
 				7AD39B0613B9BC7F00762CB4 /* teamCAlerts.png */,
 				71B8376D1390C194002E5BAF /* catchingA.png */,
+				7AC07E9513BDEC8C0013DB28 /* Catched.png */,
 				71B8376E1390C194002E5BAF /* catchingB.png */,
 				71B8376F1390C194002E5BAF /* catchingC.png */,
 				71B8370C1390B325002E5BAF /* wrongQR.png */,
@@ -685,6 +691,8 @@
 				7AF7ECBE13BAFC92005F215E /* ResultViewController.xib in Resources */,
 				7AF7ECC213BB245C005F215E /* win.png in Resources */,
 				7AF7ECC313BB245C005F215E /* Lose.png in Resources */,
+				7AC07E9613BDEC8C0013DB28 /* Catched.png in Resources */,
+				7AB7DB1013BEDE050079B6A1 /* GameEnd.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,7 +762,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -776,7 +784,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -808,7 +816,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
-				VALID_ARCHS = "armv6 armv7";
+				VALID_ARCHS = "armv6 armv7 i386";
 			};
 			name = Debug;
 		};
@@ -829,7 +837,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
-				VALID_ARCHS = "armv6 armv7";
+				VALID_ARCHS = "armv6 armv7 i386";
 			};
 			name = Release;
 		};

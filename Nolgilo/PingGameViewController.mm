@@ -51,6 +51,24 @@
 	return game;
 }
 
+
+-(void) OnTimer:(NSTimer *)timer
+{
+	[[self game] fadeView:message:FALSE];
+}
+
+-(void) SetMessage:(NSString *)imagename:(double)sc{
+    NSLog(@"%@", [NSString stringWithFormat:@"%@.png", imagename]);
+	message.image  = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", imagename]];
+	[NSTimer scheduledTimerWithTimeInterval:sc
+									 target:self
+								   selector:@selector(OnTimer:)
+								   userInfo:nil
+									repeats:NO
+	 ];
+	[[self game] fadeView:message:TRUE];
+}
+
 - (void)SpotBuilding{
 //	[[self spot] initSpot];
 //	[[self spot]addPin:gameStage];
@@ -97,13 +115,13 @@
 	ping_enable = FALSE;
 	menu_enable = FALSE;
     locupdate = FALSE;
-    
+    live = TRUE;
     
     info.score = 0;
     
     pingcheck = [[NSTimer scheduledTimerWithTimeInterval:4.0
                                                   target:self
-                                                selector:@selector(pingcheck:)
+                                                selector:@selector(check:)
                                                 userInfo:nil
                                                  repeats:YES] retain]; 
 	locationManager.delegate = self;
@@ -116,13 +134,29 @@
     
 }
 
--(void) pingcheck:(NSTimer*)timer
-{
+-(void)goResult:(int)state{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.7];
+    [UIView setAnimationTransition: UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
+	[self.view addSubview:resultViewController.view];
+    if(state == 1){
+        [resultViewController resultinit:info.teamid:info.score:@"win"];
+    }
+    else if(state == 2){
+        [resultViewController resultinit:info.teamid:info.score:@"Lose"];
+    }
+	[UIView commitAnimations];
+    [pingcheck release];
+}
+
+-(void)pingChecking{
     NSString *pingteam;
     pingteam = [[self ping] PingCheck:info.teamid];
     if([pingteam isEqual:@"0"]){
     }
     else{
+        
+        [[self ping] PingTeamInfo:pingteam];
         altermessage.text = [NSString stringWithFormat:@"%@팀에서 발사된 핑이 감지되었습니다", pingteam];
         double radian, lat, log, dis;
         NSString *arrowName;
@@ -149,7 +183,7 @@
                                        selector:@selector(show:)
                                        userInfo:nil
                                         repeats:NO
-        ];
+         ];
         
         altermessage.hidden = NO;
         alterbox.hidden = NO;
@@ -159,7 +193,32 @@
         teamName1.hidden = NO;
         [[self ping] PingCheckEnd:info.teamid:pingteam];
     }
-
+}
+-(void) end:(NSTimer*)timer
+{
+    int result;
+    result = [[self ping] GameResult:info.teamid];
+    [self goResult:result];
+}
+-(void) gameChecking{
+    if([[self ping] GameCheking:info.teamid]){
+        [pingcheck invalidate];
+        [self SetMessage:@"GameEnd":5.0];
+        [NSTimer scheduledTimerWithTimeInterval:5.0
+                                         target:self
+                                       selector:@selector(end:)
+                                       userInfo:nil
+                                        repeats:NO
+         ];
+    }
+}
+-(void) check:(NSTimer*)timer
+{
+    if(live){
+        [self pingChecking];
+    }
+    [self gameChecking];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
 -(void) show: (NSTimer *)timer{
 	altermessage.hidden = YES;
@@ -369,20 +428,12 @@
     [alert release];	
 }
 
--(void)goResult{
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.7];
-    [UIView setAnimationTransition: UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
-	[self.view addSubview:resultViewController.view];
-    [resultViewController resultinit:info.teamid:info.score:@"Lose"];
-	[UIView commitAnimations];    
-}
-
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if(buttonIndex){
         [[self ping] alterExit:info.teamid];
         NSLog(@"정상적으로 종료가 되었습니다.");
-        [self goResult];
+        [self goResult:2];
+
     }
 }
 
@@ -398,32 +449,29 @@
 	[widController release];
 }
 
+
 -(IBAction) QRCodeButton{
 	[self.view addSubview:qrcode];
 }
 -(IBAction) QRCodeCancel{
 	[qrcode removeFromSuperview];
-}
-
-
--(void) OnTimer:(NSTimer *)timer
-{
-	[[self game] fadeView:message:FALSE];
-}
-
--(void) SetMessage:(NSString *)imagename{
-	message.image  = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", imagename]];
-	[NSTimer scheduledTimerWithTimeInterval:5.0
-									 target:self
-								   selector:@selector(OnTimer:)
-								   userInfo:nil
-									repeats:NO
-	 ];
-	[[self game] fadeView:message:TRUE];
+    int state = [[self ping] GetState:info.teamid];
+    
+    if(state){
+        //1이니까 살아있는것.
+    }
+    else{
+        pingButton.enabled = NO;
+        otherteamcatchButton.enabled = NO;
+        teamButton.enabled = NO;
+        live = FALSE;
+        
+        [self SetMessage:@"Catched":8.0];
+    }
 }
 
 - (void) wrongQRCode{
-	[self SetMessage:@"wrongQR"];
+	[self SetMessage:@"wrongQR":5.0];
 }
 
 
@@ -433,8 +481,9 @@
 	}
 	else{
 		if([[self ping] GetTeam:teamid]){
-			[self SetMessage:[NSString stringWithFormat:@"catching%@", teamid]];
+			[self SetMessage:[NSString stringWithFormat:@"catching%@", teamid]:5.0];
             info.score += 30;
+            [[self ping] SetScore:info.teamid:info.score];
 		}
         else{
             [self wrongQRCode];

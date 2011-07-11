@@ -32,6 +32,14 @@
 */
 
 
+-(void) setRereshTiemer{
+    refresh = [NSTimer scheduledTimerWithTimeInterval:4
+                                               target:self 
+                                             selector:@selector(refreshTable) 
+                                             userInfo:nil
+                                              repeats:YES];
+}
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,8 +50,13 @@
     
     pingGameViewController = [[PingGameViewController alloc] initWithNibName:@"PingGameViewController" bundle:nil];
     
-}
+    [self setRereshTiemer];
 
+}
+-(void)refreshTable{
+    NSLog(@"reloa");
+    [list reloadData];
+}
 
 
 
@@ -68,9 +81,9 @@
 	
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
     
-//    if(cell != nil){
-//       cell = nil;
-//    }
+    if(cell != nil){
+       cell = nil;
+    }
     
     if(cell == nil){
         
@@ -142,7 +155,6 @@
 		
 		cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_room.png",room_state]];
     }
-
     return cell;
 }
 -(int) ConnectUser{
@@ -159,6 +171,7 @@
 	[self.view addSubview:pingGameViewController.view];
     [pingGameViewController userinit:teamName:[[self gamelist] GetRoomid]];
 	[UIView commitAnimations];
+
     
 }
 
@@ -204,6 +217,8 @@
                                                           repeats:YES] retain]; 
 
     }
+    [refresh invalidate];
+    [refresh release];
 }
 
 -(void) connuser:(NSTimer*)timer
@@ -222,7 +237,7 @@
 
 -(void) ReadyGame{
     [self GameStart];
-    [[self gamelist] RoomClose:[[self gamelist] GetRoomid]]];
+    [[self gamelist] RoomClose:[[self gamelist] GetRoomid]];
 }
 
 -(void) RoomExit{
@@ -236,6 +251,8 @@
 
     [updateConnuser invalidate];
     [updateConnuser release];
+    
+    [self setRereshTiemer];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

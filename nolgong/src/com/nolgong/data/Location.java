@@ -14,8 +14,8 @@ public class Location {
     private Key key;
 
 	@Persistent
-	private String id;
-
+	private String userid;
+	
 	@Persistent
 	private String latitude;
 
@@ -31,6 +31,25 @@ public class Location {
 	@Persistent
 	private String ping;
 	
+	@Persistent
+	private String score;
+	
+	public String getScore() {
+		return score;
+	}
+
+	public void setScore(String score) {
+		this.score = score;
+	}
+
+	public String getUserid() {
+		return userid;
+	}
+
+	public void setUserid(String userid) {
+		this.userid = userid;
+	}
+
     public String getPing() {
 		return ping;
 	}
@@ -53,14 +72,6 @@ public class Location {
 
 	public void setState(String state) {
 		this.state = state;
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
 	}
 
 	public String getLatitude() {
