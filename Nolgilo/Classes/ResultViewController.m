@@ -7,7 +7,7 @@
 //
 
 #import "ResultViewController.h"
-
+#import "GameListViewController.h"
 
 @implementation ResultViewController
 
@@ -29,6 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    gameListViewController = [[GameListViewController alloc] initWithNibName:@"GameListViewController" bundle:nil];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -51,7 +52,11 @@
 }
 
 -(IBAction) goRoomList{
-    NSLog(@"RoomList로 돌아갑니다.");
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.7];
+    [UIView setAnimationTransition: UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
+	[self.view addSubview:gameListViewController.view];
+	[UIView commitAnimations];
 }
 
 /*

@@ -81,7 +81,6 @@
     ping_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&roomid=%d&ping=%@",team2,roomid,myteam]];
 	response = [NSString stringWithContentsOfURL:ping_url encoding:NSUTF8StringEncoding error:NULL];
     
-    NSLog(@"정상적으로 핑이 쏴졌습니다.");
 }
 
 -(NSArray *) GetScore:(NSInteger)roomid{
@@ -94,20 +93,18 @@
     
 	NSMutableArray *data = [NSMutableArray arrayWithCapacity:3];
 	[data addObject:score];
-    NSLog(@"score : %@", score);
     
     test_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=B&roomid=%d", roomid]];
 	response = [NSString stringWithContentsOfURL:test_url encoding:NSUTF8StringEncoding error:NULL];
     responseDic = [response JSONValue];
     score = [responseDic objectForKey:@"score"];
 	[data addObject:score];
-    NSLog(@"score : %@", score);
     
     test_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=C&roomid=%d", roomid]];
 	response = [NSString stringWithContentsOfURL:test_url encoding:NSUTF8StringEncoding error:NULL];
+    responseDic = [response JSONValue];
     score = [responseDic objectForKey:@"score"];
 	[data addObject:score];
-    NSLog(@"score : %@", score);
     
     return data;
 }
@@ -119,9 +116,6 @@
     NSURL *test_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&roomid=%d",team1,roomid]];
 	NSString *response = [NSString stringWithContentsOfURL:test_url encoding:NSUTF8StringEncoding error:NULL];
     
-    NSLog(@"response : %@", response);
-    
-    
     NSDictionary *responseDic = [response JSONValue];
 	NSMutableArray *data = [NSMutableArray arrayWithCapacity:2];
 	[data addObject:responseDic];
@@ -129,8 +123,6 @@
     test_url = [NSURL URLWithString:[NSString stringWithFormat:@"http://nolgilo.appspot.com/test?id=%@&roomid=%d",team2,roomid]];
     
 	response = [NSString stringWithContentsOfURL:test_url encoding:NSUTF8StringEncoding error:NULL];
-    
-    NSLog(@"response : %@", response);
 	
     responseDic = [response JSONValue];
 	[data addObject:responseDic];

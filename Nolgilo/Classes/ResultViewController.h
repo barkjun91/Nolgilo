@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class GameListViewController;
 
 @interface ResultViewController : UIViewController{
+    
+    GameListViewController* gameListViewController;
+    
     IBOutlet UILabel *teamNameLabel;
     IBOutlet UILabel *scoreLabel;
     IBOutlet UIImageView *result;
