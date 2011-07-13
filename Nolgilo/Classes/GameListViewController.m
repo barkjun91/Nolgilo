@@ -200,7 +200,7 @@
         //메인 label 생성, 초기화
         mainLabel = [[[UILabel alloc] initWithFrame:CGRectMake(
                                                              IMAGE_WIDTH + cell.indentationWidth,
-                                                             (tableView.rowHeight - LABEL_HEIGHT * 2)/2+20,
+                                                             (tableView.rowHeight - LABEL_HEIGHT * 2)/2+10,
                                                              tableView.bounds.size.width -
                                                              IMAGE_WIDTH - customIndicator.size.width - cell.indentationWidth,
                                                              LABEL_HEIGHT)] autorelease];
@@ -212,12 +212,29 @@
         
         [cell.contentView addSubview:mainLabel];
       
+        subLabel = [[[UILabel alloc] initWithFrame:CGRectMake(IMAGE_WIDTH + cell.indentationWidth,
+                                                              (tableView.rowHeight - LABEL_HEIGHT * 2) / 2 + LABEL_HEIGHT + 10,
+                                                              mainLabel.bounds.size.width,
+                                                              LABEL_HEIGHT)] autorelease];
+        
+        subLabel.tag = SUB_LABEL_TAG;
+        subLabel.backgroundColor = [UIColor clearColor];
+        subLabel.textColor = mainLabel.textColor;
+        subLabel.highlightedTextColor = mainLabel.highlightedTextColor;
+        subLabel.font = [UIFont systemFontOfSize:MAIN_LABEL_TEXTSIZE - 2];
+        
+        
+        [cell.contentView addSubview:subLabel];
+        
         cell.backgroundView = [[[UIImageView alloc] init] autorelease] ;
         cell.selectedBackgroundView = [[[UIImageView alloc] init] autorelease];	
-	
-		int rows = (currentRow % [[self gamelist] GetCount]);
+
+        int room_connuser = [[self gamelist] GetConnectUser:currentRow];;
+        int rows = (currentRow % [[self gamelist] GetCount]);
         mainLabel.text = [[self gamelist] GetMainTitle:rows];
-        subLabel.text = [[self gamelist] GetSubTitle:rows];
+        subLabel.text = [NSString stringWithFormat:@"(%d/3)", room_connuser];
+        
+        
         NSString *room_state = [[self gamelist] GetState:rows];
         
         UIImage *cellBackGroundImage;

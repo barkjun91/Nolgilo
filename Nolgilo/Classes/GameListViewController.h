@@ -11,7 +11,7 @@
 
 //커스텀 셀 text label 태그
 #define MAIN_LABEL_TAG 101
-//#define SUB_LABEL_TAG 102
+#define SUB_LABEL_TAG 102
 
 //커스텀 셀 text label 높이
 #define LABEL_HEIGHT 20.0
