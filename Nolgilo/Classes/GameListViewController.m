@@ -33,7 +33,7 @@
 
 
 -(void) setRereshTiemer{
-    refresh = [NSTimer scheduledTimerWithTimeInterval:4
+    refresh = [NSTimer scheduledTimerWithTimeInterval:3
                                                target:self 
                                              selector:@selector(refreshTable) 
                                              userInfo:nil
@@ -41,6 +41,117 @@
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+
+-(void)refreshTable{
+    [list reloadData];
+}
+
+
+-(int) ConnectUser{
+    int connect_user=0;
+    connect_user = [[self gamelist] GetConnectUser:select_row];
+    return connect_user;
+}
+
+-(void)teamSetting{
+    if(teamName == 0){
+        teamName = room_connect_user;        
+    }
+    else{
+        if(teamName > room_connect_user){
+            teamName = room_connect_user;
+        }
+    }
+}
+
+-(void) RoomJoin{    
+    room_connect_user = [self ConnectUser];
+    [self teamSetting];
+    
+    NSLog(@"room_connect_user : %d", room_connect_user);
+    
+    Connect_User.text = [NSString stringWithFormat:@"%d", room_connect_user];
+    Maintitle.text = [[self gamelist] GetMainTitle:select_row];
+    Subtitle.text = [[self gamelist] GetSubTitle:select_row];
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.7];
+    [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
+	[self.view addSubview:joinroom];
+	[UIView commitAnimations];
+    
+    if(room_connect_user == 3){
+        Game_Start.hidden = NO;
+        exitroom.hidden = YES;
+        [self performSelector:@selector(ReadyGame) withObject:NULL afterDelay:5.0];
+    }
+    else{
+        updateConnuser = [[NSTimer scheduledTimerWithTimeInterval:2.0
+                                                           target:self
+                                                         selector:@selector(connuser:)
+                                                         userInfo:nil
+                                                          repeats:YES] retain]; 
+        
+    }
+    [refresh invalidate];
+}
+
+-(void) connuser:(NSTimer*)timer
+{
+    room_connect_user = [[self gamelist] GetConnectUser:select_row];
+    [self teamSetting];
+    Connect_User.text = [NSString stringWithFormat:@"%d", room_connect_user];
+    if(room_connect_user == 3){
+        [updateConnuser invalidate];
+        //[updateConnuser release];
+        Game_Start.hidden = NO;
+        exitroom.hidden = YES;
+        [self performSelector:@selector(ReadyGame) withObject:NULL afterDelay:5.0];
+    }
+
+}
+
+-(void) RoomExit{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.7];
+    [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromLeft forView:self.view cache:YES];
+	[joinroom removeFromSuperview];
+	[UIView commitAnimations];
+    
+    Game_Start.hidden = YES;
+    
+    [updateConnuser invalidate];
+    [updateConnuser release];
+    
+    [self setRereshTiemer];
+}
+
+-(IBAction)exitRoom{
+    [self RoomExit];
+    [[self gamelist] RoomExit:select_row];
+}
+
+
+-(void)GameStart{
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.7];
+    [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
+	[self.view addSubview:pingGameViewController.view];
+    [pingGameViewController userinit:teamName:[[self gamelist] GetRoomid]];
+	[UIView commitAnimations];
+    
+    
+}
+
+
+-(void) ReadyGame{
+    [self GameStart];
+    [[self gamelist] RoomClose:[[self gamelist] GetRoomid]];
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -51,13 +162,8 @@
     pingGameViewController = [[PingGameViewController alloc] initWithNibName:@"PingGameViewController" bundle:nil];
     
     [self setRereshTiemer];
-
+    
 }
--(void)refreshTable{
-    NSLog(@"reloa");
-    [list reloadData];
-}
-
 
 
 //테이블뷰 설정
@@ -76,7 +182,7 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellID = @"Cell";
-	NSUInteger sectionRow = [tableView numberOfRowsInSection:[indexPath section]];
+	//NSUInteger sectionRow = [tableView numberOfRowsInSection:[indexPath section]];
 	NSUInteger currentRow = [indexPath row];
 	
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
@@ -106,21 +212,7 @@
         mainLabel.font = [UIFont systemFontOfSize:MAIN_LABEL_TEXTSIZE];
         
         [cell.contentView addSubview:mainLabel];
-        
-        
-/*        subLabel = [[[UILabel alloc] initWithFrame:CGRectMake(IMAGE_WIDTH + cell.indentationWidth,
-                                                              (tableView.rowHeight - LABEL_HEIGHT * 2) / 2 + LABEL_HEIGHT,
-                                                              mainLabel.bounds.size.width,
-                                                              LABEL_HEIGHT)] autorelease];
-        
-        subLabel.tag = SUB_LABEL_TAG;
-        subLabel.backgroundColor = [UIColor clearColor];
-        subLabel.textColor = mainLabel.textColor;
-        subLabel.highlightedTextColor = mainLabel.highlightedTextColor;
-        subLabel.font = [UIFont systemFontOfSize:MAIN_LABEL_TEXTSIZE-2];
-        
-        [cell.contentView addSubview:subLabel];
-*/      
+      
         cell.backgroundView = [[[UIImageView alloc] init] autorelease] ;
         cell.selectedBackgroundView = [[[UIImageView alloc] init] autorelease];	
 	
@@ -136,123 +228,12 @@
         cellBackGroundSelected = [UIImage imageNamed:@"table_cell_sel.png"];        
         
     
-/*		if (currentRow == 0 && sectionRow == 1) {
-			cellBackGroundImage = [UIImage imageNamed:@"cell_one.png"];
-			cellBackGroundSelected = [UIImage imageNamed:@"cell_one_highlight.png"];
-		}else if (currentRow == 0) {
-			cellBackGroundImage = [UIImage imageNamed:@"top.png"];
-			cellBackGroundSelected = [UIImage imageNamed:@"top_highlight.png"];
-		}else if (currentRow == sectionRow - 1) {
-			cellBackGroundImage = [UIImage imageNamed:@"bottom.png"];
-			cellBackGroundSelected = [UIImage imageNamed:@"bottom_highlight.png"];
-		}else {
-			cellBackGroundImage = [UIImage imageNamed:@"mid.png"];
-			cellBackGroundSelected = [UIImage imageNamed:@"mid_highlight.png"];
-		}
-*/		
 		((UIImageView *)cell.backgroundView).image = cellBackGroundImage;
 		((UIImageView *)cell.selectedBackgroundView).image = cellBackGroundSelected;
 		
 		cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_room.png",room_state]];
     }
     return cell;
-}
--(int) ConnectUser{
-    int connect_user=0;
-    connect_user = [[self gamelist] GetConnectUser:select_row];
-    return connect_user;
-}
-
--(void)GameStart{
-   
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.7];
-    [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
-	[self.view addSubview:pingGameViewController.view];
-    [pingGameViewController userinit:teamName:[[self gamelist] GetRoomid]];
-	[UIView commitAnimations];
-
-    
-}
-
--(void)teamSetting{
-    if(teamName == 0){
-        NSLog(@"초기화!");
-        teamName = room_connect_user;        
-    }
-    else{
-        if(teamName > room_connect_user){
-            NSLog(@"교환");
-            teamName = room_connect_user;
-        }
-    }
-}
-
--(void) RoomJoin{
-/*  
-
-*/
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.7];
-    [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
-	[self.view addSubview:joinroom];
-    room_connect_user = [self ConnectUser];
-    Connect_User.text = [NSString stringWithFormat:@"%d", room_connect_user];
-    Maintitle.text = [[self gamelist] GetMainTitle:select_row];
-    Subtitle.text = [[self gamelist] GetSubTitle:select_row];
-	[UIView commitAnimations];
-    
-    [self teamSetting];
-    
-    if(room_connect_user == 3){
-        Game_Start.hidden = NO;
-        exitroom.hidden = YES;
-        [self performSelector:@selector(ReadyGame) withObject:NULL afterDelay:5.0];
-    }
-    else{
-        updateConnuser = [[NSTimer scheduledTimerWithTimeInterval:4.0
-                                                           target:self
-                                                         selector:@selector(connuser:)
-                                                         userInfo:nil
-                                                          repeats:YES] retain]; 
-
-    }
-    [refresh invalidate];
-    [refresh release];
-}
-
--(void) connuser:(NSTimer*)timer
-{
-    room_connect_user = [[self gamelist] GetConnectUser:select_row];
-    [self teamSetting];
-    Connect_User.text = [NSString stringWithFormat:@"%d", room_connect_user];
-    if(room_connect_user == 3){
-        [updateConnuser invalidate];
-        //[updateConnuser release];
-        Game_Start.hidden = NO;
-        exitroom.hidden = YES;
-        [self performSelector:@selector(ReadyGame) withObject:NULL afterDelay:5.0];
-    }
-}
-
--(void) ReadyGame{
-    [self GameStart];
-    [[self gamelist] RoomClose:[[self gamelist] GetRoomid]];
-}
-
--(void) RoomExit{
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.7];
-    [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromLeft forView:self.view cache:YES];
-	[joinroom removeFromSuperview];
-	[UIView commitAnimations];
-    
-    Game_Start.hidden = YES;
-
-    [updateConnuser invalidate];
-    [updateConnuser release];
-    
-    [self setRereshTiemer];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -271,6 +252,8 @@
     }
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
+
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -290,11 +273,6 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-}
-
--(IBAction)exitRoom{
-    [self RoomExit];
-    [[self gamelist] RoomExit:select_row];
 }
 
 - (void)dealloc {

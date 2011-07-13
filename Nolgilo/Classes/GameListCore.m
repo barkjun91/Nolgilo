@@ -86,12 +86,6 @@
 -(bool)GetRoomState:(int)number{
 	Boolean result=YES;
     NSString *state;
-	//NSDictionary *data = [roomlist objectAtIndex:number];
-	
-	//NSLog(@"%@", data);
-    //	NSLog(@"%d", number);
-	
-	//state = [data objectForKey:@"state"];
     
     state = [statelist objectAtIndex:number];
 	if([state isEqualToString:@"open"]){
@@ -139,7 +133,6 @@
     for(int i=0; i<count; i++){
         data = [roomlist objectAtIndex:i];
         [idlist addObject:[data objectForKey:@"roomid"]];
-        NSLog(@"%@", [idlist objectAtIndex:i]);
     }
 }
 

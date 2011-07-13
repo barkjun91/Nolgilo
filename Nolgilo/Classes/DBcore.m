@@ -241,13 +241,15 @@
 
 
 /* --- 대기룸 관련 부분 함수 ----*/
+
 -(void)RoomClose:(int)roomid{
     NSString *json = [NSString stringWithFormat:@"http://nolgilo.appspot.com/room?roomid=%d&state=close",roomid];
     
 	NSURL *url = [NSURL URLWithString:json];
 	NSString *response = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:NULL];
-	NSLog(@"reponse : %@", response); 
+    
 }
+
 
 -(NSArray *) RoomListData{
 	 
@@ -262,7 +264,6 @@
     NSString *json = [NSString stringWithFormat:@"http://nolgilo.appspot.com/room?roomid=%d&connuser=%d",roomid,connuser];
 	NSURL *url = [NSURL URLWithString:json];
 	NSString *response = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:NULL];
-	NSLog(@"reponse : %@", response);    
 }
 
 -(int)RoomConnectUser:(int)roomid{
