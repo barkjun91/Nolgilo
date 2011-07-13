@@ -49,6 +49,7 @@
 		double lat;
 		double log;
 		NSString* arrowName;
+        bool state;
 	}team1, team2;
 	IBOutlet UILabel *teamName1, *teamName2;
 	IBOutlet UIImageView *teamArrow1, *teamArrow2;

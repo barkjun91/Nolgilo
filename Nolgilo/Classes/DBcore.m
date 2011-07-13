@@ -176,9 +176,6 @@
 	return sql;
 }
 
--(void) SpotGet{
-	
-}
 -(void)initMyLoc:(NSString *)teamid 
                 :(double)lat
                 :(double)log 

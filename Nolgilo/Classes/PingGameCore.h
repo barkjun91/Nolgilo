@@ -27,6 +27,7 @@
 -(void)ConnectDB:(NSString *)team;
 
 -(NSString *)GetTeamName:(int)teamnumber;
+-(bool)GetTeamState:(int)teamnumber;
 -(NSString *)GetArrowImage:(double)dis:(double)set;
 -(double)GetDistance:(double)o_lat:(double)o_log;
 -(double)GetLat:(int)teamnumber;

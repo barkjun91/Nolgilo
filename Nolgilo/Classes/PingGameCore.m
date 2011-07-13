@@ -55,6 +55,7 @@
     }
 }
 
+
 - (bool)GameCheking:(NSString *)teamid{
     if([[self db] GetState:teamid:myroomid] == 3)
     {
@@ -94,11 +95,26 @@
 	NSString *teamname;
 	NSDictionary *team = [datalist objectAtIndex:teamnumber];
 	teamname = [team objectForKey:@"userid"];
-	NSLog(@"%@", [team objectForKey:@"roomid"]);
 	
 //	teamname = [datalist objectAtIndex:teamnumber];
 	
 	return teamname;
+}
+
+-(bool)GetTeamState:(int)teamnumber{
+    bool teamstate;
+    NSString *state;
+    
+	NSDictionary *team = [datalist objectAtIndex:teamnumber];
+	state = [team objectForKey:@"state"];
+    if([state isEqualToString:@"1"]){
+        teamstate = TRUE;
+    }
+    else{
+        teamstate = FALSE;
+    }
+	
+	return teamstate;
 }
 
 -(double)GetLat:(int)teamnumber{

@@ -118,6 +118,8 @@
     live = TRUE;
     
     info.score = 0;
+    team1.state = TRUE;
+    team2.state = TRUE;
     
     pingcheck = [[NSTimer scheduledTimerWithTimeInterval:4.0
                                                   target:self
@@ -163,7 +165,6 @@
         
         lat = [[self ping]GetPingLat];
         log = [[self ping]GetPingLog];
-        NSLog(@"%f, %f", lat, log);
         
         radian = [[self ping] GetRadian:lat:log];
         dis = [[self ping] GetDistance:lat:log];
@@ -307,37 +308,31 @@
     [super dealloc];
 }
 
--(void) showInfo: (NSTimer *)timer{
-	teamName1.hidden = YES;
-	teamArrow1.hidden = YES;
-	teamName2.hidden = YES;
-	teamArrow2.hidden = YES;
-	ping_enable = FALSE;
-}
-
 -(void) pingTime: (NSTimer *)timer{
 	pingButton.enabled = YES;	
 }
 
 -(void) DataSet{
 	[[self ping] ConnectDB:info.teamid];
-	
-	team1.name = [[self ping] GetTeamName:0];
-	team2.name = [[self ping] GetTeamName:1];
+    team1.state = [[self ping] GetTeamState:0];
+    team2.state = [[self ping] GetTeamState:1];
     
-	team1.lat = [[self ping] GetLat:0];
-	team1.log = [[self ping] GetLog:0];
-	team2.lat = [[self ping] GetLat:1];
-	team2.log = [[self ping] GetLog:1];
-	
-	team1.dis = [[self ping] GetDistance:team1.lat:team1.log];
-	team2.dis = [[self ping] GetDistance:team2.lat:team2.log];
-
-	team1.radian = [[self ping] GetRadian:team1.lat:team1.log];
-	team2.radian = [[self ping] GetRadian:team2.lat:team2.log];
-	
-	team1.arrowName = [[self ping] GetArrowImage:team1.dis:0];
-	team2.arrowName = [[self ping] GetArrowImage:team2.dis:0];
+	if(team1.state){
+        team1.name = [[self ping] GetTeamName:0];
+        team1.lat = [[self ping] GetLat:0];
+        team1.log = [[self ping] GetLog:0];
+        team1.dis = [[self ping] GetDistance:team1.lat:team1.log];
+        team1.radian = [[self ping] GetRadian:team1.lat:team1.log];
+        team1.arrowName = [[self ping] GetArrowImage:team1.dis:0];
+    }
+    if(team2.state){
+        team2.name = [[self ping] GetTeamName:1];
+        team2.lat = [[self ping] GetLat:1];
+        team2.log = [[self ping] GetLog:1];
+        team2.dis = [[self ping] GetDistance:team2.lat:team2.log];
+        team2.radian = [[self ping] GetRadian:team2.lat:team2.log];
+        team2.arrowName = [[self ping] GetArrowImage:team2.dis:0];
+    }
 }
 -(void) ImageDataSet{
 
@@ -358,6 +353,18 @@
 	
 }
 
+-(void) showInfo: (NSTimer *)timer{
+    if(team1.state){
+        teamName1.hidden = YES;
+        teamArrow1.hidden = YES;
+    }
+    if(team2.state){
+        teamName2.hidden = YES;
+        teamArrow2.hidden = YES;
+    }
+	ping_enable = FALSE;
+}
+
 -(void) PingMessageOut{
 	//3초간 상대방의 위치를 보여준다.
 	[NSTimer scheduledTimerWithTimeInterval:6.0
@@ -374,10 +381,14 @@
 									repeats:NO
 	 ];
 	
-	teamName1.hidden = NO;
-	teamArrow1.hidden = NO;
-	teamName2.hidden = NO;
-	teamArrow2.hidden = NO;
+    if(team1.state){
+        teamName1.hidden = NO;
+        teamArrow1.hidden = NO;
+    }
+    if(team2.state){
+        teamName2.hidden = NO;
+        teamArrow2.hidden = NO;
+    }
 	pingButton.enabled = NO;
     ping_enable = YES;
 }
