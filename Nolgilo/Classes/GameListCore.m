@@ -80,6 +80,8 @@
 -(int)GetConnectUser:(int)number{
     int user;
     user = [[self db] RoomConnectUser:[[idlist objectAtIndex:number] intValue]];
+    NSLog(@"%d", user);
+    
     [consuerlist replaceObjectAtIndex:number withObject:[NSString stringWithFormat:@"%d",user]];
     return user;
 }
@@ -108,7 +110,7 @@
     [consuerlist replaceObjectAtIndex:number withObject:[NSString stringWithFormat:@"%d",user]];
 }
 
--(void)RoomClose:(NSInteger)roomid{
+-(void)RoomClose{
     [[self db] RoomClose:roomid];
 }
 

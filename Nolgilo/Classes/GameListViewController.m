@@ -138,16 +138,15 @@
     [UIView setAnimationDuration:0.7];
     [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
 	[self.view addSubview:pingGameViewController.view];
-    [pingGameViewController userinit:teamName:[[self gamelist] GetRoomid]];
 	[UIView commitAnimations];
-    
+    [pingGameViewController userinit:teamName:[[self gamelist] GetRoomid]];
     
 }
 
 
 -(void) ReadyGame{
     [self GameStart];
-    [[self gamelist] RoomClose:[[self gamelist] GetRoomid]];
+    //[[self gamelist] RoomClose];
 }
 
 

@@ -32,5 +32,5 @@
 -(NSArray *) RoomListData;
 -(void)RoomConnectUpdate:(int)roomid:(int)connuser;
 -(int)RoomConnectUser:(int)roomid;
--(void)RoomClose:(NSInteger)roomid;
+-(void)RoomClose:(int)roomid;
 @end
