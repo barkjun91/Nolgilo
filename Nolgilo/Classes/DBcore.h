@@ -16,7 +16,6 @@
 -(NSArray *) DataBaseConnect:(NSString *)conteam:(NSInteger)roomid;
 -(bool)TeamCatch:(NSString *)teamid:(NSInteger)roomid;
 -(void)PostMyLoc:(NSString *)teamid :(double)lat :(double)log:(NSInteger)roomid;
--(NSString *) SpotData:(NSInteger)roomid;
 -(void)initMyLoc:(NSString *)teamid :(double)lat :(double)log:(NSInteger)roomid;
 -(void)PingOut:(NSString *)team1:(NSString *)team2:(NSString *)myteam:(NSInteger)roomid;
 -(NSString *)PingCheck:(NSString *)teamid:(NSInteger)roomid;

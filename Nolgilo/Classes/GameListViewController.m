@@ -243,7 +243,7 @@
 		cellBackGroundImage = [UIImage imageNamed:@"table_cell.png"];
         cellBackGroundSelected = [UIImage imageNamed:@"table_cell_sel.png"];        
         
-    
+     
 		((UIImageView *)cell.backgroundView).image = cellBackGroundImage;
 		((UIImageView *)cell.selectedBackgroundView).image = cellBackGroundSelected;
 		

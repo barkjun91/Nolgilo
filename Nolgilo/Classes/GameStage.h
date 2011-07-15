@@ -15,7 +15,5 @@
 @interface GameStage : NSObject <MKMapViewDelegate, CLLocationManagerDelegate> {
 
 }
-
--(void) StageInit:(MKMapView *)mapView;
 				 
 @end

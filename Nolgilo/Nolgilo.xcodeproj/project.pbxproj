@@ -13,22 +13,19 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		497E457613D0216A0007DE61 /* PingGameTeamCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 497E457513D0216A0007DE61 /* PingGameTeamCore.m */; };
 		7107944F134F050B006A4D36 /* PingGameViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7107944D134F050B006A4D36 /* PingGameViewController.mm */; };
 		71079450134F050B006A4D36 /* PingGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7107944E134F050B006A4D36 /* PingGameViewController.xib */; };
 		71079462134F0666006A4D36 /* TeamA.png in Resources */ = {isa = PBXBuildFile; fileRef = 71079461134F0666006A4D36 /* TeamA.png */; };
-		710794A5134F0A20006A4D36 /* GameStage.m in Sources */ = {isa = PBXBuildFile; fileRef = 710794A4134F0A20006A4D36 /* GameStage.m */; };
 		711BDBA91341D4A0007A6B3D /* GameListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711BDBA71341D4A0007A6B3D /* GameListViewController.m */; };
 		711BDBAA1341D4A0007A6B3D /* GameListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711BDBA81341D4A0007A6B3D /* GameListViewController.xib */; };
-		711BDBC81341D521007A6B3D /* RootGameListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711BDBC61341D521007A6B3D /* RootGameListViewController.m */; };
 		711BDBC91341D521007A6B3D /* RootGameListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711BDBC71341D521007A6B3D /* RootGameListViewController.xib */; };
 		7134675F133B3DBF00DCA096 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7134675E133B3DBF00DCA096 /* icon2.png */; };
 		714D748C132A09FD00FB57A0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 714D748B132A09FD00FB57A0 /* Default.png */; };
 		715717FF135438B900FC5012 /* PingGameCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 715717FE135438B900FC5012 /* PingGameCore.m */; };
 		7171AB791328B26F004127CE /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7171AB781328B26F004127CE /* icon.jpg */; };
 		7182D407134327480047DA4D /* menutitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7182D406134327480047DA4D /* menutitle.png */; };
-		719C1B601333557400E7C276 /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 719C1B5F1333557400E7C276 /* GameModel.m */; };
 		71A1251A1328E47A00C1BC87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71A125191328E47A00C1BC87 /* InfoPlist.strings */; };
-		71AEE5E21394E023007BC5BF /* pin.m in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE5E11394E023007BC5BF /* pin.m */; };
 		71B836C31390A7B5002E5BAF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B836C21390A7B5002E5BAF /* AVFoundation.framework */; };
 		71B836CB1390A7E2002E5BAF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B836CA1390A7E2002E5BAF /* CoreMedia.framework */; };
 		71B836CD1390A7E2002E5BAF /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B836CC1390A7E2002E5BAF /* CoreVideo.framework */; };
@@ -37,7 +34,6 @@
 		71B837711390C194002E5BAF /* catchingB.png in Resources */ = {isa = PBXBuildFile; fileRef = 71B8376E1390C194002E5BAF /* catchingB.png */; };
 		71B837721390C194002E5BAF /* catchingC.png in Resources */ = {isa = PBXBuildFile; fileRef = 71B8376F1390C194002E5BAF /* catchingC.png */; };
 		71E0E4CC13446D5800AFE39F /* gradientBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E0E4CB13446D5800AFE39F /* gradientBackground.png */; };
-		71E2723A1393CD19005A86E5 /* GameTeamSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E272381393CD19005A86E5 /* GameTeamSelectController.m */; };
 		71E2723B1393CD19005A86E5 /* GameTeamSelectController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E272391393CD19005A86E5 /* GameTeamSelectController.xib */; };
 		71E273EF1393DD1C005A86E5 /* TeamB.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E273ED1393DD1C005A86E5 /* TeamB.png */; };
 		71E273F01393DD1C005A86E5 /* TeamC.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E273EE1393DD1C005A86E5 /* TeamC.png */; };
@@ -45,7 +41,6 @@
 		71EA215913A368D600B3B492 /* moreselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 71EA215813A368D600B3B492 /* moreselect.png */; };
 		7A00600E1379B15500F3CDE4 /* pingable.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A00600C1379B15500F3CDE4 /* pingable.png */; };
 		7A17D16913839898006D7C33 /* QRcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A17D16713839898006D7C33 /* QRcodeViewController.xib */; };
-		7A481EAD1389E948004B1D29 /* SpotCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A481EAC1389E948004B1D29 /* SpotCore.m */; };
 		7A5E6B35138F420B00F4CC11 /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5E6A8D138F3D6E00F4CC11 /* libZXingWidget.a */; };
 		7A5E6B59138F443300F4CC11 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5E6B58138F443300F4CC11 /* libiconv.dylib */; };
 		7A5E6C2E138F68E700F4CC11 /* pingteamA.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5E6C2B138F68E700F4CC11 /* pingteamA.png */; };
@@ -123,17 +118,15 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Nolgilo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nolgilo_Prefix.pch; sourceTree = "<group>"; };
+		497E457413D0216A0007DE61 /* PingGameTeamCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingGameTeamCore.h; sourceTree = "<group>"; };
+		497E457513D0216A0007DE61 /* PingGameTeamCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingGameTeamCore.m; sourceTree = "<group>"; };
 		7107944C134F050B006A4D36 /* PingGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PingGameViewController.h; path = ../PingGameViewController.h; sourceTree = "<group>"; };
 		7107944D134F050B006A4D36 /* PingGameViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PingGameViewController.mm; path = ../PingGameViewController.mm; sourceTree = "<group>"; };
 		7107944E134F050B006A4D36 /* PingGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PingGameViewController.xib; sourceTree = "<group>"; };
 		71079461134F0666006A4D36 /* TeamA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TeamA.png; path = ../Resource/TeamA.png; sourceTree = SOURCE_ROOT; };
-		710794A3134F0A20006A4D36 /* GameStage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStage.h; sourceTree = "<group>"; };
-		710794A4134F0A20006A4D36 /* GameStage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStage.m; sourceTree = "<group>"; };
 		711BDBA61341D4A0007A6B3D /* GameListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameListViewController.h; sourceTree = "<group>"; };
 		711BDBA71341D4A0007A6B3D /* GameListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameListViewController.m; sourceTree = "<group>"; };
 		711BDBA81341D4A0007A6B3D /* GameListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameListViewController.xib; path = Classes/GameListViewController.xib; sourceTree = "<group>"; };
-		711BDBC51341D521007A6B3D /* RootGameListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootGameListViewController.h; sourceTree = "<group>"; };
-		711BDBC61341D521007A6B3D /* RootGameListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootGameListViewController.m; sourceTree = "<group>"; };
 		711BDBC71341D521007A6B3D /* RootGameListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RootGameListViewController.xib; path = Classes/RootGameListViewController.xib; sourceTree = "<group>"; };
 		7134675E133B3DBF00DCA096 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon2.png; path = ../Resource/icon2.png; sourceTree = SOURCE_ROOT; };
 		714D748B132A09FD00FB57A0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Resource/Default.png; sourceTree = SOURCE_ROOT; };
@@ -141,12 +134,8 @@
 		715717FE135438B900FC5012 /* PingGameCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingGameCore.m; sourceTree = "<group>"; };
 		7171AB781328B26F004127CE /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon.jpg; path = ../Resource/icon.jpg; sourceTree = SOURCE_ROOT; };
 		7182D406134327480047DA4D /* menutitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menutitle.png; path = ../Resource/menutitle.png; sourceTree = SOURCE_ROOT; };
-		719C1B5E1333557400E7C276 /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
-		719C1B5F1333557400E7C276 /* GameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameModel.m; sourceTree = "<group>"; };
 		71A125171328E46D00C1BC87 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		71A1251B1328E4A200C1BC87 /* Korean */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Korean; path = Korean.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		71AEE5E01394E023007BC5BF /* pin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pin.h; sourceTree = "<group>"; };
-		71AEE5E11394E023007BC5BF /* pin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pin.m; sourceTree = "<group>"; };
 		71B836C21390A7B5002E5BAF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		71B836CA1390A7E2002E5BAF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		71B836CC1390A7E2002E5BAF /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -155,8 +144,6 @@
 		71B8376E1390C194002E5BAF /* catchingB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = catchingB.png; path = ../Resource/catchingB.png; sourceTree = SOURCE_ROOT; };
 		71B8376F1390C194002E5BAF /* catchingC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = catchingC.png; path = ../Resource/catchingC.png; sourceTree = SOURCE_ROOT; };
 		71E0E4CB13446D5800AFE39F /* gradientBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradientBackground.png; path = ../Resource/gradientBackground.png; sourceTree = SOURCE_ROOT; };
-		71E272371393CD19005A86E5 /* GameTeamSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTeamSelectController.h; sourceTree = "<group>"; };
-		71E272381393CD19005A86E5 /* GameTeamSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTeamSelectController.m; sourceTree = "<group>"; };
 		71E272391393CD19005A86E5 /* GameTeamSelectController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameTeamSelectController.xib; path = Classes/GameTeamSelectController.xib; sourceTree = "<group>"; };
 		71E273ED1393DD1C005A86E5 /* TeamB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TeamB.png; path = ../Resource/TeamB.png; sourceTree = SOURCE_ROOT; };
 		71E273EE1393DD1C005A86E5 /* TeamC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TeamC.png; path = ../Resource/TeamC.png; sourceTree = SOURCE_ROOT; };
@@ -164,8 +151,6 @@
 		71EA215813A368D600B3B492 /* moreselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moreselect.png; path = ../Resource/moreselect.png; sourceTree = "<group>"; };
 		7A00600C1379B15500F3CDE4 /* pingable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pingable.png; path = ../Resource/pingable.png; sourceTree = SOURCE_ROOT; };
 		7A17D16713839898006D7C33 /* QRcodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = QRcodeViewController.xib; path = Classes/QRcodeViewController.xib; sourceTree = "<group>"; };
-		7A481EAB1389E948004B1D29 /* SpotCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotCore.h; sourceTree = "<group>"; };
-		7A481EAC1389E948004B1D29 /* SpotCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotCore.m; sourceTree = "<group>"; };
 		7A5E6A85138F3D6E00F4CC11 /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = ../zxing/iphone/ZXingWidget/ZXingWidget.xcodeproj; sourceTree = SOURCE_ROOT; };
 		7A5E6B58138F443300F4CC11 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		7A5E6C2B138F68E700F4CC11 /* pingteamA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pingteamA.png; path = ../Resource/pingteamA.png; sourceTree = SOURCE_ROOT; };
@@ -336,20 +321,14 @@
 		71079448134F04A4006A4D36 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				719C1B5E1333557400E7C276 /* GameModel.h */,
-				719C1B5F1333557400E7C276 /* GameModel.m */,
-				710794A3134F0A20006A4D36 /* GameStage.h */,
-				710794A4134F0A20006A4D36 /* GameStage.m */,
-				715717FD135438B900FC5012 /* PingGameCore.h */,
-				715717FE135438B900FC5012 /* PingGameCore.m */,
 				7AE698571383DE7500193AC2 /* DBcore.h */,
 				7AE698581383DE7500193AC2 /* DBcore.m */,
-				7A481EAB1389E948004B1D29 /* SpotCore.h */,
-				7A481EAC1389E948004B1D29 /* SpotCore.m */,
-				71AEE5E01394E023007BC5BF /* pin.h */,
-				71AEE5E11394E023007BC5BF /* pin.m */,
+				715717FD135438B900FC5012 /* PingGameCore.h */,
+				715717FE135438B900FC5012 /* PingGameCore.m */,
 				7A5F339A13AF148A0042BEF2 /* GameListCore.h */,
 				7A5F339B13AF148A0042BEF2 /* GameListCore.m */,
+				497E457413D0216A0007DE61 /* PingGameTeamCore.h */,
+				497E457513D0216A0007DE61 /* PingGameTeamCore.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -370,10 +349,6 @@
 			children = (
 				711BDBA61341D4A0007A6B3D /* GameListViewController.h */,
 				711BDBA71341D4A0007A6B3D /* GameListViewController.m */,
-				711BDBC51341D521007A6B3D /* RootGameListViewController.h */,
-				711BDBC61341D521007A6B3D /* RootGameListViewController.m */,
-				71E272371393CD19005A86E5 /* GameTeamSelectController.h */,
-				71E272381393CD19005A86E5 /* GameTeamSelectController.m */,
 			);
 			name = GameList;
 			sourceTree = "<group>";
@@ -707,16 +682,10 @@
 				1D3623260D0F684500981E51 /* NolgiloAppDelegate.m in Sources */,
 				7ABB8FD2131B706D00437FC4 /* LoadingViewController.m in Sources */,
 				7ABB9037131B770B00437FC4 /* RootViewController.m in Sources */,
-				719C1B601333557400E7C276 /* GameModel.m in Sources */,
 				711BDBA91341D4A0007A6B3D /* GameListViewController.m in Sources */,
-				711BDBC81341D521007A6B3D /* RootGameListViewController.m in Sources */,
 				7107944F134F050B006A4D36 /* PingGameViewController.mm in Sources */,
-				710794A5134F0A20006A4D36 /* GameStage.m in Sources */,
 				715717FF135438B900FC5012 /* PingGameCore.m in Sources */,
 				7AE698591383DE7500193AC2 /* DBcore.m in Sources */,
-				7A481EAD1389E948004B1D29 /* SpotCore.m in Sources */,
-				71E2723A1393CD19005A86E5 /* GameTeamSelectController.m in Sources */,
-				71AEE5E21394E023007BC5BF /* pin.m in Sources */,
 				7ADFFEA213AA0C2800527D5D /* NSObject+JSON.m in Sources */,
 				7ADFFEA313AA0C2800527D5D /* SBJsonParser.m in Sources */,
 				7ADFFEA413AA0C2800527D5D /* SBJsonStreamParser.m in Sources */,
@@ -732,6 +701,7 @@
 				7ADFFEAE13AA0C2800527D5D /* SBUTF8Stream.m in Sources */,
 				7A5F339C13AF148A0042BEF2 /* GameListCore.m in Sources */,
 				7AF7ECBD13BAFC92005F215E /* ResultViewController.m in Sources */,
+				497E457613D0216A0007DE61 /* PingGameTeamCore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,26 +35,11 @@
 	}
 	return ping;
 }
--(SpotCore *) spot
-{
-	if(!spot){
-		spot = [[SpotCore alloc] init];
-	}
-	return spot;
-}
-
--(GameModel *) game
-{
-	if(!game){
-		game = [[GameModel alloc] init];
-	}
-	return game;
-}
 
 
 -(void) OnTimer:(NSTimer *)timer
 {
-	[[self game] fadeView:message:FALSE];
+	[[self ping] fadeView:message:FALSE];
 }
 
 -(void) SetMessage:(NSString *)imagename:(double)sc{
@@ -66,7 +51,7 @@
 								   userInfo:nil
 									repeats:NO
 	 ];
-	[[self game] fadeView:message:TRUE];
+	[[self ping] fadeView:message:TRUE];
 }
 
 - (void)SpotBuilding{
@@ -78,7 +63,7 @@
 
 
 
-- (void)userinit:(int)teamselect:(NSInteger)roomid{
+-(void)userinit:(int)teamselect:(NSInteger)roomid{
     if(teamselect == 1){
         info.teamid = @"A";
     }
@@ -99,18 +84,27 @@
 }
 
 
+-(void) stageInit:(MKMapView *)mapView{
+	mapView.showsUserLocation = YES; // if yes, shows a bule~;
+	mapView.mapType = MKMapTypeStandard;
+	mapView.delegate = self;
+	mapView.zoomEnabled = YES;
+	mapView.scrollEnabled = YES;
+	mapView.userInteractionEnabled = YES;	
+	mapView.transform = CGAffineTransformMakeRotation(0.0f);
+}
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self SpotBuilding];
-	[[self game] GameInitMessage];
-
+	[[self ping] GameInitMessage];
+    [self stageInit:gameStage];
+    
 	span.latitudeDelta = 0.002;
 	span.longitudeDelta = 0.002;
 	
 	self.locationManager = [[CLLocationManager alloc] init];	
-	[[GameStage alloc] StageInit:gameStage];
 	
 	ping_enable = FALSE;
 	menu_enable = FALSE;
@@ -218,7 +212,7 @@
     if(live){
         [self pingChecking];
     }
-    [self gameChecking];
+    [self pingChecking];
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
 -(void) show: (NSTimer *)timer{

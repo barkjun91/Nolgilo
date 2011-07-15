@@ -13,10 +13,8 @@
 #import <MapKit/MKMapView.h>
 #import <ZXingWidgetController.h>
 
-#import "GameStage.h"
 #import "PingGameCore.h"
-#import "SpotCore.h"
-#import "GameModel.h"
+
 @class ResultViewController;
 
 @interface PingGameViewController : UIViewController<ZXingDelegate, MKMapViewDelegate, CLLocationManagerDelegate> {
@@ -64,8 +62,6 @@
 	MKCoordinateRegion region;
 
 	PingGameCore *ping;
-	SpotCore *spot;
-	GameModel *game;
     
     NSTimer *pingcheck;
 }

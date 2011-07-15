@@ -10,12 +10,9 @@
 #import <MapKit/MapKit.h>
 
 @interface GameModel : NSObject {
-	UIAlertView  *baseAlert;
+	
 	
 }
 
-//게임 스테이지 초기화
--(void)GameInitMessage;
--(void)fadeView:(UIView *) v: (BOOL) appare;
 
 @end

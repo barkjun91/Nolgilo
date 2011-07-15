@@ -14,9 +14,8 @@
 
 @interface RootViewController : UIViewController {
     LoadingViewController* loadingViewController;
-	GameListViewController* gameListViewController;
-    
-	}
+	GameListViewController* gameListViewController;    
+}
 
 -(IBAction) TitleOnFlipView;
 @end

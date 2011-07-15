@@ -10,11 +10,12 @@
 #import "DBcore.h"
 
 
-@interface PingGameCore : NSObject {
+@interface PingGameCore : NSObject{
 	NSString * TeamName;
 	
     NSArray *datalist;
     NSDictionary *pingdata;
+    UIAlertView  *baseAlert;
     
 	double mylat;
 	double mylog;
@@ -55,6 +56,8 @@
 - (bool)GameCheking:(NSString *)teamid;
 - (int)GameResult:(NSString *)teamid;
 
+-(void)GameInitMessage;
+-(void)fadeView:(UIView *) v: (BOOL) appare;
 
 @property (nonatomic, retain) NSArray *datalist;
 @property (nonatomic, retain) NSDictionary *pingdata;
