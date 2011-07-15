@@ -123,7 +123,7 @@
 	locationManager.delegate = self;
 	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 
-	[locationManager startUpdatingHeading];
+	// [locationManager startUpdatingHeading];
 	[locationManager startUpdatingLocation];
 	
     resultViewController = [[ResultViewController alloc] initWithNibName:@"ResultViewController" bundle:nil];
@@ -189,24 +189,7 @@
         [[self ping] PingCheckEnd:info.teamid:pingteam];
     }
 }
--(void) end:(NSTimer*)timer
-{
-    int result;
-    result = [[self ping] GameResult:info.teamid];
-    [self goResult:result];
-}
--(void) gameChecking{
-    if([[self ping] GameCheking:info.teamid]){
-        [pingcheck invalidate];
-        [self SetMessage:@"GameEnd":5.0];
-        [NSTimer scheduledTimerWithTimeInterval:5.0
-                                         target:self
-                                       selector:@selector(end:)
-                                       userInfo:nil
-                                        repeats:NO
-         ];
-    }
-}
+
 -(void) check:(NSTimer*)timer
 {
     if(live){
@@ -215,6 +198,7 @@
     [self pingChecking];
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
+
 -(void) show: (NSTimer *)timer{
 	altermessage.hidden = YES;
 	alterbox.hidden = YES;
@@ -518,15 +502,4 @@
 	[self dismissModalViewControllerAnimated:NO];
 }
 
-#pragma mark -
-#pragma mark MapAnotation
-
--(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation{
-	MKPinAnnotationView* pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"asdf"];
-	pinView.pinColor = MKPinAnnotationColorPurple;
-	pinView.animatesDrop = YES;
-	pinView.canShowCallout = YES;
-	
-	return pinView;
-}
 @end

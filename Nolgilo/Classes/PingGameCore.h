@@ -53,7 +53,6 @@
 - (NSString *)SetQRImage:(NSString *)teamid;
 - (void)SetScore:(NSString *)teamid:(long)score;
 
-- (bool)GameCheking:(NSString *)teamid;
 - (int)GameResult:(NSString *)teamid;
 
 -(void)GameInitMessage;

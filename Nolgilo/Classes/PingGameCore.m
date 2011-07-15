@@ -22,6 +22,8 @@
 	return db;
 }
 
+#pragma mark -
+#pragma mark 메세지 출력 부분
 
 -(void) GameInitMessage{
 	
@@ -45,6 +47,13 @@
     
 }
 
+-(void) performDismiss: (NSTimer *)timer{
+	
+	[baseAlert dismissWithClickedButtonIndex:0 animated:NO];
+}
+
+#pragma mark -
+#pragma mark ImageView Fade in/out
 
 -(void)fadeView:(UIView *) v: (BOOL) appare{
 	if(appare){
@@ -64,71 +73,59 @@
 	
 }
 
+#pragma mark -
+#pragma mark 진행 관련 부분
 
+// 함수명 : init
+// 리턴값 : void
+// PingGameCore를 초기화 시켜주는 함수
+// lat:(double)자신의 위도 / log:(double)자신의 경도 / team:(NSString)자신이 속한 팀
 
--(void) performDismiss: (NSTimer *)timer{
+-(void)init:(double)lat
+		   :(double)log
+           :(NSInteger)roomid{
+    
+	mylat = lat;
+	mylog = log;
+	myroomid = roomid;
 	
-	[baseAlert dismissWithClickedButtonIndex:0 animated:NO];
+	
+    //	NSArray *coredata = [[self db] DataBaseConnect:team]; //다른팀의 정보를 가지고 온다.
+    //    [self DataSetting:coredata]; //가져온 정보를 정제한다.
 }
 
-
-- (int)GameResult:(NSString *)teamid{
-    NSArray *scorelist;
-    int maxscore, teamnum, teamscore;
-    
-    if([teamid isEqualToString:@"A"]){
-        teamnum = maxscore = 0;
-    }
-    else if([teamid isEqualToString:@"B"]){
-        teamnum = maxscore = 1;
-    }
-    else{
-        teamnum = maxscore = 2;
-    }
-    
-    scorelist = [[self db] GetScore:myroomid];
-    teamscore = [[scorelist objectAtIndex:teamnum] intValue];
-    
-    for(int i = 0; i<3; i++){
-        if(i != teamnum){
-            if([[scorelist objectAtIndex:i] intValue] > teamscore){
-                maxscore = i;
-            }
-        }
-    }
-    
-    if(maxscore == teamnum){
-        return 1;
-    }
-    else{
-        return 2;
-    }
-}
-
-
-- (bool)GameCheking:(NSString *)teamid{
-    if([[self db] GetState:teamid:myroomid] == 3)
-    {
-        return TRUE;
-    }
-    else
-    {
-        return FALSE;
-    }
-}
+// 함수명 : setScore
+// 리턴값 : void
+// 스코어를 갱신해 주는 역할을 한다.
 
 -(void)SetScore:(NSString *)teamid :(long)score{
     [[self db] SetScore:teamid:score:myroomid];
 }
+
+// 함수명 : setTeamLabel
+// 리턴값 : NSString
+// 유저의 팀 라벨을 설정하는 역할을 한다.
+
 - (NSString *)SetTeamLabel:(NSString *)teamid{
 	NSString *teamlabel = [NSString stringWithFormat:@"Team%@.png", teamid];
 	return teamlabel;
 }
 
+// 함수명 : SetQRImage
+// 리턴값 : NSString
+// 유저의 팀의 정보가 담긴 QR코드를 설정하는 역할을 한다.
+
 - (NSString *)SetQRImage:(NSString *)teamid{
 	NSString *teamQR = [NSString stringWithFormat:@"pingteam%@.png", teamid];
 	return teamQR;
 }
+
+// 함수명 : GetState
+// 리턴값 : int
+// 자신의 현재 상태를 알아내는 역할을 한다.
+// 0 : 상대방에게 잡혔다. 
+// 1 : 살아있는 상태
+// 2 : 게임에서 나간 경우
 
 -(int)GetState:(NSString *)teamid{
     int state;
@@ -364,22 +361,42 @@
     [[self db] SetTeamStatus:teamid:myroomid:2];
 }
 
-//함수명 : init
-//리턴값 : void
-//PingGameCore를 초기화 시켜주는 함수
-//lat:(double)자신의 위도 / log:(double)자신의 경도 / team:(NSString)자신이 속한 팀
 
--(void)init:(double)lat
-		   :(double)log
-           :(NSInteger)roomid{
+
+#pragma mark -
+#pragma mark 결과 결과 연산
+
+- (int)GameResult:(NSString *)teamid{
+    NSArray *scorelist;
+    int maxscore, teamnum, teamscore;
     
-	mylat = lat;
-	mylog = log;
-	myroomid = roomid;
-	
-	
-//	NSArray *coredata = [[self db] DataBaseConnect:team]; //다른팀의 정보를 가지고 온다.
-//    [self DataSetting:coredata]; //가져온 정보를 정제한다.
+    if([teamid isEqualToString:@"A"]){
+        teamnum = maxscore = 0;
+    }
+    else if([teamid isEqualToString:@"B"]){
+        teamnum = maxscore = 1;
+    }
+    else{
+        teamnum = maxscore = 2;
+    }
+    
+    scorelist = [[self db] GetScore:myroomid];
+    teamscore = [[scorelist objectAtIndex:teamnum] intValue];
+    
+    for(int i = 0; i<3; i++){
+        if(i != teamnum){
+            if([[scorelist objectAtIndex:i] intValue] > teamscore){
+                maxscore = i;
+            }
+        }
+    }
+    
+    if(maxscore == teamnum){
+        return 1;
+    }
+    else{
+        return 2;
+    }
 }
 
 - (void)dealloc {

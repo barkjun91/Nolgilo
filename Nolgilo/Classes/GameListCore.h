@@ -24,6 +24,7 @@
     NSInteger count;
     int roomid;
 }
+
 -(void)RoomListData;
 -(NSInteger)GetCount;
 -(NSString *)GetMainTitle:(int)number;
